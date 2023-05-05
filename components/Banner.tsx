@@ -7,12 +7,17 @@ import {motion} from 'framer-motion';
 
 export default function Banner(): JSX.Element {
   return (
-    <div className="flex justify-center mb-8">
+    <div className="flex justify-center md:mb-8">
       <Link aria-label="jooncco.com" href="/">
         <motion.div
-          initial={{opacity: 0, scale: 0.5}}
-          animate={{opacity: 1, scale: 1}}
-          transition={{type: 'spring'}}>
+          initial={{scale: 0}}
+          animate={{scale: 1}}
+          transition={{
+            type: 'spring',
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileTap={{scale: 0.75}}>
           <Image
             src="/img/banner.png"
             alt="banner image"
