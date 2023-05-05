@@ -27,6 +27,7 @@
     "@typescript-eslint/object-curly-spacing": 0,
     "@typescript-eslint/member-delimiter-style": 0,
     "semi-style": ["error", "last"],
-    "semi-spacing": ["error", {"before": false, "after": true}]
+    "semi-spacing": ["error", {"before": false, "after": true}],
+    "multiline-ternary": ["off"]
   }
 }
