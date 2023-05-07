@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Cp(): JSX.Element {
   return (
-    <div className="text-black bg-white">
+    <div className="text-white">
       <p>cp</p>
     </div>
   );

@@ -17,7 +17,7 @@ export default function Banner(): JSX.Element {
             stiffness: 260,
             damping: 20,
           }}
-          whileTap={{scale: 0.75}}>
+          whileTap={{scale: 0.8}}>
           <Image
             src="/img/banner.png"
             alt="banner image"

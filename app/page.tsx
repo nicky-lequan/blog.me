@@ -3,7 +3,7 @@ import React from 'react';
 export default function Home(): JSX.Element {
   return (
     <div className="text-white">
-      <p>Home</p>
+      <p>home</p>
       <br />
       <br />
       <br />
