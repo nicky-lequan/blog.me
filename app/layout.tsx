@@ -1,7 +1,7 @@
 import React from 'react';
 import './global.css';
 import type {Metadata} from 'next';
-import Banner from '@/components/Banner';
+import NavBanner from '@/components/navbar/NavBanner';
 import NavBar from '@/components/NavBar';
 
 export const metadata: Metadata = {
@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="text-white bg-black">
       <body className="max-w-7xl mx-auto mb-40 mx-4 mt-8 md:mt-12">
-        <Banner />
+        <NavBanner />
         <NavBar />
-        <main className="flex-auto min-w-0 mt-4 md:mt-0 flex flex-col px-2">
+        <main className="flex-auto min-w-0 mt-4 flex flex-col p-12">
           {children}
         </main>
       </body>
