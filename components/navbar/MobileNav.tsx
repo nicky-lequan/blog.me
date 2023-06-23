@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {navItems} from '../NavBar';
 import {motion} from 'framer-motion';
 
-export default function NavButton(): JSX.Element {
+export default function MobileNav(): JSX.Element {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
 

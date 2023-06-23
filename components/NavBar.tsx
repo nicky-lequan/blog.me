@@ -1,19 +1,19 @@
 import React from 'react';
 import Logo from './navbar/Logo';
-import NavButton from './navbar/MobileNav';
+import MobileNav from './navbar/MobileNav';
 import DesktopNav from './navbar/DesktopNav';
 
 export const navItems = {
-  home: {
+  Home: {
     path: '/',
   },
-  posts: {
+  Posts: {
     path: '/posts',
   },
-  cp: {
-    path: '/cp',
+  Cp: {
+    path: '/competitive-programming',
   },
-  resume: {
+  Resume: {
     path: '/resume',
   },
 };
@@ -25,7 +25,7 @@ export default function NavBar(): JSX.Element {
         <Logo />
         <DesktopNav />
       </div>
-      <NavButton />
+      <MobileNav />
     </div>
   );
 }
