@@ -5,10 +5,11 @@ import React, {useEffect, useState} from 'react';
 export default function HomeBanner(): JSX.Element {
   const [text, setText] = useState('');
   const texts: string[] = [
-    'Fellows !',
+    "Fellows !",
     "It's Jooncco.",
-    "I'm a Backend Engineer ",
-    'and I LOVE to learn & build things. ',
+    "I'm a Backend Engineer.",
+    "I'm a Solutions Architect.",
+    "I LOVE to learn & build things.",
   ];
   const [textIdx, setTextIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -59,11 +60,11 @@ export default function HomeBanner(): JSX.Element {
         <span className="font-bold text-red-600">|</span>
       </p>
       <p>
-        My journey as a software engineer has been 4 years. Learning & building
-        new stuff is always exciting especially when I see my skills dedicate to
-        making a better world. The world we live is full of joy as long as there
-        remains any challenges I can face, and I believe it all can be conquered
-        in the end.
+        Time Flies! It's been 4 years since I started my career as a software engineer, making a better world.
+        Software engineering is a field that I always find exciting, full of challenges which keeps me
+        motivated all the time. Honestly, facing challenges itself is not a pleasurable experience for me like everyone else.
+        I think it's the sense of conquest that makes me keep rolling.
+        My journey will continue anyway, and you're watching the outcomes of my hardwork right now.
       </p>
     </div>
   );
