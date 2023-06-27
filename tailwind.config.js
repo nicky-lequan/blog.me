@@ -8,6 +8,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {},
+    fontFamily: {
+      raleway: ['raleway', 'sans-serif'],
+    },
   },
   plugins: [],
 };

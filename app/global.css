@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'raleway';
+  src: url('../public/font/RalewayFont.ttf');
+}
+@font-face {
+  font-family: 'caskaydia';
+  src: url('../public/font/CaskaydiaCoveNerdFont.ttf');
+}
+
+@layer base {
+  html {
+    font-family: 'raleway';
+  }
+  h1 {
+    @apply mt-8 font-bold text-5xl;
+  }
+  h2 {
+    @apply mt-6 font-bold text-4xl;
+  }
+  h3 {
+    @apply mt-4 font-bold text-3xl;
+  }
+}
