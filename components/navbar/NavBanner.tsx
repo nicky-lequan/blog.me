@@ -9,7 +9,7 @@ export default function NavBanner(): JSX.Element {
   return (
     <div className="flex justify-center md:mb-8">
       <Link aria-label="jooncco.com" href="/">
-        <motion.div whileTap={{scale: 0.95}}>
+        <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 1}}>
           <Image
             src="/img/banner.png"
             alt="banner image"

@@ -54,7 +54,7 @@ export default function HomeBanner(): JSX.Element {
   }
 
   return (
-    <div className="px-8 py-20 flex flex-col justify-center mx-auto bg-slate-900/30 rounded-lg">
+    <div className="px-8 py-20 flex flex-col justify-center mx-auto bg-gradient-to-r from-indigo-800/30 rounded-xl">
       <p className="text-5xl mb-6">
         <span className="font-bold">{text}</span>
         <span className="font-bold text-red-600">|</span>

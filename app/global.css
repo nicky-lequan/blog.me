@@ -15,12 +15,18 @@
     font-family: 'raleway';
   }
   h1 {
-    @apply mt-8 font-bold text-5xl;
+    @apply px-4 py-3 font-bold text-5xl bg-gradient-to-r from-indigo-600/30 to-70% rounded-xl;
   }
   h2 {
-    @apply mt-6 font-bold text-4xl;
+    @apply px-4 py-2 font-bold text-4xl bg-gradient-to-r from-indigo-700/30 to-60% rounded-xl;
   }
   h3 {
-    @apply mt-4 font-bold text-3xl;
+    @apply px-4 py-2 font-bold text-3xl bg-gradient-to-r from-indigo-700/30 to-50% rounded-xl;
+  }
+  h4 {
+    @apply px-4 py-2 font-bold text-2xl bg-gradient-to-r from-indigo-700/30 to-40% rounded-xl;
+  }
+  h5 {
+    @apply px-4 py-2 font-bold text-xl bg-gradient-to-r from-indigo-700/30 to-30% rounded-xl;
   }
 }
