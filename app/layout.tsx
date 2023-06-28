@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className="max-w-7xl mx-auto mb-40 mx-4 mt-8 md:mt-12">
         <NavBanner />
         <NavBar />
-        <main className="flex-auto min-w-0 mt-4 flex flex-col p-12">
+        <main className="flex-auto min-w-0 mt-4 flex flex-col py-4">
           {children}
         </main>
       </body>
