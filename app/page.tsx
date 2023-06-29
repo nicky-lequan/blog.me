@@ -1,15 +1,17 @@
 import HomeBanner from '@/components/home/HomeBanner';
+import {H2} from '@/components/common/Header';
 import React from 'react';
+import TestimonialCard from '@/components/home/TestimonialCard';
 
 export default function Home(): JSX.Element {
   return (
     <div className="text-white">
       <HomeBanner />
-      <h2 className="mt-10">Testimonials</h2>
-      <p className="my-5">Thoughts on me.</p>
-      <h2 className="mt-10">Recent Activities</h2>
+      <H2 className="mt-10 mb-4">Testimonials</H2>
+      <TestimonialCard />
+      <H2 className="mt-10">Recent Activities</H2>
       <p className="my-5">My recent activities.</p>
-      <h2 className="mt-10">Donation</h2>
+      <H2 className="mt-10">Donation</H2>
       <p className="my-5">Buy me a cup of coffee.</p>
     </div>
   );
