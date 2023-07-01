@@ -60,7 +60,7 @@ export default function HomeBanner(): JSX.Element {
         <span className="font-bold text-red-600">|</span>
       </p>
       <p>
-        Time Flies! It&apos;s been 4 years since I started my career as a
+        Time Flies⚡️ It&apos;s been 4 years since I started my career as a
         software engineer, making a better world. Software engineering is a
         field that I always find exciting, full of challenges which keeps me
         motivated all the time. Honestly, facing challenges itself is not a
