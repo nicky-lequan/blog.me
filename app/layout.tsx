@@ -22,10 +22,10 @@ export default function RootLayout({
 }): React.ReactNode {
   return (
     <html lang="en" className="text-white bg-black">
-      <body className="max-w-7xl mx-auto mb-40 mx-4 mt-8 md:mt-12 px-6">
+      <body className="max-w-7xl mx-auto mb-40 mx-4 mt-8 md:mt-12">
         <NavBanner />
         <NavBar />
-        <main className="flex-auto min-w-0 mt-4 flex flex-col py-4">
+        <main className="min-w-0 mt-4 px-6 py-4 flex-auto flex flex-col">
           {children}
         </main>
       </body>

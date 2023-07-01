@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 
 export default function NavBanner(): JSX.Element {
   return (
-    <div className="flex justify-center md:mb-8">
+    <div className="flex justify-center mb-8">
       <Link aria-label="jooncco.com" href="/">
         <motion.div whileHover={{scale: 1.1}} whileTap={{scale: 1}}>
           <Image
