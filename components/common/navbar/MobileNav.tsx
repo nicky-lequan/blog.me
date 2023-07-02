@@ -20,6 +20,9 @@ export default function MobileNav(): JSX.Element {
       }
     }
     window.addEventListener('click', handleClick);
+    return () => {
+      window.removeEventListener('click', handleClick);
+    };
   }, [open]);
 
   return (
@@ -31,14 +34,14 @@ export default function MobileNav(): JSX.Element {
             setOpen((prev) => !prev);
           }}
           ref={menuButton}>
-          <span className="block w-5 h-0.5 bg-cyan-200/80"></span>
-          <span className="block w-5 h-0.5 bg-cyan-200/80"></span>
-          <span className="block w-5 h-0.5 bg-cyan-200/80"></span>
+          <span className="block w-5 h-0.5 bg-white"></span>
+          <span className="block w-5 h-0.5 bg-white"></span>
+          <span className="block w-5 h-0.5 bg-white"></span>
         </button>
       </motion.div>
 
       {open && (
-        <ul className="absolute z-10 right-2 mt-4 w-32 origin-top-right divide-y divide-slate-700/40 rounded-lg bg-gray-900/70">
+        <ul className="absolute z-10 right-2 mt-4 w-32 origin-top-right divide-y divide-slate-700 rounded-lg bg-gray-900">
           {Object.entries(navItems).map(([name, {path}]) => {
             return (
               <li
@@ -49,7 +52,7 @@ export default function MobileNav(): JSX.Element {
                 }}>
                 <Link
                   href={path}
-                  className="px-4 py-2 block border-gray-400 hover:bg-gray-800/80 rounded-lg">
+                  className="px-4 py-2 block border-gray-500 hover:bg-gray-900 rounded-lg">
                   {name}
                 </Link>
               </li>
