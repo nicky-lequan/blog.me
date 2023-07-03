@@ -4,19 +4,29 @@ import React, {useEffect, useState} from 'react';
 import Logo from './navbar/Logo';
 import MobileNav from './navbar/MobileNav';
 import DesktopNav from './navbar/DesktopNav';
+import {
+  HomeIcon,
+  BookOpenIcon,
+  VariableIcon,
+  UserIcon,
+} from '@heroicons/react/24/solid';
 
 export const navItems = {
   Home: {
     path: '/',
+    icon: <HomeIcon className="h-5 w-5" />,
   },
   Posts: {
     path: '/posts',
+    icon: <BookOpenIcon className="h-5 w-5" />,
   },
   Cp: {
     path: '/competitive-programming',
+    icon: <VariableIcon className="h-5 w-5" />,
   },
   Resume: {
     path: '/resume',
+    icon: <UserIcon className="h-5 w-5" />,
   },
 };
 
@@ -39,14 +49,15 @@ export default function NavBar(): JSX.Element {
 
   return (
     <div
-      className={`sticky top-0 flex justify-between ${
-        isScrolling ? 'bg-gray-900/90' : 'bg-transparent'
-      } border-b border-b-gray-500 rounded-b-xl`}>
+      className={`sticky top-0 flex justify-between border-b border-b-gray-500 rounded-b-xl
+        ${isScrolling ? 'bg-gray-900/90' : 'bg-transparent'}`}>
       <div className="flex flex-row my-auto">
         <Logo />
         <DesktopNav />
       </div>
-      <MobileNav />
+      <div className="flex flex-row my-auto">
+        <MobileNav />
+      </div>
     </div>
   );
 }
