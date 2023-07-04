@@ -1,9 +1,9 @@
-import {H1, H2, H3, H4, H5} from '@/components/common/Header';
+import {H1, H2, H3, H4, H5} from '@/components/Header';
 import React from 'react';
 
 export default function Posts(): JSX.Element {
   return (
-    <div className="text-white">
+    <div >
       <H1>Posts</H1>
       <br />
       <H1>Heading 1</H1>

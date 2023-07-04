@@ -10,6 +10,7 @@ import {
   VariableIcon,
   UserIcon,
 } from '@heroicons/react/24/solid';
+import ThemeSwitch from './navbar/ThemeSwitch';
 
 export const navItems = {
   Home: {
@@ -35,7 +36,7 @@ export default function NavBar(): JSX.Element {
 
   useEffect(() => {
     function changeColor(): void {
-      if (window.scrollY >= 308) {
+      if (window.scrollY >= 228) {
         setIsScrolling(true);
       } else {
         setIsScrolling(false);
@@ -55,7 +56,8 @@ export default function NavBar(): JSX.Element {
         <Logo />
         <DesktopNav />
       </div>
-      <div className="flex flex-row my-auto">
+      <div className="px-4 flex flex-row my-auto space-x-2">
+        <ThemeSwitch />
         <MobileNav />
       </div>
     </div>
