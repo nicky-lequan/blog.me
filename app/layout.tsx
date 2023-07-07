@@ -23,7 +23,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className="max-w-7xl mx-auto mb-40 mx-4 mt-8 md:mt-12">
+      <body className="max-w-7xl mx-auto mb-40 mx-4 mt-8">
         <ThemeProvider attribute="class">
           <NavBanner />
           <NavBar />
