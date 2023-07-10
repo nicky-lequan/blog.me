@@ -1,5 +1,8 @@
 'use client';
 
+import {Tooltip} from '@material-tailwind/react';
+import Image from 'next/image';
+import Link from 'next/link';
 import React, {useEffect, useState} from 'react';
 
 export default function HomeBanner(): JSX.Element {
@@ -60,13 +63,31 @@ export default function HomeBanner(): JSX.Element {
         <span className="font-bold text-red-600">|</span>
       </p>
       <p>
-        Time Flies⚡️ It&apos;s been 4 years since I started my career as a
-        software engineer, making a better world. Software engineering is a
-        field that I always find exciting, full of challenges which keeps me
-        motivated all the time. Honestly, facing challenges itself is not a
-        pleasurable experience for me like everyone else. I think it&apos;s the
-        sense of conquest that makes me keep rolling. My journey will continue
-        anyway, and you&apos;re watching the outcomes of my hardwork right now.
+        &nbsp;
+        <span className="font-bold">&quot;Jooncco&quot;</span> is a compound
+        word consists of two substrings.
+        <span className="font-bold"> &quot;Joon&quot;</span> comes from my first
+        name <span className="font-bold"> Junha</span>, and
+        <span className="font-bold"> &quot;cco&quot;</span> comes from&nbsp;
+        <Tooltip
+          content={
+            <Image height={60} width={60} src="/img/loco.png" alt={'loco'} />
+          }
+          placement="bottom">
+          <Link
+            className="font-bold underline decoration-indigo-400"
+            href="https://www.instagram.com/satgotloco">
+            Loco
+          </Link>
+        </Tooltip>
+        , the name of my favorite Korean hiphop star who is incredibly talented
+        & always shares good vibes with band sounds. It&apos;s been&nbsp;
+        <span className="font-bold">4 years</span>
+        &nbsp;since I&apos;ve been around in this field. Software engineering is
+        full of challenges most of the time, and I really enjoy the sense of
+        conquest that comes after everytime I solve them. This keeps me rolling,
+        and my journey shall continue on and on and on. You&apos;re watching the
+        outcomes of my hardwork on my live channel ON AIR.
       </p>
     </div>
   );
