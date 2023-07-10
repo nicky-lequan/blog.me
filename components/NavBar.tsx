@@ -51,7 +51,11 @@ export default function NavBar(): JSX.Element {
   return (
     <div
       className={`sticky top-0 flex justify-between border-b border-b-gray-500 rounded-b-xl
-        ${isScrolling ? 'bg-gray-900/90' : 'bg-transparent'}`}>
+        ${
+          isScrolling
+            ? 'bg-indigo-500/40 dark:bg-gray-900/90'
+            : 'bg-transparent'
+        }`}>
       <div className="flex flex-row my-auto">
         <Logo />
         <DesktopNav />

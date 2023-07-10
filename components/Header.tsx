@@ -10,7 +10,7 @@ export function H1({className, children}: HeaderProps): JSX.Element {
     <h1
       className={`${
         className ?? ''
-      } px-4 py-3 font-bold text-3xl lg:text-5xl bg-gradient-to-r from-indigo-600/30 to-70% rounded-xl`}>
+      } px-4 py-3 font-bold text-3xl lg:text-5xl bg-gradient-to-r from-indigo-700/30 to-70% rounded-xl`}>
       {children}
     </h1>
   );
