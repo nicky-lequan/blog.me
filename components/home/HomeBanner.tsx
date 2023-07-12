@@ -81,7 +81,10 @@ export default function HomeBanner(): JSX.Element {
           </Link>
         </Tooltip>
         , the name of my favorite Korean hiphop star who is incredibly talented
-        & always shares good vibes with band sounds. It&apos;s been&nbsp;
+        & always shares good vibes with band sounds.
+        <br />
+        <br />
+        It&apos;s been&nbsp;
         <span className="font-bold">4 years</span>
         &nbsp;since I&apos;ve been around in this field. Software engineering is
         full of challenges most of the time, and I really enjoy the sense of
