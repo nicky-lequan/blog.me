@@ -31,7 +31,7 @@ export default function NavBar(): JSX.Element {
 
   useEffect(() => {
     function changeColor(): void {
-      if (window.scrollY >= 228) {
+      if (window.scrollY >= 192) {
         setIsScrolling(true);
       } else {
         setIsScrolling(false);
@@ -45,17 +45,15 @@ export default function NavBar(): JSX.Element {
 
   return (
     <div
-      className={`sticky top-0 flex justify-between border-b border-b-gray-500 rounded-b-xl
+      className={`sticky top-0 z-50 flex justify-between shadow-sm shadow-gray-500 dark:shadow-gray-800 rounded-b-xl
         ${
-          isScrolling
-            ? 'bg-indigo-500/40 dark:bg-gray-900/90'
-            : 'bg-transparent'
+          isScrolling ? 'bg-blue-100/60 dark:bg-[#202A44]/60' : 'bg-transparent'
         }`}>
       <div className="flex flex-row my-auto">
         <Logo />
         <DesktopNav />
       </div>
-      <div className="px-4 flex flex-row my-auto space-x-2">
+      <div className="px-3 flex flex-row my-auto space-x-2">
         <ThemeSwitch />
         <MobileNav />
       </div>

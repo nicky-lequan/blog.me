@@ -57,10 +57,10 @@ export default function HomeBanner(): JSX.Element {
   }
 
   return (
-    <div className="px-8 py-20 flex flex-col justify-center mx-auto bg-gradient-to-r from-indigo-800/20 dark:from-indigo-800/30 rounded-xl">
+    <div className="px-8 py-20 flex flex-col justify-center mx-auto bg-gradient-to-r from-blue-100 dark:from-indigo-800/30 shadow-md shadow-current dark:shadow-gray-800 rounded-xl">
       <p className="text-5xl mb-6">
         <span className="font-bold">{text}</span>
-        <span className="font-bold text-red-600">|</span>
+        <span className="font-bold text-red-900 dark:text-red-600">|</span>
       </p>
       <p>
         &nbsp;
@@ -73,9 +73,10 @@ export default function HomeBanner(): JSX.Element {
           content={
             <Image height={60} width={60} src="/img/loco.png" alt={'loco'} />
           }
-          placement="bottom">
+          placement="bottom"
+          className="bg-blue-100 dark:bg-[#202A44]">
           <Link
-            className="font-bold underline decoration-indigo-400"
+            className="font-bold text-blue-700 dark:text-indigo-500"
             href="https://www.instagram.com/satgotloco">
             Loco
           </Link>

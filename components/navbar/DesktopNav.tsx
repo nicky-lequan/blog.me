@@ -31,7 +31,7 @@ export default function DesktopNav(): JSX.Element {
                   {name}
                   {path === pathname && (
                     <motion.div
-                      className="absolute inset-0 bg-indigo-500/40 dark:bg-gray-900/90 rounded-md z-[-1]"
+                      className="absolute inset-0 bg-blue-500/20 dark:bg-indigo-900/40 rounded-md z-[-1]"
                       layoutId="sidebar"
                       transition={{
                         type: 'spring',
