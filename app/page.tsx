@@ -17,10 +17,10 @@ export default function Home(): JSX.Element {
       <p className="my-5 px-4">My recent activity.</p>
       <H2 className="mt-10 mb-4">Portfolio</H2>
       <p className="my-5 px-4">My artworks.</p>
-      <H2 className="mt-10 mb-4">Contact</H2>
-      <p className="my-5 px-4">Reach me.</p>
       <H2 className="mt-10 mb-4">Donation</H2>
       <p className="my-5 px-4">Buy me a cup of coffee.</p>
+      <H2 className="mt-10 mb-4">Contact</H2>
+      <p className="my-5 px-4">Reach me.</p>
     </>
   );
 }

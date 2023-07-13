@@ -10,8 +10,8 @@ export default function HomeBanner(): JSX.Element {
   const texts: string[] = [
     'Fellows !',
     "It's Jooncco.",
-    "I'm a Backend Engineer.",
-    "I'm a Solutions Architect.",
+    "I'm a Software Engineer.",
+    "I'm a Quant Enthusiast.",
     'I LOVE to learn & build things.',
   ];
   const [textIdx, setTextIdx] = useState(0);
@@ -64,11 +64,22 @@ export default function HomeBanner(): JSX.Element {
       </p>
       <p>
         &nbsp;
-        <span className="font-bold">&quot;Jooncco&quot;</span> is a compound
-        word consists of two substrings.
-        <span className="font-bold"> &quot;Joon&quot;</span> comes from my first
-        name <span className="font-bold"> Junha</span>, and
-        <span className="font-bold"> &quot;cco&quot;</span> comes from&nbsp;
+        <span className="font-bold underline decoration-2 decoration-indigo-500">
+          Jooncco
+        </span>
+        &nbsp;is a compound word consists of two substrings.&nbsp;
+        <span className="font-bold underline decoration-2 decoration-indigo-500">
+          Joon
+        </span>
+        &nbsp;comes from my first name&nbsp;
+        <span className="font-bold underline decoration-2 decoration-indigo-500">
+          Junha
+        </span>
+        , and &nbsp;
+        <span className="font-bold underline decoration-2 decoration-indigo-500">
+          cco
+        </span>
+        &nbsp;comes from&nbsp;
         <Tooltip
           content={
             <Image height={60} width={60} src="/img/loco.png" alt={'loco'} />
@@ -76,22 +87,22 @@ export default function HomeBanner(): JSX.Element {
           placement="bottom"
           className="bg-blue-100 dark:bg-[#202A44]">
           <Link
-            className="font-bold text-blue-700 dark:text-indigo-500"
+            className="font-bold text-indigo-500 dark:text-indigo-500 underline decoration-2 decoration-indigo-500"
             href="https://www.instagram.com/satgotloco">
             Loco
           </Link>
         </Tooltip>
         , the name of my favorite Korean hiphop star who is incredibly talented
-        & always shares good vibes with band sounds.
+        & always spreads good vibes with music band sound.
         <br />
         <br />
         It&apos;s been&nbsp;
         <span className="font-bold">4 years</span>
         &nbsp;since I&apos;ve been around in this field. Software engineering is
         full of challenges most of the time, and I really enjoy the sense of
-        conquest that comes after everytime I solve them. This keeps me rolling,
-        and my journey shall continue on and on and on. You&apos;re watching the
-        outcomes of my hardwork on my live channel ON AIR.
+        conquest that comes after everytime I solve them. It is the fuel keeps
+        me rolling, and my journey shall continue on and on and on. You&apos;re
+        watching the outcomes of my hardwork ON AIR.
       </p>
     </div>
   );
