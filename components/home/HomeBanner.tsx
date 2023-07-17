@@ -99,7 +99,7 @@ export default function HomeBanner(): JSX.Element {
         It&apos;s been&nbsp;
         <span className="font-bold">4 years</span>
         &nbsp;since I&apos;ve been around in this field. Software engineering is
-        full of challenges most of the time, and I really enjoy the sense of
+        full of challenges most of the time, but I really enjoy the sense of
         conquest that comes after everytime I solve them. It is the fuel keeps
         me rolling, and my journey shall continue on and on and on. You&apos;re
         watching the outcomes of my hardwork ON AIR.
