@@ -1,6 +1,6 @@
 import HomeBanner from '@/components/home/HomeBanner';
-import {Typography} from './provider';
-import {H2} from '@/components/Headers';
+import { Typography } from './provider';
+import { H2 } from '@/components/Headers';
 import React from 'react';
 import Testimonials from '@/components/home/Testimonials';
 

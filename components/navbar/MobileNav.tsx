@@ -7,8 +7,8 @@ import {
   SpeedDialAction,
   Typography,
 } from '@/app/provider';
-import {SquaresIcon} from '../Icons';
-import {navItems} from '../NavBar';
+import { SquaresIcon } from '../Icons';
+import { navItems } from '../NavBar';
 import Link from 'next/link';
 
 export default function MobileNav(): JSX.Element {
@@ -21,7 +21,7 @@ export default function MobileNav(): JSX.Element {
           </IconButton>
         </SpeedDialHandler>
         <SpeedDialContent>
-          {Object.entries(navItems).map(([name, {path, icon}]) => {
+          {Object.entries(navItems).map(([name, { path, icon }]) => {
             return (
               <SpeedDialAction
                 key={name}

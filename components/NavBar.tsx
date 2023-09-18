@@ -1,10 +1,10 @@
 'use client';
 
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from './navbar/Logo';
 import MobileNav from './navbar/MobileNav';
 import DesktopNav from './navbar/DesktopNav';
-import {HomeIcon, BookmarkIcon, TrophyIcon, IdCardIcon} from './Icons';
+import { HomeIcon, BookmarkIcon, TrophyIcon, IdCardIcon } from './Icons';
 import ThemeSwitch from './navbar/ThemeSwitch';
 
 export const navItems = {
@@ -46,8 +46,7 @@ export default function NavBar(): JSX.Element {
   return (
     <div
       className={`sticky top-0 z-50 flex justify-between shadow-sm shadow-gray-500 dark:shadow-gray-800 rounded-b-xl
-        ${
-          isScrolling ? 'bg-blue-100/60 dark:bg-[#202A44]/60' : 'bg-transparent'
+        ${isScrolling ? 'bg-blue-100/60 dark:bg-[#202A44]/60' : 'bg-transparent'
         }`}>
       <div className="flex flex-row my-auto">
         <Logo />

@@ -1,12 +1,12 @@
 'use client';
 
-import React, {useEffect, useState} from 'react';
-import {useTheme} from 'next-themes';
-import {MoonIcon, SunIcon} from '../Icons';
-import {IconButton} from '@material-tailwind/react';
+import React, { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
+import { MoonIcon, SunIcon } from '../Icons';
+import { IconButton } from '@material-tailwind/react';
 
 export default function ThemeSwitch(): JSX.Element {
-  const {systemTheme, theme, setTheme} = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const toggleTheme = (): void => {
@@ -16,8 +16,8 @@ export default function ThemeSwitch(): JSX.Element {
           ? 'light'
           : 'dark'
         : theme === 'dark'
-        ? 'light'
-        : 'dark'
+          ? 'light'
+          : 'dark'
     );
   };
 

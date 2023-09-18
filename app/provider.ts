@@ -1,5 +1,5 @@
 'use client';
-import {ThemeProvider} from 'next-themes';
+import { ThemeProvider } from 'next-themes';
 import {
   Carousel,
   IconButton,
@@ -10,7 +10,7 @@ import {
   Typography,
 } from '@material-tailwind/react';
 
-export {ThemeProvider};
+export { ThemeProvider };
 export {
   Carousel,
   IconButton,

@@ -1,9 +1,9 @@
 import React from 'react';
 import './global.css';
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import NavBanner from '@/components/navbar/NavBanner';
 import NavBar from '@/components/NavBar';
-import {ThemeProvider} from './provider';
+import { ThemeProvider } from './provider';
 
 export const metadata: Metadata = {
   title: {

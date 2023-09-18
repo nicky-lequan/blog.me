@@ -4,7 +4,7 @@ interface IconProps {
   className?: string;
 }
 
-export function HomeIcon({className}: IconProps): JSX.Element {
+export function HomeIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export function HomeIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function DownloadIcon({className}: IconProps): JSX.Element {
+export function DownloadIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export function DownloadIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function IdCardIcon({className}: IconProps): JSX.Element {
+export function IdCardIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ export function IdCardIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function MoonIcon({className}: IconProps): JSX.Element {
+export function MoonIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export function MoonIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function SunIcon({className}: IconProps): JSX.Element {
+export function SunIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ export function SunIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function HeartIcon({className}: IconProps): JSX.Element {
+export function HeartIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ export function HeartIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function SquaresIcon({className}: IconProps): JSX.Element {
+export function SquaresIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export function SquaresIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function VariableIcon({className}: IconProps): JSX.Element {
+export function VariableIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ export function VariableIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function BookmarkIcon({className}: IconProps): JSX.Element {
+export function BookmarkIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +138,7 @@ export function BookmarkIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function TrophyIcon({className}: IconProps): JSX.Element {
+export function TrophyIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@ export function TrophyIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function PlusIcon({className}: IconProps): JSX.Element {
+export function PlusIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ export function PlusIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function PencilIcon({className}: IconProps): JSX.Element {
+export function PencilIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +182,7 @@ export function PencilIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function GlobeIcon({className}: IconProps): JSX.Element {
+export function GlobeIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +199,7 @@ export function GlobeIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function CodeBracketSquareIcon({className}: IconProps): JSX.Element {
+export function CodeBracketSquareIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -215,7 +215,7 @@ export function CodeBracketSquareIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function ArrowUpIcon({className}: IconProps): JSX.Element {
+export function ArrowUpIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +231,7 @@ export function ArrowUpIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function BoltIcon({className}: IconProps): JSX.Element {
+export function BoltIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +247,7 @@ export function BoltIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function FolderPlusIcon({className}: IconProps): JSX.Element {
+export function FolderPlusIcon({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

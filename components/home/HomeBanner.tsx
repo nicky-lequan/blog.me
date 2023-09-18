@@ -1,9 +1,9 @@
 'use client';
 
-import {Tooltip} from '@material-tailwind/react';
+import { Tooltip } from '@material-tailwind/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function HomeBanner(): JSX.Element {
   const [text, setText] = useState('');

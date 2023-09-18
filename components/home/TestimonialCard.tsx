@@ -19,9 +19,8 @@ export default function TestimonialCard({
 }: TestimonialCardProps): JSX.Element {
   return (
     <figure
-      className={`${
-        className ?? ''
-      } p-8 flex flex-col items-center justify-center text-center bg-[#A7C7E7] dark:bg-[#202A44] shadow-lg shadow-current dark:shadow-gray-800 rounded-lg`}>
+      className={`${className ?? ''
+        } p-8 flex flex-col items-center justify-center text-center bg-[#A7C7E7] dark:bg-[#202A44] shadow-lg shadow-current dark:shadow-gray-800 rounded-lg`}>
       <blockquote className="max-w-2xl mx-auto mb-4 lg:mb-8 text-gray-800 dark:text-gray-400">
         <svg
           className="h-12 mx-auto mb-3 text-gray-900 dark:text-gray-700"

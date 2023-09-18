@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography} from '../provider';
+import { Typography } from '../provider';
 
 export default function Resume(): JSX.Element {
   return (

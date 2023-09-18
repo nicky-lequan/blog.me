@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import {LayoutGroup, motion} from 'framer-motion';
-import {usePathname} from 'next/navigation';
+import { LayoutGroup, motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import clsx from 'clsx';
-import {navItems} from '../NavBar';
+import { navItems } from '../NavBar';
 
 export default function DesktopNav(): JSX.Element {
   const pathname = usePathname() ?? '/';
@@ -14,7 +14,7 @@ export default function DesktopNav(): JSX.Element {
     <div className="my-auto hidden sm:block">
       <LayoutGroup>
         <nav className="flex space-x-2">
-          {Object.entries(navItems).map(([name, {path}]) => {
+          {Object.entries(navItems).map(([name, { path }]) => {
             const isActive = path === pathname;
             return (
               <Link

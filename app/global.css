@@ -1,10 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: 'raleway';
   src: url('../public/font/RalewayFont.ttf');
 }
+
 @font-face {
   font-family: 'caskaydia';
   src: url('../public/font/CaskaydiaCoveNerdFont.ttf');

@@ -1,4 +1,4 @@
-import {Carousel} from '@/app/provider';
+import { Carousel } from '@/app/provider';
 import React from 'react';
 import TestimonialCard from './TestimonialCard';
 
