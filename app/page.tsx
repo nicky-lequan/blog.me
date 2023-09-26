@@ -1,26 +1,12 @@
-import HomeBanner from '@/components/home/HomeBanner';
-import { Typography } from './provider';
-import { H2 } from '@/components/Headers';
+import DynamicTextBanner from '@/components/DynamicTextBanner';
+import {H1} from '@/components/Headers';
 import React from 'react';
-import Testimonials from '@/components/home/Testimonials';
 
 export default function Home(): JSX.Element {
   return (
     <>
-      <Typography variant="h1" className="my-6 font-['raleway'] font-extrabold">
-        Home
-      </Typography>
-      <HomeBanner />
-      <H2 className="mt-10 mb-4">Testimonials</H2>
-      <Testimonials />
-      <H2 className="mt-10 mb-4">Recent Activity</H2>
-      <p className="my-5 px-4">My recent activity.</p>
-      <H2 className="mt-10 mb-4">Portfolio</H2>
-      <p className="my-5 px-4">My artworks.</p>
-      <H2 className="mt-10 mb-4">Donation</H2>
-      <p className="my-5 px-4">Buy me a cup of coffee.</p>
-      <H2 className="mt-10 mb-4">Contact</H2>
-      <p className="my-5 px-4">Reach me.</p>
+      <DynamicTextBanner />
+      <H1 className="mt-10 mb-4">Recent Activities</H1>
     </>
   );
 }

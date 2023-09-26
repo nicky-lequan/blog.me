@@ -1,15 +1,29 @@
-import { Carousel } from '@/app/provider';
+import {Carousel} from '@/app/provider';
 import React from 'react';
 import TestimonialCard from './TestimonialCard';
 
-export default function Testimonials(): JSX.Element {
+interface SlidingCarouselProps {
+  autoplay?: boolean;
+  autoplayDelay?: number;
+  loop?: boolean;
+  contents: JSX.Element[];
+}
+
+export default function SlidingCarousel({
+  autoplay = true,
+  autoplayDelay = 10000,
+  loop = true,
+  contents,
+}: SlidingCarouselProps): JSX.Element {
   return (
     <div className="bg-[#6F8FAF]/20 dark:bg-indigo-400/10 rounded-xl">
       <Carousel
         className="rounded-xl items-center"
-        autoplay={true}
-        autoplayDelay={8000}
-        loop={true}>
+        autoplay={autoplay}
+        autoplayDelay={autoplayDelay}
+        loop={loop}>
+        {/* {contents} */}
+        {/* dummy contents */}
         <TestimonialCard
           className="mt-4 mb-12 md:mx-auto md:w-7/12"
           title="Solid foundation for any project"
