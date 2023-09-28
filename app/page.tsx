@@ -6,7 +6,6 @@ export default function Home(): JSX.Element {
   return (
     <>
       <DynamicTextBanner />
-      <H1 className="mt-10 mb-4">Recent Activities</H1>
     </>
   );
 }
