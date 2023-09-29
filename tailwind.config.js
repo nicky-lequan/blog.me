@@ -16,9 +16,6 @@ module.exports = withMT({
       screens: {
         xs: '450px',
       },
-      backgroundImage: {
-        'hero-pattern': "url('/src/assets/herobg.png')",
-      },
     },
     fontFamily: {
       raleway: ['raleway', 'sans-serif'],
@@ -28,14 +25,16 @@ module.exports = withMT({
   plugins: [
     createThemes({
       light: {
+        base: '#FFFFFF',
         primary: '#D0E8F2',
-        focus: '#A3D8F4',
-        paper: '#F4F9F9',
+        secondary: '#A3D8F4',
+        neutral: '#F4F9F9',
       },
       dark: {
+        base: '#000000',
         primary: '#35155D',
-        focus: '#DA0037',
-        paper: '#0F0F0F',
+        secondary: '#DA0037',
+        neutral: '#0F0F0F',
       },
     }),
   ],

@@ -59,16 +59,18 @@ export default function NavBar(): JSX.Element {
     };
   }, [mobileMenuRef]);
 
+  const isDarkTheme = (): boolean => {
+    return theme === 'system'
+      ? systemTheme === 'dark'
+        ? true
+        : false
+      : theme === 'dark'
+      ? true
+      : false;
+  };
+
   const toggleTheme = () => {
-    setTheme(
-      theme === 'system'
-        ? systemTheme === 'dark'
-          ? 'light'
-          : 'dark'
-        : theme === 'dark'
-        ? 'light'
-        : 'dark'
-    );
+    setTheme(isDarkTheme() ? 'light' : 'dark');
   };
 
   const toggleMobileMenu = () => {
@@ -77,7 +79,7 @@ export default function NavBar(): JSX.Element {
 
   return (
     <>
-      <div className="sticky top-0 z-50 bg-paper">
+      <div className="sticky top-0 z-50 bg-base">
         <div className="mx-auto sm:px-4 px-2 flex flex-row h-[81px] max-w-7xl justify-between items-center">
           {/* left */}
           <div className="flex flex-row my-auto">
@@ -131,7 +133,7 @@ export default function NavBar(): JSX.Element {
                           {name}
                           {isActive && (
                             <motion.div
-                              className="absolute inset-0 z-[-1] bg-focus dark:bg-focus rounded-md"
+                              className="absolute inset-0 z-[-1] bg-secondary rounded-md"
                               layoutId="sidebar"
                               transition={{
                                 type: 'spring',
@@ -186,17 +188,8 @@ export default function NavBar(): JSX.Element {
                 variant="text"
                 className="my-auto rounded-full text-black dark:text-white"
                 onClick={toggleTheme}>
-                {theme === 'system' ? (
-                  systemTheme === 'light' ? (
-                    <SunIcon className="h-6 w-6" />
-                  ) : (
-                    <MoonIcon className="h-6 w-6" />
-                  )
-                ) : theme === 'light' ? (
-                  <SunIcon className="h-6 w-6" />
-                ) : (
-                  <MoonIcon className="h-6 w-6" />
-                )}
+                {isDarkTheme() && <MoonIcon className="h-6 w-6" />}
+                {!isDarkTheme() && <SunIcon className="h-6 w-6" />}
               </IconButton>
             </div>
           </div>

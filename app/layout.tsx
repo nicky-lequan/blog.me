@@ -6,8 +6,8 @@ import {ThemeProvider} from './provider';
 
 export const metadata: Metadata = {
   title: {
-    default: 'jooncco.com',
-    template: '%s | jooncco.com',
+    default: 'jooncco.dev',
+    template: '%s | jooncco.dev',
   },
   description: "Developer jooncco's blog.",
   icons: {
@@ -22,10 +22,10 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className="mb-40 bg-white dark:bg-black">
+      <body className="mb-40 bg-base">
         <ThemeProvider attribute="class">
           <NavBar />
-          <main className="max-w-6xl mx-auto mt-2 min-w-0 px-6 py-4 flex-auto flex flex-col bg-paper rounded-2xl">
+          <main className="max-w-6xl mx-auto mt-2 min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
             {children}
           </main>
         </ThemeProvider>
