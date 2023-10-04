@@ -28,8 +28,8 @@ const Pokemon = ({isMobile}) => {
       <primitive
         object={isDarkTheme() ? charmander.scene : squirtle.scene}
         scale={isMobile ? 0.3 : 0.65}
-        position={isMobile ? [0.77, 0.8, 0] : [1.2, 1, 0]}
-        rotation={[0.1, -0.5, 0]}
+        position={isMobile ? [0.87, 1.2, 0] : [1.2, 1, 0]}
+        rotation={[0.5, -0.4, 0]}
       />
     </mesh>
   );

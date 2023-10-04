@@ -1,7 +1,7 @@
 'use client';
 
 import React, {useEffect, useRef, useState} from 'react';
-import {SunIcon, MoonIcon, Bars3Icon, XMarkIcon} from './Icons';
+import {SunIcon, MoonIcon, Bars3Icon, Bars3BottomRifhtIcon} from './Icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import {LayoutGroup, motion} from 'framer-motion';
@@ -79,7 +79,7 @@ export default function NavBar(): JSX.Element {
 
   return (
     <>
-      <div className="sticky top-0 z-50 bg-base">
+      <div className="fixed top-0 w-full z-50 bg-base">
         <div className="mx-auto sm:px-4 px-2 flex flex-row h-[81px] max-w-7xl justify-between items-center">
           {/* left */}
           <div className="flex flex-row my-auto">
@@ -90,7 +90,7 @@ export default function NavBar(): JSX.Element {
               onClick={() => {
                 window.scrollTo(0, 0);
               }}>
-              <div className="flex flex-row space-x-1">
+              <div className="flex flex-row space-x-2">
                 <Image
                   src="/img/logo.png"
                   alt="logo image"
@@ -159,13 +159,13 @@ export default function NavBar(): JSX.Element {
                 className="my-auto rounded-full text-black dark:text-white"
                 onClick={toggleMobileMenu}>
                 {!mobileMenuOpen && <Bars3Icon className="h-6 w-6" />}
-                {mobileMenuOpen && <XMarkIcon className="h-6 w-6" />}
+                {mobileMenuOpen && <Bars3BottomRifhtIcon className="h-6 w-6" />}
               </IconButton>
 
               <div
                 className={`${
                   !mobileMenuOpen ? 'hidden' : 'flex'
-                } m-2 p-4 absolute top-20 right-0 min-w-[140px] z-10 bg-gradient-to-r from-white to-primary dark:from-[#18122B] dark:to-[#3F0071] shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
+                } m-2 p-4 absolute top-20 right-1 min-w-[140px] z-10 bg-gradient-to-r from-white to-primary dark:from-[#18122B] dark:to-[#3F0071] shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
                 <ul className="p-0 list-none flex justify-end items-start flex-col gap-4 font-bold">
                   {Object.entries(navItems).map(([name, {path}]) => (
                     <Link
