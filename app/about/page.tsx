@@ -17,8 +17,8 @@ export default function About(): JSX.Element {
             I'm a full-stack software engineer. <br />
             <br />
             Writing code, reading, weight training, competing in a programming
-            contest, refreshers (rooftop parties, shopping) are things that I
-            like.
+            contest, and of course refreshers (parties, shopping) are things
+            that I like.
           </p>
         </div>
       </div>

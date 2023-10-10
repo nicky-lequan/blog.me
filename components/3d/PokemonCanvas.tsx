@@ -27,13 +27,9 @@ const Pokemon = ({isUnderSm, isUnderLg}) => {
       <pointLight intensity={0.5} position={[2.1, 1.9, -0.8]} />
       <primitive
         object={isDarkTheme() ? charmander.scene : squirtle.scene}
-        scale={isUnderSm ? 0.3 : 0.65}
+        scale={isUnderLg ? 0.3 : 0.65}
         position={
-          isUnderLg
-            ? isUnderSm
-              ? [0.8, 0.4, 0]
-              : [1.2, 0.4, 0]
-            : [1.8, 0.4, 0]
+          isUnderLg ? (isUnderSm ? [0.5, 1, 0] : [1, 1, 0]) : [1.4, 0.4, 0]
         }
         rotation={[0.5, -0.4, 0]}
       />
