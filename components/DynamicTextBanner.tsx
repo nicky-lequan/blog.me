@@ -5,8 +5,8 @@ import React, {useEffect, useState} from 'react';
 export default function HomeBanner(): JSX.Element {
   const [text, setText] = useState('');
   const texts: string[] = [
-    'Hello, stranger ',
     'Welcome to my knowledge base.',
+    'Passion for the high quality software dwells in here.',
     'Hope you find something useful here :)',
   ];
   const [textIdx, setTextIdx] = useState(0);
