@@ -6,7 +6,7 @@ import {OrbitControls, Preload, useGLTF} from '@react-three/drei';
 import {useTheme} from 'next-themes';
 import CanvasProgress from './CanvasProgress';
 
-const Pokemon = ({isMobile}) => {
+const Pokemon = ({isUnderSm, isUnderLg}) => {
   const charmander = useGLTF('/3d/charmander/scene.gltf');
   const squirtle = useGLTF('/3d/squirtle/scene.gltf');
   const {systemTheme, theme} = useTheme();
@@ -24,11 +24,17 @@ const Pokemon = ({isMobile}) => {
   return (
     <mesh>
       <hemisphereLight intensity={isDarkTheme() ? 2 : 7} groundColor="black" />
-      <pointLight intensity={0.5} position={[2.1, 1.4, -1.3]} />
+      <pointLight intensity={0.5} position={[2.1, 1.9, -0.8]} />
       <primitive
         object={isDarkTheme() ? charmander.scene : squirtle.scene}
-        scale={isMobile ? 0.3 : 0.65}
-        position={isMobile ? [0.87, 1.2, 0] : [1.2, 1, 0]}
+        scale={isUnderSm ? 0.3 : 0.65}
+        position={
+          isUnderLg
+            ? isUnderSm
+              ? [0.8, 0.4, 0]
+              : [1.2, 0.4, 0]
+            : [1.8, 0.4, 0]
+        }
         rotation={[0.5, -0.4, 0]}
       />
     </mesh>
@@ -36,17 +42,24 @@ const Pokemon = ({isMobile}) => {
 };
 
 export default function PokemonCanvas(): JSX.Element {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isUnderSm, setIsUnderSm] = useState(false);
+  const [isUnderLg, setIsUnderLg] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 719px)');
-    setIsMobile(mediaQuery.matches);
+    const mediaQuerySm = window.matchMedia('(max-width: 639px)');
+    const mediaQueryLg = window.matchMedia('(max-width: 1023px)');
+    setIsUnderSm(mediaQuerySm.matches);
+    setIsUnderLg(mediaQueryLg.matches);
 
-    function handleMediaQueryChange(event: MediaQueryListEvent): void {
-      setIsMobile(event.matches);
+    function handleMediaQueryChangeSm(event: MediaQueryListEvent): void {
+      setIsUnderSm(event.matches);
+    }
+    function handleMediaQueryChangeLg(event: MediaQueryListEvent): void {
+      setIsUnderLg(event.matches);
     }
 
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    mediaQuerySm.addEventListener('change', handleMediaQueryChangeSm);
+    mediaQueryLg.addEventListener('change', handleMediaQueryChangeLg);
   }, []);
 
   return (
@@ -61,9 +74,10 @@ export default function PokemonCanvas(): JSX.Element {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Pokemon isMobile={isMobile} />
+        <Pokemon isUnderSm={isUnderSm} isUnderLg={isUnderLg} />
       </Suspense>
       <Preload all />
     </Canvas>
   );
 }
+1;

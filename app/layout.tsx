@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className="mb-40 bg-base">
         <ThemeProvider attribute="class">
           <NavBar />
-          <main className="max-w-6xl mx-auto mt-2 min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
+          <main className="max-w-6xl mx-auto mt-24 min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
             {children}
           </main>
         </ThemeProvider>

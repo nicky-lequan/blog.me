@@ -1,5 +1,4 @@
 import React from 'react';
-import {motion} from 'framer-motion';
 import PokemonCanvas from '@/components/3d/PokemonCanvas';
 
 export default function About(): JSX.Element {
@@ -12,10 +11,14 @@ export default function About(): JSX.Element {
         </div>
         <div>
           <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">
-            Hi, I'm <span className="text-secondary">Jooncco</span>
+            Hi there. I'm <span className="text-secondary">JunHa.</span>
           </h1>
-          <p className="text-gray-700 dark:text-gray-500 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100">
-            I develop this, and that
+          <p className="w-7/12 text-gray-700 dark:text-gray-500 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100">
+            I'm a full-stack software engineer. <br />
+            <br />
+            Writing code, reading, weight training, competing in a programming
+            contest, refreshers (rooftop parties, shopping) are things that I
+            like.
           </p>
         </div>
       </div>
