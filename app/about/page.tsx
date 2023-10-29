@@ -16,14 +16,23 @@ export default function About(): JSX.Element {
           <p className="w-7/12 text-gray-700 dark:text-gray-500 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100">
             I'm a full-stack software engineer. <br />
             <br />
-            Writing code, reading, weight training, competing in a programming
-            contest, and of course refreshers (parties, shopping) are things
-            that I like.
+            AWS, K8s, Next.js, and Competitive Programming are the things that I'm into nowadays.
+            I have more capabilities of course, so please refer to the Skills section if you wish to see more.
+            
+            I'm currently open for job opportunities by the way, especially those in Canada.  
+            So please please don't hesitate if you're a manager, head hunter, or whatever your position is.
+
+            Weight training, watching performances, going to music festivals and snow boarding are my top hobbies.
+            I like to listen to jazzy house when I code, and I'm a inevitable coffee lover.
           </p>
         </div>
       </div>
 
       <PokemonCanvas />
+
+      {/* Contact Me 문구: 
+      You're on the right track if you're seeking for a deciplined, self-motivated,
+      mission oreinted, and consistently learning engineer.*/}
     </section>
   );
 }
