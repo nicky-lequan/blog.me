@@ -79,7 +79,7 @@ export default function NavBar(): JSX.Element {
 
   return (
     <>
-      <div className="fixed top-0 w-full z-50 bg-primary/90 dark:bg-[#111111]/90">
+      <div className="fixed top-0 w-full z-50 bg-primary/60 dark:bg-[#111111]/90">
         <div className="mx-auto sm:px-4 px-2 flex flex-row h-[81px] max-w-7xl justify-between items-center">
           {/* left */}
           <div className="flex flex-row my-auto">
