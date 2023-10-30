@@ -1,5 +1,4 @@
 import React from 'react';
-import PokemonCanvas from '@/components/3d/PokemonCanvas';
 
 export default function About(): JSX.Element {
   return (
@@ -10,7 +9,7 @@ export default function About(): JSX.Element {
           <div className="w-1 sm:h-80 h-40 bg-gradient-to-b from-secondary" />
         </div>
         <div>
-          <h1 className="mt-2 font-black text-[40px] xs:text-[50px] sm:text-[60px] lg:text-[80px] lg:leading-[98px]">
+          <h1 className="mt-8 font-black text-[40px] xs:text-[50px] sm:text-[60px] lg:text-[80px] lg:leading-[98px]">
             Hi there. I'm <span className="text-secondary">JunHa.</span>
           </h1>
           <p className="mt-2 text-gray-700 dark:text-gray-500 font-medium text-[16px] xs:text-[20px] sm:text-[26px] lg:text-[30px] leading-[32px]">
