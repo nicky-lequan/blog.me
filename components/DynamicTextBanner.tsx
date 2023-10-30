@@ -22,7 +22,7 @@ export default function HomeBanner(): JSX.Element {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  });
 
   function tick(): void {
     const fullText = texts[textIdx];
