@@ -6,8 +6,7 @@ export default function HomeBanner(): JSX.Element {
   const [text, setText] = useState('');
   const texts: string[] = [
     'Welcome to my knowledge base.',
-    'Passion for the high quality software dwells in here.',
-    'Hope you find something useful here :)',
+    'Hope you find something useful :)',
   ];
   const [textIdx, setTextIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);

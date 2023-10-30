@@ -10,29 +10,30 @@ export default function About(): JSX.Element {
           <div className="w-1 sm:h-80 h-40 bg-gradient-to-b from-secondary" />
         </div>
         <div>
-          <h1 className="font-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">
+          <h1 className="mt-2 font-black text-[40px] xs:text-[50px] sm:text-[60px] lg:text-[80px] lg:leading-[98px]">
             Hi there. I'm <span className="text-secondary">JunHa.</span>
           </h1>
-          <p className="w-7/12 text-gray-700 dark:text-gray-500 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100">
+          <p className="mt-2 text-gray-700 dark:text-gray-500 font-medium text-[16px] xs:text-[20px] sm:text-[26px] lg:text-[30px] lg:leading-[40px]">
             I'm a full-stack software engineer. <br />
-            <br />
-            AWS, K8s, Next.js, and Competitive Programming are the things that I'm into nowadays.
-            I have more capabilities of course, so please refer to the Skills section if you wish to see more.
-            
-            I'm currently open for job opportunities by the way, especially those in Canada.  
-            So please please don't hesitate if you're a manager, head hunter, or whatever your position is.
-
-            Weight training, watching performances, going to music festivals and snow boarding are my top hobbies.
-            I like to listen to jazzy house when I code, and I'm a inevitable coffee lover.
+          </p>
+          <p className="mt-2 text-gray-700 dark:text-gray-500 font-medium text-[10px] xs:text-[14px] sm:text-[18px] lg:text-[24px] lg:leading-[32px]">
+            AWS, K8s, Next.js, and Competitive Programming are the things that
+            I'm into nowadays. I have more capabilities of course, so please
+            refer to the Skills section if you wish to see more. I'm currently
+            open for job opportunities by the way, especially those in Canada.
+            So please don't hesitate to reach me if you're a manager, head
+            hunter, or whatever your position is. Weight training, watching
+            performances, going to music festivals and snow boarding are my top
+            hobbies. I listen to jazzy-house mix when I work, and I'm also an
+            inevitable coffee lover.
           </p>
         </div>
       </div>
 
-      <PokemonCanvas />
-
-      {/* Contact Me 문구: 
-      You're on the right track if you're seeking for a deciplined, self-motivated,
-      mission oreinted, and consistently learning engineer.*/}
+      {/* Contact Me:
+      Looking for a self-motivated & mission oriented engineer ?
+      Man, you're on the right track.
+      */}
     </section>
   );
 }
