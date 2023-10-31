@@ -12,16 +12,19 @@ import {IconButton, Typography} from '@material-tailwind/react';
 
 const navItems = {
   About: {
-    path: '/about',
+    path: '/#about',
+  },
+  Work: {
+    path: '/#work',
+  },
+  CP: {
+    path: '/#competitive-programming',
+  },
+  Contact: {
+    path: '/#contact',
   },
   Posts: {
     path: '/posts',
-  },
-  CP: {
-    path: '/competitive-programming',
-  },
-  Contact: {
-    path: '/contact',
   },
 };
 
@@ -121,7 +124,7 @@ export default function NavBar(): JSX.Element {
                           {name}
                           {isActive && (
                             <motion.div
-                              className="absolute inset-0 z-[-1] bg-secondary rounded-md"
+                              className="absolute inset-0 z-[-1] bg-primary rounded-md"
                               layoutId="sidebar"
                               transition={{
                                 type: 'spring',

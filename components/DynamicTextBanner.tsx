@@ -60,7 +60,7 @@ export default function HomeBanner(): JSX.Element {
       <p>
         Software engineering is always challenging, but those challenge never
         comes solely itself alone. <br />
-        It always comes with a sense of conquest in the end, and I'm sorta
+        It always comes with a sense of conquest in the end, and I&apos;m sorta
         addicted to that feeling.
       </p>
     </div>

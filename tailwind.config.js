@@ -26,13 +26,13 @@ module.exports = withMT({
     createThemes({
       light: {
         base: '#FFFFFF',
-        primary: '#D0E8F2',
+        primary: '#7BC7E8',
         secondary: '#A3D8F4',
         neutral: '#F4F9F9',
       },
       dark: {
         base: '#000000',
-        primary: '#35155D',
+        primary: '#4E188F',
         secondary: '#DA0037',
         neutral: '#0F0F0F',
       },
