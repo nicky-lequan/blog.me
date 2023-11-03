@@ -9,6 +9,7 @@ import {
   capability4,
 } from '../public/img/tutorial';
 import CapabilityCard from './CapabilityCard';
+import SectionWrapper from './hoc/SectionWrapper';
 
 const capabilities = [
   {
@@ -29,9 +30,9 @@ const capabilities = [
   },
 ];
 
-export default function Home(): JSX.Element {
+const About = () => {
   return (
-    <div className="my-4 xs:my-12 sm:px-16 px-6 inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
+    <div className="sm:px-16 px-6 inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
       <div className="flex flex-col justify-center items-center mt-5">
         <div className="w-5 h-5 rounded-full bg-primary" />
         <div className="w-1 sm:h-[520px] h-[480px] bg-gradient-to-b from-primary" />
@@ -81,4 +82,6 @@ export default function Home(): JSX.Element {
       </div>
     </div>
   );
-}
+};
+
+export default SectionWrapper(About, 'about');

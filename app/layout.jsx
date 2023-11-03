@@ -1,10 +1,9 @@
 import React from 'react';
 import './global.css';
-import type {Metadata} from 'next';
 import NavBar from '@/components/NavBar';
 import {ThemeProvider} from './provider';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
     default: 'jooncco.dev',
     template: '%s | jooncco.dev',
@@ -15,11 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: JSX.Element;
-}): JSX.Element {
+export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body className="mb-40 bg-base">

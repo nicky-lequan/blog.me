@@ -4,8 +4,8 @@ const {createThemes} = require('tw-colors');
 
 module.exports = withMT({
   content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
+    './app/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
     './content/**/*.mdx',
   ],
   theme: {

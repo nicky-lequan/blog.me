@@ -2,9 +2,9 @@
 
 import React, {useEffect, useState} from 'react';
 
-export default function HomeBanner(): JSX.Element {
+export default function HomeBanner() {
   const [text, setText] = useState('');
-  const texts: string[] = [
+  const texts = [
     'Welcome to my knowledge base.',
     'Hope you find something useful :)',
   ];
@@ -24,7 +24,7 @@ export default function HomeBanner(): JSX.Element {
     };
   });
 
-  function tick(): void {
+  function tick() {
     const fullText = texts[textIdx];
     const updatedText = isDeleting
       ? text.substring(0, text.length - 1)

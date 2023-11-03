@@ -28,17 +28,17 @@ const navItems = {
   },
 };
 
-export default function NavBar(): JSX.Element {
+export default function NavBar() {
   const pathname = usePathname() ?? '/';
   const {systemTheme, theme, setTheme} = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef();
 
   useEffect(() => {
-    const handleMobileMenuClickAway = (event: MouseEvent) => {
+    const handleMobileMenuClickAway = (event) => {
       if (
         mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target as Node)
+        !mobileMenuRef.current.contains(event.target)
       ) {
         setMobileMenuOpen(false);
       }
@@ -50,7 +50,7 @@ export default function NavBar(): JSX.Element {
     };
   }, [mobileMenuRef]);
 
-  const isDarkTheme = (): boolean => {
+  const isDarkTheme = () => {
     return theme === 'system'
       ? systemTheme === 'dark'
         ? true

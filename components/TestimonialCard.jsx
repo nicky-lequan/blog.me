@@ -1,14 +1,5 @@
 import React from 'react';
 
-interface TestimonialCardProps {
-  className?: string;
-  title: string;
-  content: string;
-  imageSource?: string;
-  author: string;
-  jobTitle: string;
-}
-
 export default function TestimonialCard({
   className,
   title,
@@ -16,7 +7,7 @@ export default function TestimonialCard({
   imageSource,
   author,
   jobTitle,
-}: TestimonialCardProps): JSX.Element {
+}) {
   return (
     <figure
       className={`${

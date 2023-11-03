@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface IconProps {
-  className?: string;
-}
-
-export function MoonIcon({className}: IconProps): JSX.Element {
+export function MoonIcon({className}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +16,7 @@ export function MoonIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function SunIcon({className}: IconProps): JSX.Element {
+export function SunIcon({className}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +28,7 @@ export function SunIcon({className}: IconProps): JSX.Element {
   );
 }
 
-export function Bars3Icon({className}: IconProps): JSX.Element {
+export function Bars3Icon({className}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +44,7 @@ export function Bars3Icon({className}: IconProps): JSX.Element {
   );
 }
 
-export function Bars3BottomRifhtIcon({className}: IconProps): JSX.Element {
+export function Bars3BottomRifhtIcon({className}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,8 @@
 import React from 'react';
-import DynamicTextBanner from '@/components/DynamicTextBanner';
-import About from '@/components/About';
+import DynamicTextBanner from '../components/DynamicTextBanner';
+import About from '../components/About';
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <>
       <DynamicTextBanner />

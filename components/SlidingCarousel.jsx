@@ -2,19 +2,12 @@ import {Carousel} from '@/app/provider';
 import React from 'react';
 import TestimonialCard from './TestimonialCard';
 
-interface SlidingCarouselProps {
-  autoplay?: boolean;
-  autoplayDelay?: number;
-  loop?: boolean;
-  contents: JSX.Element[];
-}
-
 export default function SlidingCarousel({
   autoplay = true,
   autoplayDelay = 10000,
   loop = true,
   contents,
-}: SlidingCarouselProps): JSX.Element {
+}) {
   return (
     <div className="bg-[#6F8FAF]/20 dark:bg-indigo-400/10 rounded-xl">
       <Carousel
