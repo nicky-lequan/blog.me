@@ -33,6 +33,7 @@ export default function NavBar() {
   const {systemTheme, theme, setTheme} = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef();
+  const [isRendered, setIsRendered] = useState(false);
 
   useEffect(() => {
     const handleMobileMenuClickAway = (event) => {
@@ -45,6 +46,7 @@ export default function NavBar() {
     };
 
     window.addEventListener('mousedown', handleMobileMenuClickAway);
+    setIsRendered(true);
     return () => {
       window.removeEventListener('mousedown', handleMobileMenuClickAway);
     };
@@ -97,93 +99,97 @@ export default function NavBar() {
             </Link>
           </div>
           {/* right */}
-          <div className="flex flex-row my-auto space-x-1">
-            {/* pc menu */}
-            <div className="my-auto md:block hidden">
-              <LayoutGroup>
-                <nav className="flex space-x-4">
-                  {Object.entries(navItems).map(([name, {path}]) => {
-                    const isActive = path === pathname;
-                    return (
+          {isRendered && (
+            <div className="flex flex-row my-auto space-x-1">
+              {/* pc menu */}
+              <div className="my-auto md:block hidden">
+                <LayoutGroup>
+                  <nav className="flex space-x-4">
+                    {Object.entries(navItems).map(([name, {path}]) => {
+                      const isActive = path === pathname;
+                      return (
+                        <Link
+                          key={path}
+                          href={path}
+                          className={clsx(
+                            'transition-all rounded-md flex align-middle',
+                            {
+                              'hover:bg-gray-300/60': !isActive,
+                              'dark:hover:bg-transparent': !isActive,
+                              'text-neutral-500': !isActive,
+                              'font-bold': isActive,
+                            }
+                          )}
+                          onClick={() => {
+                            window.scrollTo(0, 0);
+                          }}>
+                          <span className="relative py-[5px] px-[10px] text-xl">
+                            {name}
+                            {isActive && (
+                              <motion.div
+                                className="absolute inset-0 z-[-1] bg-primary rounded-md"
+                                layoutId="sidebar"
+                                transition={{
+                                  type: 'spring',
+                                  stiffness: 350,
+                                  damping: 30,
+                                }}
+                              />
+                            )}
+                          </span>
+                        </Link>
+                      );
+                    })}
+                  </nav>
+                </LayoutGroup>
+              </div>
+              {/* mobile menu */}
+              <div
+                ref={mobileMenuRef}
+                className="md:hidden flex flex-1 justify-end items-center">
+                <IconButton
+                  size="sm"
+                  variant="text"
+                  className="my-auto rounded-full text-black dark:text-white"
+                  onClick={toggleMobileMenu}>
+                  {!mobileMenuOpen && <Bars3Icon className="h-6 w-6" />}
+                  {mobileMenuOpen && (
+                    <Bars3BottomRifhtIcon className="h-6 w-6" />
+                  )}
+                </IconButton>
+
+                <div
+                  className={`${
+                    !mobileMenuOpen ? 'hidden' : 'flex'
+                  } m-2 p-4 absolute top-20 right-1 min-w-[140px] z-10 bg-gradient-to-r from-white to-primary dark:from-[#18122B] dark:to-[#3F0071] shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
+                  <ul className="p-0 list-none flex justify-end items-start flex-col gap-4 font-bold">
+                    {Object.entries(navItems).map(([name, {path}]) => (
                       <Link
                         key={path}
                         href={path}
-                        className={clsx(
-                          'transition-all rounded-md flex align-middle',
-                          {
-                            'hover:bg-gray-300/60': !isActive,
-                            'dark:hover:bg-transparent': !isActive,
-                            'text-neutral-500': !isActive,
-                            'font-bold': isActive,
-                          }
-                        )}
                         onClick={() => {
                           window.scrollTo(0, 0);
+                          setMobileMenuOpen(false);
                         }}>
-                        <span className="relative py-[5px] px-[10px] text-xl">
-                          {name}
-                          {isActive && (
-                            <motion.div
-                              className="absolute inset-0 z-[-1] bg-primary rounded-md"
-                              layoutId="sidebar"
-                              transition={{
-                                type: 'spring',
-                                stiffness: 350,
-                                damping: 30,
-                              }}
-                            />
-                          )}
-                        </span>
+                        {name}
                       </Link>
-                    );
-                  })}
-                </nav>
-              </LayoutGroup>
-            </div>
-            {/* mobile menu */}
-            <div
-              ref={mobileMenuRef}
-              className="md:hidden flex flex-1 justify-end items-center">
-              <IconButton
-                size="sm"
-                variant="text"
-                className="my-auto rounded-full text-black dark:text-white"
-                onClick={toggleMobileMenu}>
-                {!mobileMenuOpen && <Bars3Icon className="h-6 w-6" />}
-                {mobileMenuOpen && <Bars3BottomRifhtIcon className="h-6 w-6" />}
-              </IconButton>
-
-              <div
-                className={`${
-                  !mobileMenuOpen ? 'hidden' : 'flex'
-                } m-2 p-4 absolute top-20 right-1 min-w-[140px] z-10 bg-gradient-to-r from-white to-primary dark:from-[#18122B] dark:to-[#3F0071] shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
-                <ul className="p-0 list-none flex justify-end items-start flex-col gap-4 font-bold">
-                  {Object.entries(navItems).map(([name, {path}]) => (
-                    <Link
-                      key={path}
-                      href={path}
-                      onClick={() => {
-                        window.scrollTo(0, 0);
-                        setMobileMenuOpen(false);
-                      }}>
-                      {name}
-                    </Link>
-                  ))}
-                </ul>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {/* dark mode button */}
+              <div className="flex flex-row px-2">
+                <IconButton
+                  size="sm"
+                  variant="text"
+                  className="my-auto rounded-full text-black dark:text-white"
+                  onClick={toggleTheme}>
+                  {isDarkTheme() && <MoonIcon className="h-6 w-6" />}
+                  {!isDarkTheme() && <SunIcon className="h-6 w-6" />}
+                </IconButton>
               </div>
             </div>
-            {/* dark mode button */}
-            <div className="flex flex-row px-2">
-              <IconButton
-                size="sm"
-                variant="text"
-                className="my-auto rounded-full text-black dark:text-white"
-                onClick={toggleTheme}>
-                {isDarkTheme() && <MoonIcon className="h-6 w-6" />}
-                {!isDarkTheme() && <SunIcon className="h-6 w-6" />}
-              </IconButton>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </>
