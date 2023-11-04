@@ -1,6 +1,5 @@
 import React from 'react';
 import {motion} from 'framer-motion';
-import {styles} from '@/app/styles';
 import {staggerContainer} from '@/utils/motion';
 
 export default function SectionWrapper(Component, idName) {
@@ -11,7 +10,7 @@ export default function SectionWrapper(Component, idName) {
         initial="hidden"
         whileInView="show"
         viewport={{once: true, amount: 0.25}}
-        className={`max-w-7xl mx-auto relative z-0`}>
+        className="my-8 sm:px-16 px-6 max-w-7xl">
         <span className="hash-span" id={idName}>
           &nbsp;
         </span>

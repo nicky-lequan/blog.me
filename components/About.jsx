@@ -10,6 +10,8 @@ import {
 } from '../public/img/tutorial';
 import CapabilityCard from './CapabilityCard';
 import SectionWrapper from './hoc/SectionWrapper';
+import {motion} from 'framer-motion';
+import {textVariant} from '@/utils/motion';
 
 const capabilities = [
   {
@@ -32,7 +34,9 @@ const capabilities = [
 
 const About = () => {
   return (
-    <div className="sm:px-16 px-6 inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
+    <motion.div
+      variants={textVariant()}
+      className="flex flex-row items-start gap-5">
       <div className="flex flex-col justify-center items-center mt-5">
         <div className="w-5 h-5 rounded-full bg-primary" />
         <div className="w-1 sm:h-[520px] h-[480px] bg-gradient-to-b from-primary" />
@@ -48,7 +52,7 @@ const About = () => {
             </p>
             <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[10px] xs:text-[14px] sm:text-[18px] lg:text-[24px] sm:leading-[24px]">
               K8s, Amazon EKS, Next.js, and Competitive Programming are the
-              things that I&apos;m into nowadays. I have more capabilities of
+              things that I&apos;m into nowadays. I have other capabilities of
               course, so please refer to the Work section if you wish to see
               more.
               <br />
@@ -57,9 +61,8 @@ const About = () => {
               me if you&apos;re a manager, developer, or whatever your position
               is. Weight training, watching performances, going to music
               festivals and snow boarding are my top hobbies. I watch abc news
-              to see what&apos;s happening around the world, listen to
-              jazzy-house mix when I work, and I&apos;m also an inevitable
-              coffee lover.
+              every morning, like to make friends, listen to jazzy-house mix
+              when I work, and I&apos;m also an inevitable coffee lover.
             </p>
           </div>
           <Avatar
@@ -80,7 +83,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -10,6 +10,9 @@ export default function CapabilityCard({index, title, icon}) {
   return (
     <Tilt className="sm:w-[140px] w-full">
       <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
         className="w-full green-violet-gradient p-[1px] rounded-[20px] drop-shadow-2xl">
         <div

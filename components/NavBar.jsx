@@ -4,7 +4,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {SunIcon, MoonIcon, Bars3Icon, Bars3BottomRifhtIcon} from './Icons';
 import Link from 'next/link';
 import Image from 'next/image';
-import {LayoutGroup, motion} from 'framer-motion';
+import {LayoutGroup} from 'framer-motion';
 import {useTheme} from 'next-themes';
 import {IconButton, Typography} from '@material-tailwind/react';
 
