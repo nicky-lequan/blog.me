@@ -5,8 +5,6 @@ import {SunIcon, MoonIcon, Bars3Icon, Bars3BottomRifhtIcon} from './Icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import {LayoutGroup, motion} from 'framer-motion';
-import {usePathname} from 'next/navigation';
-import clsx from 'clsx';
 import {useTheme} from 'next-themes';
 import {IconButton, Typography} from '@material-tailwind/react';
 
@@ -29,7 +27,6 @@ const navItems = {
 };
 
 export default function NavBar() {
-  const pathname = usePathname() ?? '/';
   const {systemTheme, theme, setTheme} = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef();
@@ -106,36 +103,13 @@ export default function NavBar() {
                 <LayoutGroup>
                   <nav className="flex space-x-4">
                     {Object.entries(navItems).map(([name, {path}]) => {
-                      const isActive = path === pathname;
                       return (
                         <Link
                           key={path}
                           href={path}
-                          className={clsx(
-                            'transition-all rounded-md flex align-middle',
-                            {
-                              'hover:bg-gray-300/60': !isActive,
-                              'dark:hover:bg-transparent': !isActive,
-                              'text-neutral-500': !isActive,
-                              'font-bold': isActive,
-                            }
-                          )}
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                          }}>
+                          className="transition-all rounded-md flex align-middle">
                           <span className="relative py-[5px] px-[10px] text-xl">
                             {name}
-                            {isActive && (
-                              <motion.div
-                                className="absolute inset-0 z-[-1] bg-primary rounded-md"
-                                layoutId="sidebar"
-                                transition={{
-                                  type: 'spring',
-                                  stiffness: 350,
-                                  damping: 30,
-                                }}
-                              />
-                            )}
                           </span>
                         </Link>
                       );
