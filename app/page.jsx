@@ -2,6 +2,11 @@ import React from 'react';
 import DynamicTextBanner from '../components/DynamicTextBanner';
 import About from '../components/About';
 import Work from '@/components/Work';
+import CompetitiveProgramming from '@/components/CompetitiveProgramming';
+import Skills from '@/components/Skills';
+import Portfolio from '@/components/Portfolio';
+import Testimonials from '@/components/Testimonials';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
@@ -9,10 +14,11 @@ export default function Home() {
       <DynamicTextBanner />
       <About />
       <Work />
-      {/* Contact Me:
-      Looking for a self-motivated & mission oriented engineer ?
-      Man, you're on the right track.
-      */}
+      <Skills />
+      <Portfolio />
+      <CompetitiveProgramming />
+      <Testimonials />
+      <Contact />
     </>
   );
 }

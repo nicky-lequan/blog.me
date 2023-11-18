@@ -26,6 +26,7 @@ module.exports = withMT({
     createThemes({
       light: {
         base: '#FFFFFF',
+        text: '#000000',
         primary: '#7BC7E8',
         secondary: '#A3D8F4',
         neutral: '#F4F9F9',
@@ -33,6 +34,7 @@ module.exports = withMT({
       },
       dark: {
         base: '#000000',
+        text: '#FFFFFF',
         primary: '#4E188F',
         secondary: '#DA0037',
         neutral: '#0F0F0F',

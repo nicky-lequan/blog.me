@@ -2,12 +2,6 @@
 
 import React from 'react';
 import {Avatar} from '@material-tailwind/react';
-import {
-  capability1,
-  capability2,
-  capability3,
-  capability4,
-} from '../public/img/tutorial';
 import CapabilityCard from './CapabilityCard';
 import SectionWrapper from './hoc/SectionWrapper';
 import {motion} from 'framer-motion';
@@ -16,19 +10,19 @@ import {textVariant} from '@/utils/motion';
 const capabilities = [
   {
     title: 'Full Stack Engineer',
-    icon: capability1,
+    icon: '/img/solid_figure_1.png',
   },
   {
-    title: 'Backend Engineer',
-    icon: capability2,
+    title: 'Back End Engineer',
+    icon: '/img/solid_figure_2.png',
   },
   {
     title: 'Solutions Architect',
-    icon: capability3,
+    icon: '/img/solid_figure_3.png',
   },
   {
-    title: 'Business Innovator',
-    icon: capability4,
+    title: 'Content Creator',
+    icon: '/img/solid_figure_4.png',
   },
 ];
 
@@ -68,7 +62,7 @@ const About = () => {
           <Avatar
             variant="circular"
             alt="profile"
-            withBorder={true}
+            withBorder
             className="mt-12 hidden lg:block lg:w-[320px] lg:h-[300px] border-2 border-primary"
             src="/img/profile.jpg"
           />

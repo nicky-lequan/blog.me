@@ -8,7 +8,7 @@ import {Tilt} from 'react-tilt';
 
 export default function CapabilityCard({index, title, icon}) {
   return (
-    <Tilt className="sm:w-[140px] w-full">
+    <Tilt className="sm:w-[200px] w-full">
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -18,7 +18,13 @@ export default function CapabilityCard({index, title, icon}) {
         <div
           options={{max: 45, scale: 1, speed: 450}}
           className="bg-neutral2 rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center">
-          <Image src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <Image
+            src={icon}
+            alt={title}
+            width={100}
+            height={100}
+            className="w-16 h-16 object-contain"
+          />
           <h3 className="text-[20px] font-bold text-center">{title}</h3>
         </div>
       </motion.div>

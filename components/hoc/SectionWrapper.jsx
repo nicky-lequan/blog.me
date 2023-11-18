@@ -10,7 +10,7 @@ export default function SectionWrapper(Component, idName) {
         initial="hidden"
         whileInView="show"
         viewport={{once: true, amount: 0.25}}
-        className="my-8 sm:px-16 px-6 max-w-7xl">
+        className="my-14 sm:px-16 px-6 max-w-7xl">
         <span className="hash-span" id={idName}>
           &nbsp;
         </span>
