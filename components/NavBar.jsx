@@ -1,32 +1,37 @@
 'use client';
 
 import React, {useEffect, useRef, useState} from 'react';
-import {SunIcon, MoonIcon, Bars3Icon, Bars3BottomRifhtIcon} from './Icons';
+import {SunIcon, MoonIcon, Bars3Icon, Bars3BottomRightIcon} from './Icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import {LayoutGroup} from 'framer-motion';
 import {useTheme} from 'next-themes';
 import {IconButton, Typography} from '@material-tailwind/react';
 
-const navItems = {
-  About: {
+const navItems = [
+  {
+    name: 'About',
     path: '/#about',
   },
-  Work: {
+  {
+    name: 'Work',
     path: '/#work',
   },
-  CP: {
+  {
+    name: 'CP',
     path: '/#competitive-programming',
   },
-  Contact: {
+  {
+    name: 'Contact',
     path: '/#contact',
   },
-  Posts: {
+  {
+    name: 'Posts',
     path: '/posts',
   },
-};
+];
 
-export default function NavBar() {
+const NavBar = () => {
   const {systemTheme, theme, setTheme} = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef();
@@ -86,6 +91,7 @@ export default function NavBar() {
                   alt="logo image"
                   width={70}
                   height={70}
+                  priority={true}
                 />
                 <Typography
                   variant="h4"
@@ -102,7 +108,7 @@ export default function NavBar() {
               <div className="my-auto md:block hidden">
                 <LayoutGroup>
                   <nav className="flex space-x-4">
-                    {Object.entries(navItems).map(([name, {path}]) => {
+                    {navItems.map(({name, path}) => {
                       return (
                         <Link
                           key={path}
@@ -128,7 +134,7 @@ export default function NavBar() {
                   onClick={toggleMobileMenu}>
                   {!mobileMenuOpen && <Bars3Icon className="h-6 w-6" />}
                   {mobileMenuOpen && (
-                    <Bars3BottomRifhtIcon className="h-6 w-6" />
+                    <Bars3BottomRightIcon className="h-6 w-6" />
                   )}
                 </IconButton>
 
@@ -137,7 +143,7 @@ export default function NavBar() {
                     !mobileMenuOpen ? 'hidden' : 'flex'
                   } m-2 p-4 absolute top-20 right-1 min-w-[140px] z-10 bg-gradient-to-r from-white to-primary dark:from-[#18122B] dark:to-[#3F0071] shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
                   <ul className="p-0 list-none flex justify-end items-start flex-col gap-4 font-bold">
-                    {Object.entries(navItems).map(([name, {path}]) => (
+                    {navItems.map(({name, path}) => (
                       <Link
                         key={path}
                         href={path}
@@ -168,4 +174,6 @@ export default function NavBar() {
       </div>
     </>
   );
-}
+};
+
+export default NavBar;
