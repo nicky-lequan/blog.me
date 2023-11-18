@@ -60,8 +60,8 @@ export default function HomeBanner() {
       <p>
         Software engineering is always challenging, but those challenge never
         comes solely itself alone. <br />
-        It always comes with a sense of conquest in the end when you solve it,
-        and I think I&apos;m sorta addicted to that feeling.
+        It always comes with a sense of conquest in the end, and that&apos;s
+        what makes engineering so joyable and addictive.
       </p>
     </div>
   );
