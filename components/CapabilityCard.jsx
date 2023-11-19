@@ -6,7 +6,7 @@ import Image from 'next/image';
 import React from 'react';
 import {Tilt} from 'react-tilt';
 
-const CapabilityCard = ({index, title, icon}) => (
+const CapabilityCard = ({index, title, iconSrc}) => (
   <Tilt className="sm:w-[200px] w-full">
     <motion.div
       initial="hidden"
@@ -18,7 +18,7 @@ const CapabilityCard = ({index, title, icon}) => (
         options={{max: 45, scale: 1, speed: 450}}
         className="bg-neutral2 rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center">
         <Image
-          src={icon}
+          src={iconSrc}
           alt={title}
           width={100}
           height={100}

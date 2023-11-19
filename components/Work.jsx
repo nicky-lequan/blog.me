@@ -21,7 +21,7 @@ const experiences = [
   {
     title: 'Back End Engineer',
     companyName: 'LG Electronics',
-    icon: '/img/company/lg.png',
+    iconSrc: '/img/company/lg.png',
     date: 'Feb 2023 - Nov 2023',
     points: [
       'LGE SDP AppMod project: next generation IP TV web servers.',
@@ -35,7 +35,7 @@ const experiences = [
   {
     title: 'Full Stack Engineer',
     companyName: 'Bithumb meta',
-    icon: '/img/company/bithumb.png',
+    iconSrc: '/img/company/bithumb.png',
     date: 'Mar 2022 - Dec 2022',
     points: [
       'NFT marketplace Naemo World: https://naemo.io',
@@ -51,7 +51,7 @@ const experiences = [
   {
     title: 'Full Stack Engineer',
     companyName: 'LG U+',
-    icon: '/img/company/lg.png',
+    iconSrc: '/img/company/lg.png',
     date: 'Jul 2021 - Feb 2022',
     points: [
       'Cloud resource management platform UCMP: a platform we can manage standardized GCP/AWS cloud resources with ease.',
@@ -66,7 +66,7 @@ const experiences = [
   {
     title: 'Full Stack Engineer',
     companyName: 'Hanwha Life Insurance',
-    icon: '/img/company/hanwha.png',
+    iconSrc: '/img/company/hanwha.png',
     date: 'Feb 2021 - Jun 2021',
     points: [
       'Hanhwa point platform P3: reliable point management based on blockchain ledger.',
@@ -79,7 +79,7 @@ const experiences = [
   {
     title: 'Back End Engineer',
     companyName: 'Okimoki',
-    icon: '/img/company/okimoki.png',
+    iconSrc: '/img/company/okimoki.png',
     date: 'Jan 2020 - Dec 2020',
     points: [
       'LG CNS coffee order chatbot Okimoki: order your coffee inside Kakao talk.',
@@ -111,7 +111,7 @@ const Work = () => (
                 <TimelineIcon className="p-0">
                   <Avatar
                     size="sm"
-                    src={experience.icon}
+                    src={experience.iconSrc}
                     alt={experience.companyName}
                     withBorder
                     className="border-neutral"
