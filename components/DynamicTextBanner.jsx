@@ -2,7 +2,7 @@
 
 import React, {useEffect, useState} from 'react';
 
-export default function HomeBanner() {
+const DynamicTextBanner = () => {
   const [text, setText] = useState('');
   const texts = [
     'Welcome to my knowledge base.',
@@ -65,4 +65,6 @@ export default function HomeBanner() {
       </p>
     </div>
   );
-}
+};
+
+export default DynamicTextBanner;

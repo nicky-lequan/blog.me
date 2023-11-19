@@ -92,69 +92,67 @@ const experiences = [
   },
 ];
 
-const Work = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>
-          Projects I have experienced in LG CNS
-        </p>
-        <h1 className={styles.sectionHeadText}>Work Experience.</h1>
-      </motion.div>
+const Work = () => (
+  <>
+    <motion.div variants={textVariant()}>
+      <p className={styles.sectionSubText}>
+        Projects I have experienced in LG CNS
+      </p>
+      <h1 className={styles.sectionHeadText}>Work Experience.</h1>
+    </motion.div>
 
-      <motion.div variants={fadeIn('right', 'spring', 0, 5)}>
-        <div className="mt-8 flex flex-col">
-          <Timeline>
-            {experiences.map((experience, index) => (
-              <TimelineItem key={index}>
-                <TimelineConnector />
-                <TimelineHeader>
-                  <TimelineIcon className="p-0">
-                    <Avatar
-                      size="sm"
-                      src={experience.icon}
-                      alt={experience.companyName}
-                      withBorder
-                      className="border-neutral"
-                    />
-                  </TimelineIcon>
-                  <div className="flex gap-4 items-center">
-                    <Typography variant="h5">{experience.title}</Typography>
-                    {index === 0 && (
-                      <Badge
-                        content="Recent"
-                        className="text-[8px] font-bold bg-primary">
-                        &nbsp;
-                      </Badge>
-                    )}
-                  </div>
-                </TimelineHeader>
-                <TimelineBody className="pb-8">
-                  <Typography variant="small" className="text-[12px] font-bold">
-                    {experience.companyName}
-                  </Typography>
-                  <Typography variant="small" className="text-[12px]">
-                    {experience.date}
-                  </Typography>
-                  <ul>
-                    {experience.points.map((point, index) => (
-                      <li key={index}>
-                        <Typography
-                          color="gray"
-                          className="font-normal text-gray-600">
-                          {point}
-                        </Typography>
-                      </li>
-                    ))}
-                  </ul>
-                </TimelineBody>
-              </TimelineItem>
-            ))}
-          </Timeline>
-        </div>
-      </motion.div>
-    </>
-  );
-};
+    <motion.div variants={fadeIn('right', 'spring', 0, 5)}>
+      <div className="mt-8 flex flex-col">
+        <Timeline>
+          {experiences.map((experience, index) => (
+            <TimelineItem key={index}>
+              <TimelineConnector />
+              <TimelineHeader>
+                <TimelineIcon className="p-0">
+                  <Avatar
+                    size="sm"
+                    src={experience.icon}
+                    alt={experience.companyName}
+                    withBorder
+                    className="border-neutral"
+                  />
+                </TimelineIcon>
+                <div className="flex gap-4 items-center">
+                  <Typography variant="h5">{experience.title}</Typography>
+                  {index === 0 && (
+                    <Badge
+                      content="Recent"
+                      className="text-[8px] font-bold bg-primary">
+                      &nbsp;
+                    </Badge>
+                  )}
+                </div>
+              </TimelineHeader>
+              <TimelineBody className="pb-8">
+                <Typography variant="small" className="text-[12px] font-bold">
+                  {experience.companyName}
+                </Typography>
+                <Typography variant="small" className="text-[12px]">
+                  {experience.date}
+                </Typography>
+                <ul>
+                  {experience.points.map((point, index) => (
+                    <li key={index}>
+                      <Typography
+                        color="gray"
+                        className="font-normal text-gray-600">
+                        {point}
+                      </Typography>
+                    </li>
+                  ))}
+                </ul>
+              </TimelineBody>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </div>
+    </motion.div>
+  </>
+);
 
 export default SectionWrapper(Work, 'work');
