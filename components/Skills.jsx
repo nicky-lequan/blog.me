@@ -140,6 +140,14 @@ const skills = [
         iconSrc: '/img/tools/jenkins.png',
       },
       {
+        name: 'Amazon EC2',
+        iconSrc: '/img/tools/amazonec2.png',
+      },
+      {
+        name: 'Amazon S3',
+        iconSrc: '/img/tools/amazons3.png',
+      },
+      {
         name: 'Terraform',
         iconSrc: '/img/tools/terraform.png',
       },
@@ -161,6 +169,10 @@ const skills = [
     category: 'Machine Learning',
     tools: [
       {
+        name: 'Tensorflow',
+        iconSrc: '/img/tools/tensorflow.png',
+      },
+      {
         name: 'Amazon Comprehend',
         iconSrc: '/img/tools/amazoncomprehend.png',
       },
@@ -177,7 +189,6 @@ const skills = [
         name: 'AWS VPC',
         iconSrc: '/img/tools/awsvpc.png',
       },
-
       {
         name: 'Amazon EC2',
         iconSrc: '/img/tools/amazonec2.png',
@@ -197,6 +208,14 @@ const skills = [
       {
         name: 'C++',
         iconSrc: '/img/tools/cpp.png',
+      },
+      {
+        name: 'Python',
+        iconSrc: '/img/tools/python.png',
+      },
+      {
+        name: 'OpenCV',
+        iconSrc: '/img/tools/opencv.png',
       },
     ],
   },
