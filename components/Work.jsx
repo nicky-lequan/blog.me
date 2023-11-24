@@ -122,7 +122,7 @@ const Work = () => (
                   {index === 0 && (
                     <Badge
                       content="Recent"
-                      className="text-[8px] font-bold bg-primary">
+                      className="text-[8px] font-bold bg-gradient-to-r from-primary to-indigo-500 dark:via-purple-500 dark:to-pink-500">
                       &nbsp;
                     </Badge>
                   )}
