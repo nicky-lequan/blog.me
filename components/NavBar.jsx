@@ -18,8 +18,8 @@ const navItems = [
     path: '/#work',
   },
   {
-    name: 'CP',
-    path: '/#competitive-programming',
+    name: 'Portfolio',
+    path: '/#portfolio',
   },
   {
     name: 'Contact',
@@ -95,7 +95,7 @@ const NavBar = () => {
                 />
                 <Typography
                   variant="h4"
-                  className="my-auto font-['raleway'] font-extrabold sm:block hidden">
+                  className="my-auto font-['raleway'] font-extrabold lg:block hidden">
                   jooncco.dev
                 </Typography>
               </div>
