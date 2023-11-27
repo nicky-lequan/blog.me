@@ -101,56 +101,56 @@ const Work = () => (
       <h1 className={styles.sectionHeadText}>Work Experience.</h1>
     </motion.div>
 
-    <motion.div variants={fadeIn('right', 'spring', 0, 5)}>
-      <div className="mt-8 flex flex-col">
-        <Timeline>
-          {experiences.map((experience, index) => (
-            <TimelineItem key={index}>
-              <TimelineConnector />
-              <TimelineHeader>
-                <TimelineIcon className="p-0">
-                  <Avatar
-                    size="sm"
-                    src={experience.iconSrc}
-                    alt={experience.companyName}
-                    withBorder
-                    className="border-neutral"
-                  />
-                </TimelineIcon>
-                <div className="flex gap-4 items-center">
-                  <Typography variant="h5">{experience.title}</Typography>
-                  {index === 0 && (
-                    <Badge
-                      content="Recent"
-                      className="text-[8px] font-bold bg-gradient-to-r from-primary to-indigo-500 dark:via-purple-500 dark:to-pink-500">
-                      &nbsp;
-                    </Badge>
-                  )}
-                </div>
-              </TimelineHeader>
-              <TimelineBody className="pb-8">
-                <Typography variant="small" className="text-[12px] font-bold">
-                  {experience.companyName}
-                </Typography>
-                <Typography variant="small" className="text-[12px]">
-                  {experience.date}
-                </Typography>
-                <ul>
-                  {experience.points.map((point, index) => (
-                    <li key={index}>
-                      <Typography
-                        color="gray"
-                        className="font-normal text-gray-600">
-                        {point}
-                      </Typography>
-                    </li>
-                  ))}
-                </ul>
-              </TimelineBody>
-            </TimelineItem>
-          ))}
-        </Timeline>
-      </div>
+    <motion.div
+      className="mt-8 flex flex-col"
+      variants={fadeIn('left', 'tween', 0, 1)}>
+      <Timeline>
+        {experiences.map((experience, index) => (
+          <TimelineItem key={index}>
+            <TimelineConnector />
+            <TimelineHeader>
+              <TimelineIcon className="p-0">
+                <Avatar
+                  size="sm"
+                  src={experience.iconSrc}
+                  alt={experience.companyName}
+                  withBorder
+                  className="border-gray-200 bg-white"
+                />
+              </TimelineIcon>
+              <div className="flex gap-4 items-center">
+                <Typography variant="h5">{experience.title}</Typography>
+                {index === 0 && (
+                  <Badge
+                    content="Recent"
+                    className="text-[8px] font-bold bg-gradient-to-r from-primary to-indigo-500 dark:via-purple-500 dark:to-pink-500">
+                    &nbsp;
+                  </Badge>
+                )}
+              </div>
+            </TimelineHeader>
+            <TimelineBody className="pb-8">
+              <Typography variant="small" className="text-[12px] font-bold">
+                {experience.companyName}
+              </Typography>
+              <Typography variant="small" className="text-[12px]">
+                {experience.date}
+              </Typography>
+              <ul>
+                {experience.points.map((point, index) => (
+                  <li key={index}>
+                    <Typography
+                      color="gray"
+                      className="font-normal text-gray-600">
+                      {point}
+                    </Typography>
+                  </li>
+                ))}
+              </ul>
+            </TimelineBody>
+          </TimelineItem>
+        ))}
+      </Timeline>
     </motion.div>
   </>
 );

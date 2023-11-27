@@ -28,7 +28,7 @@ module.exports = withMT({
         base: '#FFFFFF',
         text: '#000000',
         primary: '#7BC7E8',
-        secondary: '#A3D8F4',
+        secondary: '#725FFF',
         neutral: '#F4F9F9',
         neutral2: '#F3F3F3',
       },
