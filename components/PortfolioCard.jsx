@@ -11,7 +11,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const PortfolioCard = ({title, thumbnail, linkUrl, tags}) => (
-  <Card className="w-full sm:w-[250px] bg-neutral2 justify-between shadow-xl">
+  <Card className="w-full sm:w-[250px] bg-neutral2 justify-between shadow-lg">
     <div>
       <CardHeader shadow={false} floated={false} className="h-32 sm:h-40">
         <Image

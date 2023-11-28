@@ -151,9 +151,9 @@ const Portfolio = () => (
       <Tabs value={tabs[0].id} className="rounded-lg">
         <TabsHeader
           indicatorProps={{
-            className: 'rounded-lg bg-primary/40 shadow-inner',
+            className: 'rounded-lg bg-primary/25 shadow-inner',
           }}
-          className="bg-neutral bg-base/60">
+          className="bg-neutral bg-gray-300/20 dark:bg-base/10">
           {tabs.map(({id, label, icon, items}) => (
             <Tab
               key={id}
@@ -174,7 +174,7 @@ const Portfolio = () => (
             mount: {y: 0},
             unmount: {y: 250},
           }}
-          className="rounded-lg bg-primary/5 shadow-inner">
+          className="rounded-lg bg-gray-300/50 dark:bg-base/30 shadow-inner">
           {tabs.map(({id, items}) => (
             <TabPanel
               key={id}

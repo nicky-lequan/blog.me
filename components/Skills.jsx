@@ -19,55 +19,55 @@ const skills = [
     tools: [
       {
         name: 'Java',
-        iconSrc: '/img/tools/java.png',
+        iconSrc: '/img/skills/java.png',
       },
       {
         name: 'Spring',
-        iconSrc: '/img/tools/spring.png',
+        iconSrc: '/img/skills/spring.png',
       },
       {
         name: 'Spring Boot',
-        iconSrc: '/img/tools/springboot.png',
+        iconSrc: '/img/skills/springboot.png',
       },
       {
         name: 'Node.js',
-        iconSrc: '/img/tools/nodejs.png',
+        iconSrc: '/img/skills/nodejs.png',
       },
       {
         name: 'AWS Lambda',
-        iconSrc: '/img/tools/awslambda.png',
+        iconSrc: '/img/skills/awslambda.png',
       },
       {
         name: 'Hibernate',
-        iconSrc: '/img/tools/hibernate.png',
+        iconSrc: '/img/skills/hibernate.png',
       },
       {
         name: 'QueryDSL JPA',
-        iconSrc: '/img/tools/querydsl.png',
+        iconSrc: '/img/skills/querydsl.png',
       },
       {
         name: 'MyBatis',
-        iconSrc: '/img/tools/mybatis.png',
+        iconSrc: '/img/skills/mybatis.png',
       },
       {
         name: 'Flyway',
-        iconSrc: '/img/tools/flyway.png',
+        iconSrc: '/img/skills/flyway.png',
       },
       {
         name: 'MySQL',
-        iconSrc: '/img/tools/mysql.png',
+        iconSrc: '/img/skills/mysql.png',
       },
       {
         name: 'PostgreSQL',
-        iconSrc: '/img/tools/postgresql.png',
+        iconSrc: '/img/skills/postgresql.png',
       },
       {
         name: 'Gradle',
-        iconSrc: '/img/tools/gradle.png',
+        iconSrc: '/img/skills/gradle.png',
       },
       {
         name: 'Maven',
-        iconSrc: '/img/tools/maven.png',
+        iconSrc: '/img/skills/maven.png',
       },
     ],
   },
@@ -76,43 +76,43 @@ const skills = [
     tools: [
       {
         name: 'React.js',
-        iconSrc: '/img/tools/reactjs.png',
+        iconSrc: '/img/skills/reactjs.png',
       },
       {
         name: 'Next.js',
-        iconSrc: '/img/tools/nextjs.png',
+        iconSrc: '/img/skills/nextjs.png',
       },
       {
         name: 'Tailwind CSS',
-        iconSrc: '/img/tools/tailwindcss.png',
+        iconSrc: '/img/skills/tailwindcss.png',
       },
       {
         name: 'Material UI',
-        iconSrc: '/img/tools/mui.png',
+        iconSrc: '/img/skills/mui.png',
       },
       {
         name: 'Formik',
-        iconSrc: '/img/tools/formik.png',
+        iconSrc: '/img/skills/formik.png',
       },
       {
         name: 'MobX',
-        iconSrc: '/img/tools/mobx.png',
+        iconSrc: '/img/skills/mobx.png',
       },
       {
         name: 'Html 5',
-        iconSrc: '/img/tools/html.png',
+        iconSrc: '/img/skills/html.png',
       },
       {
         name: 'CSS 3',
-        iconSrc: '/img/tools/css.png',
+        iconSrc: '/img/skills/css.png',
       },
       {
         name: 'Javascript (ESNext)',
-        iconSrc: '/img/tools/javascript.png',
+        iconSrc: '/img/skills/javascript.png',
       },
       {
         name: 'Typescript',
-        iconSrc: '/img/tools/typescript.png',
+        iconSrc: '/img/skills/typescript.png',
       },
     ],
   },
@@ -121,47 +121,47 @@ const skills = [
     tools: [
       {
         name: 'Git',
-        iconSrc: '/img/tools/git.png',
+        iconSrc: '/img/skills/git.png',
       },
       {
         name: 'Docker',
-        iconSrc: '/img/tools/docker.png',
+        iconSrc: '/img/skills/docker.png',
       },
       {
         name: 'Github Action',
-        iconSrc: '/img/tools/githubaction.png',
+        iconSrc: '/img/skills/githubaction.png',
       },
       {
         name: 'ArgoCD',
-        iconSrc: '/img/tools/argocd.png',
+        iconSrc: '/img/skills/argocd.png',
       },
       {
         name: 'Jenkins',
-        iconSrc: '/img/tools/jenkins.png',
+        iconSrc: '/img/skills/jenkins.png',
       },
       {
         name: 'Amazon EC2',
-        iconSrc: '/img/tools/amazonec2.png',
+        iconSrc: '/img/skills/amazonec2.png',
       },
       {
         name: 'Amazon S3',
-        iconSrc: '/img/tools/amazons3.png',
+        iconSrc: '/img/skills/amazons3.png',
       },
       {
         name: 'Terraform',
-        iconSrc: '/img/tools/terraform.png',
+        iconSrc: '/img/skills/terraform.png',
       },
       {
         name: 'K8s',
-        iconSrc: '/img/tools/kubernetes.png',
+        iconSrc: '/img/skills/kubernetes.png',
       },
       {
         name: 'Amazon EKS',
-        iconSrc: '/img/tools/amazoneks.png',
+        iconSrc: '/img/skills/amazoneks.png',
       },
       {
         name: 'AWS CodePipeline',
-        iconSrc: '/img/tools/awscodepipeline.png',
+        iconSrc: '/img/skills/awscodepipeline.png',
       },
     ],
   },
@@ -170,11 +170,11 @@ const skills = [
     tools: [
       {
         name: 'Tensorflow',
-        iconSrc: '/img/tools/tensorflow.png',
+        iconSrc: '/img/skills/tensorflow.png',
       },
       {
         name: 'Amazon Comprehend',
-        iconSrc: '/img/tools/amazoncomprehend.png',
+        iconSrc: '/img/skills/amazoncomprehend.png',
       },
     ],
   },
@@ -183,39 +183,39 @@ const skills = [
     tools: [
       {
         name: 'Amazon API Gateway',
-        iconSrc: '/img/tools/amazonapigateway.png',
+        iconSrc: '/img/skills/amazonapigateway.png',
       },
       {
         name: 'AWS VPC',
-        iconSrc: '/img/tools/awsvpc.png',
+        iconSrc: '/img/skills/awsvpc.png',
       },
       {
         name: 'Amazon EC2',
-        iconSrc: '/img/tools/amazonec2.png',
+        iconSrc: '/img/skills/amazonec2.png',
       },
       {
         name: 'Amazon S3',
-        iconSrc: '/img/tools/amazons3.png',
+        iconSrc: '/img/skills/amazons3.png',
       },
       {
         name: 'AWS Lambda',
-        iconSrc: '/img/tools/awslambda.png',
+        iconSrc: '/img/skills/awslambda.png',
       },
       {
         name: 'Amazon RDS',
-        iconSrc: '/img/tools/amazonrds.png',
+        iconSrc: '/img/skills/amazonrds.png',
       },
       {
         name: 'C++',
-        iconSrc: '/img/tools/cpp.png',
+        iconSrc: '/img/skills/cpp.png',
       },
       {
         name: 'Python',
-        iconSrc: '/img/tools/python.png',
+        iconSrc: '/img/skills/python.png',
       },
       {
         name: 'OpenCV',
-        iconSrc: '/img/tools/opencv.png',
+        iconSrc: '/img/skills/opencv.png',
       },
     ],
   },
