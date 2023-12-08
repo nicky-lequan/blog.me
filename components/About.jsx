@@ -9,11 +9,11 @@ import {textVariant} from '@/utils/motion';
 
 const capabilities = [
   {
-    title: 'Full Stack Engineer',
+    title: 'Full-stack Engineer',
     iconSrc: '/img/solid_figure_1.png',
   },
   {
-    title: 'Back End Engineer',
+    title: 'Backend Engineer',
     iconSrc: '/img/solid_figure_2.png',
   },
   {

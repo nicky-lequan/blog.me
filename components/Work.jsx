@@ -19,7 +19,7 @@ import {
 
 const experiences = [
   {
-    title: 'Back End Engineer',
+    title: 'Backend Engineer',
     companyName: 'LG Electronics',
     iconSrc: '/img/company/lg.png',
     date: 'Feb 2023 - Nov 2023',
@@ -33,7 +33,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Engineer',
+    title: 'Full-stack Engineer',
     companyName: 'Bithumb meta',
     iconSrc: '/img/company/bithumb.png',
     date: 'Mar 2022 - Dec 2022',
@@ -49,7 +49,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Engineer',
+    title: 'Full-stack Engineer',
     companyName: 'LG U+',
     iconSrc: '/img/company/lg.png',
     date: 'Jul 2021 - Feb 2022',
@@ -64,7 +64,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Engineer',
+    title: 'Full-stack Engineer',
     companyName: 'Hanwha Life Insurance',
     iconSrc: '/img/company/hanwha.png',
     date: 'Feb 2021 - Jun 2021',
@@ -77,7 +77,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Back End Engineer',
+    title: 'Backend Engineer',
     companyName: 'Okimoki',
     iconSrc: '/img/company/okimoki.png',
     date: 'Jan 2020 - Dec 2020',
