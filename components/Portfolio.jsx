@@ -28,51 +28,28 @@ const tabs = [
     icon: <GlobeIcon />,
     items: [
       {
-        title: 'jooncco.dev',
+        title: 'jooncco.dev-fe',
         thumbnail: '/img/portfolio/jooncco.dev-fe.png',
         linkUrl: 'https://github.com/jooncco/jooncco.dev-fe',
-        tags: ['blog', 'next.js', 'tailwindcss', 'material-tailwind'],
+        desc: "Jooncco's knowledge base frontend, built with Next.js 14.",
       },
       {
-        title: 'NFT Marketplace',
+        title: 'naemo.io',
         thumbnail: '/img/portfolio/nftmarketplace.png',
         linkUrl: 'https://naemo.io',
-        tags: [
-          'marketplace',
-          'react.js',
-          'mobx',
-          'nft',
-          'blockchain',
-          'ethereum',
-          'solana',
-        ],
+        desc: "Exchange fancy NFTs with crypto currency such as Ethereum, Solana and more. Built with React.js and now it's maintained by bithumb meta.",
       },
       {
-        title: 'Spring API Server Template',
+        title: 'Spring Boot API Server Template',
         thumbnail: '/img/portfolio/springapiservertemplate.png',
         linkUrl: 'https://github.com/jooncco/spring-api-server-template',
-        tags: [
-          'api-server',
-          'template',
-          'spring-boot',
-          'java',
-          'flyway',
-          'mybatis',
-        ],
+        desc: 'Spring Boot api server example, aiming to show best practices in production-level.',
       },
       {
         title: 'jooncco.com',
         thumbnail: '/img/portfolio/jooncco.com.png',
-        linkUrl: 'https://github.com/jooncco/jooncco.dev-fe',
-        tags: [
-          'deprecated',
-          'blog',
-          'github-pages',
-          'jekyll',
-          'html',
-          'css',
-          'javascript',
-        ],
+        linkUrl: 'https://github.com/jooncco/jooncco.github.io',
+        desc: "(Deprecated) A blog based on github.io and jekyll template 'Minimal Mistakes'.",
       },
     ],
   },
@@ -97,19 +74,19 @@ const tabs = [
         title: 'Bitcoin Price Predictor',
         thumbnail: '/img/portfolio/bitcoinpricepredictor.png',
         linkUrl: 'https://github.com/jooncco/bitcoin-price-predictor',
-        tags: ['ai', 'python', 'lstm-rnn', 'linear-regression'],
+        desc: 'Bitcoin price prediction with market indicators and google trend using regression models & LSTM RNN',
       },
       {
         title: 'Coindrop Game AI Agent',
         thumbnail: '/img/portfolio/coindropgameaiagent.png',
         linkUrl: 'https://github.com/jooncco/coindrop-game-ai-agent',
-        tags: ['ai', 'python', 'reinforcement-learning', 'q-learning'],
+        desc: 'Reflex agent trained with reinforcement learning(Q-learning). This agent plays coin drop game implemented using pygame module.',
       },
       {
         title: '"is a" Relationship Teller',
         thumbnail: '/img/portfolio/isarelationshipteller.png',
         linkUrl: 'https://github.com/jooncco/is-A-relationship-teller',
-        tags: ['ai', 'python', 'nlp', 'fast-text'],
+        desc: 'NLP for Korean words. Returns whether a given (Entity, Concept) pair is in is-a relationship or not.',
       },
     ],
   },
@@ -122,19 +99,19 @@ const tabs = [
         title: 'Kakaotalk Chat Exporter',
         thumbnail: '/img/portfolio/kakaotalkchatexporter.png',
         linkUrl: 'https://github.com/jooncco/kakaotalk-chat-exporter',
-        tags: ['scrapper', 'python', 'open-cv', 'macro', 'automation'],
+        desc: 'Automated text exporter for Kakaotalk messenger.',
       },
       {
         title: 'CP Snippet Java',
         thumbnail: '/img/portfolio/cpsnippetjava.png',
         linkUrl: 'https://github.com/jooncco/cp-snippet-java',
-        tags: ['snippets', 'java', 'competitive-programming', 'vs-code'],
+        desc: 'Json for java code snippets. Extremly useful when competitive programming.',
       },
       {
         title: 'CP Stamper C++',
         thumbnail: '/img/portfolio/cpstampercpp.png',
         linkUrl: 'https://github.com/jooncco/cp-stamper-cpp',
-        tags: ['comment-writer', 'cpp', 'competitive-programming'],
+        desc: 'Simple comment writer. The comment generated contains author and timestamp.',
       },
     ],
   },
@@ -153,7 +130,7 @@ const Portfolio = () => (
           indicatorProps={{
             className: 'rounded-lg bg-primary/25 shadow-inner',
           }}
-          className="bg-neutral bg-gray-300/20 dark:bg-base/10">
+          className="bg-gray-300/20 dark:bg-base/10">
           {tabs.map(({id, label, icon, items}) => (
             <Tab
               key={id}
@@ -180,13 +157,13 @@ const Portfolio = () => (
               key={id}
               value={id}
               className="p-6 flex flex-wrap gap-x-6 gap-y-4">
-              {items.map(({title, thumbnail, linkUrl, tags}, index) => (
+              {items.map(({title, thumbnail, linkUrl, desc}, index) => (
                 <PortfolioCard
                   key={index}
                   title={title}
                   thumbnail={thumbnail}
                   linkUrl={linkUrl}
-                  tags={tags}
+                  desc={desc}
                 />
               ))}
             </TabPanel>

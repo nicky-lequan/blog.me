@@ -10,8 +10,8 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 
-const PortfolioCard = ({title, thumbnail, linkUrl, tags}) => (
-  <Card className="w-full sm:w-[250px] bg-neutral2 justify-between shadow-lg">
+const PortfolioCard = ({title, thumbnail, linkUrl, desc}) => (
+  <Card className="w-full sm:w-[250px] bg-neutral2 justify-between shadow-2xl">
     <div>
       <CardHeader shadow={false} floated={false} className="h-32 sm:h-40">
         <Image
@@ -27,25 +27,24 @@ const PortfolioCard = ({title, thumbnail, linkUrl, tags}) => (
           <Typography className="font-semibold text-text">{title}</Typography>
         </div>
         <div className="flex flex-wrap gap-x-1">
-          {tags.map((tag, index) => (
-            <Typography
-              key={index}
-              variant="small"
-              color="gray"
-              className="font-normal opacity-75">
-              #{tag}
-            </Typography>
-          ))}
+          <Typography
+            variant="small"
+            color="gray"
+            className="font-normal opacity-75">
+            {desc}
+          </Typography>
         </div>
       </CardBody>
     </div>
     <CardFooter className="pt-0">
-      <Button
-        ripple={false}
-        fullWidth={true}
-        className="bg-blue-gray-200/30 text-text shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100">
-        <Link href={linkUrl}>TAKE A LOOK</Link>
-      </Button>
+      <Link href={linkUrl}>
+        <Button
+          ripple={false}
+          fullWidth={true}
+          className="bg-blue-gray-200/30 text-text shadow-none hover:scale-105 hover:shadow-none">
+          TAKE A LOOK
+        </Button>
+      </Link>
     </CardFooter>
   </Card>
 );
