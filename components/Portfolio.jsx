@@ -125,17 +125,17 @@ const Portfolio = () => (
     </motion.div>
 
     <motion.div className="mt-8" variants={fadeIn('left', 'tween', 0, 1)}>
-      <Tabs value={tabs[0].id} className="rounded-lg">
+      <Tabs value={tabs[0].id}>
         <TabsHeader
           indicatorProps={{
-            className: 'rounded-lg bg-primary/25 shadow-inner',
+            className: 'rounded-lg bg-primary/70 shadow-inner',
           }}
-          className="bg-gray-300/20 dark:bg-base/10">
+          className="bg-slate-200 dark:bg-zinc-950/40 shadow-xl">
           {tabs.map(({id, label, icon, items}) => (
             <Tab
               key={id}
               value={id}
-              className={`rounded-lg font-semibold text-text hover:bg-neutral2/80 hover:shadow-inner ${
+              className={`rounded-lg font-semibold text-text hover:bg-primary/40 hover:shadow-inner ${
                 items.length === 0 ? 'hidden' : ''
               }`}>
               <div className="flex gap-x-2 items-center">
@@ -151,7 +151,7 @@ const Portfolio = () => (
             mount: {y: 0},
             unmount: {y: 250},
           }}
-          className="rounded-lg bg-gray-300/50 dark:bg-base/30 shadow-inner">
+          className="rounded-lg bg-slate-300 dark:bg-stone-950 shadow-inner">
           {tabs.map(({id, items}) => (
             <TabPanel
               key={id}

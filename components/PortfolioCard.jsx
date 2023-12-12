@@ -11,7 +11,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const PortfolioCard = ({title, thumbnail, linkUrl, desc}) => (
-  <Card className="w-full sm:w-[250px] bg-neutral2 justify-between shadow-2xl">
+  <Card className="w-full sm:w-[250px] bg-zinc-100 dark:bg-zinc-900 justify-between shadow-md">
     <div>
       <CardHeader shadow={false} floated={false} className="h-32 sm:h-40">
         <Image
@@ -29,8 +29,7 @@ const PortfolioCard = ({title, thumbnail, linkUrl, desc}) => (
         <div className="flex flex-wrap gap-x-1">
           <Typography
             variant="small"
-            color="gray"
-            className="font-normal opacity-75">
+            className="font-normal opacity-75 text-slate">
             {desc}
           </Typography>
         </div>
@@ -42,7 +41,7 @@ const PortfolioCard = ({title, thumbnail, linkUrl, desc}) => (
           ripple={false}
           fullWidth={true}
           className="bg-blue-gray-200/30 text-text shadow-none hover:scale-105 hover:shadow-none">
-          TAKE A LOOK
+          CHECKOUT
         </Button>
       </Link>
     </CardFooter>
