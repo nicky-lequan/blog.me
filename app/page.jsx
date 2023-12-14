@@ -2,7 +2,7 @@ import React from 'react';
 import DynamicTextBanner from '../components/DynamicTextBanner';
 import About from '../components/About';
 import Work from '@/components/Work';
-import CompetitiveProgramming from '@/components/CompetitiveProgramming';
+import CompetitiveProgramming from '@/components/Achievements';
 import Skills from '@/components/Skills';
 import Portfolio from '@/components/Portfolio';
 import Testimonials from '@/components/Testimonials';

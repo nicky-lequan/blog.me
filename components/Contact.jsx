@@ -9,7 +9,7 @@ import {styles} from '@/app/styles';
 const Contact = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>We&apos;re just a few clicks away</p>
+      <p className={styles.sectionSubText}>Just a few clicks away</p>
       <h1 className={styles.sectionHeadText}>Contact</h1>
     </motion.div>
   </>
