@@ -104,7 +104,7 @@ const Work = () => (
     <motion.div
       className="mt-8 flex flex-col"
       variants={fadeIn('left', 'tween', 0, 1)}>
-      <Timeline className="p-8 bg-slate-100 dark:bg-stone-950 h-[960px] overflow-scroll rounded-[20px] shadow-inner">
+      <Timeline className="px-8 py-10 bg-slate-100 dark:bg-stone-950 h-[960px] overflow-scroll rounded-[20px] shadow-inner">
         {experiences.map((experience, index) => (
           <TimelineItem key={index}>
             <TimelineConnector />

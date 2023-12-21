@@ -12,6 +12,11 @@
   src: url('../public/font/CaskaydiaCoveNerdFont.ttf');
 }
 
+@font-face {
+  font-family: 'heavydata';
+  src: url('../public/font/HeavyDataNerdFont.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
