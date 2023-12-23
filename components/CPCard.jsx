@@ -42,7 +42,7 @@ const CPCard = ({
                 <div className="flex flex-col items-center justify-center gap-1">
                   <Typography
                     variant="small"
-                    className="font-semibold text-stone dark:text-stone-400">
+                    className="font-semibold text-stone dark:text-stone-400 font-heavydata">
                     Rating
                   </Typography>
                   <Typography
@@ -55,7 +55,7 @@ const CPCard = ({
                 <div className="min-w-[80px] flex flex-col items-center justify-center gap-1">
                   <Typography
                     variant="small"
-                    className="font-semibold text-stone dark:text-stone-400">
+                    className="font-semibold text-stone dark:text-stone-400 font-heavydata">
                     Level
                   </Typography>
                   <Typography
@@ -68,7 +68,7 @@ const CPCard = ({
                 <div className="flex flex-col items-center gap-1">
                   <Typography
                     variant="small"
-                    className="font-semibold text-stone dark:text-stone-400">
+                    className="font-semibold text-stone dark:text-stone-400 font-heavydata">
                     Rank
                   </Typography>
                   <Typography
@@ -81,7 +81,7 @@ const CPCard = ({
                 <div className="flex flex-col items-center justify-center gap-1">
                   <Typography
                     variant="small"
-                    className="font-semibold text-stone dark:text-stone-400">
+                    className="font-semibold text-stone dark:text-stone-400 font-heavydata">
                     Attended
                   </Typography>
                   <Typography
@@ -95,7 +95,7 @@ const CPCard = ({
             <div className="ml-10 sm:ml-0 px-6 md:px-8 w-[46%] flex flex-col bg-white/40 dark:bg-slate/10 rounded-[20px] items-center justify-center gap-1 shadow-md">
               <Typography
                 variant="small"
-                className="text-sm sm:text-lg font-semibold text-stone dark:text-stone-400">
+                className="text-sm sm:text-lg font-semibold text-stone dark:text-stone-400 font-heavydata">
                 Top
               </Typography>
               <Typography
