@@ -1,7 +1,7 @@
 'use client';
 
 import React, {useEffect, useRef, useState} from 'react';
-import {SunIcon, MoonIcon, Bars3Icon, Bars3BottomRightIcon} from './Icons';
+import {SunIcon, MoonIcon, EllipsisHorizontalIcon, XMarkIcon} from './Icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import {LayoutGroup} from 'framer-motion';
@@ -132,10 +132,8 @@ const NavBar = () => {
                   variant="text"
                   className="my-auto rounded-full text-black dark:text-white"
                   onClick={toggleMobileMenu}>
-                  {!mobileMenuOpen && <Bars3Icon className="h-6 w-6" />}
-                  {mobileMenuOpen && (
-                    <Bars3BottomRightIcon className="h-6 w-6" />
-                  )}
+                  {!mobileMenuOpen && <EllipsisHorizontalIcon />}
+                  {mobileMenuOpen && <XMarkIcon />}
                 </IconButton>
 
                 <div
