@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useState} from 'react';
+import React from 'react';
 import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {fadeIn, textVariant} from '@/utils/motion';
@@ -46,8 +46,8 @@ const tabs = [
         desc: 'Spring Boot api server example, aiming to show best practices in production-level.',
       },
       {
-        title: 'jooncco.com',
-        thumbnail: '/img/portfolio/jooncco.com.png',
+        title: 'jooncco.github.io',
+        thumbnail: '/img/portfolio/jooncco.github.io.png',
         linkUrl: 'https://github.com/jooncco/jooncco.github.io',
         desc: "[Deprecated] A blog based on github.io and jekyll template 'Minimal Mistakes'.",
       },
@@ -151,7 +151,7 @@ const Portfolio = () => (
             mount: {y: 0},
             unmount: {y: 250},
           }}
-          className="rounded-lg bg-slate-300 dark:bg-stone-950 shadow-inner">
+          className="rounded-lg bg-slate-200 dark:bg-stone-950 shadow-inner">
           {tabs.map(({id, items}) => (
             <TabPanel
               key={id}

@@ -92,7 +92,7 @@ const Achievements = () => {
       <motion.div
         className="mt-8 relative"
         variants={fadeIn('left', 'tween', 0, 1)}>
-        <div className="p-8 h-[560px] overflow-scroll bg-slate-100 dark:bg-stone-950 rounded-[20px] shadow-inner">
+        <div className="p-8 h-[560px] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[20px] shadow-inner">
           <Timeline>
             {achievements.map((item, index) => (
               <TimelineItem
@@ -131,19 +131,19 @@ const Achievements = () => {
             ))}
           </Timeline>
           {imageIdx === -1 && (
-            <div className="absolute right-12 top-12 w-[400px] h-[400px] hidden xl:flex xl:flex-col items-center justify-center rounded-md bg-zinc-50 dark:bg-zinc-900 shadow-xl">
-              <PhotoIcon className="h-24 w-24" />
+            <div className="absolute right-12 top-12 w-[400px] h-[400px] hidden xl:flex xl:flex-col items-center justify-center rounded-[20px] bg-zinc-50 dark:bg-zinc-900 shadow-xl">
+              <PhotoIcon className="!h-24 !w-24" />
               Hover to see an image
             </div>
           )}
           {imageIdx > -1 && (
-            <div className="p-2 absolute right-10 top-10 rounded-md bg-zinc-50 dark:bg-zinc-900 hidden xl:block shadow-xl">
+            <div className="p-2 absolute right-10 top-10 rounded-3xl bg-zinc-50 dark:bg-zinc-900 hidden xl:block shadow-xl">
               <Image
                 src={achievements[imageIdx].imageSrc}
                 alt="trailer"
                 width={400}
                 height={400}
-                className="bg-white/90 dark:bg-slate-950/90 rounded-md"
+                className="bg-white/90 dark:bg-slate-950/90 rounded-[20px]"
               />
             </div>
           )}
