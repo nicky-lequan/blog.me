@@ -1,10 +1,12 @@
 'use client';
 
+import Link from 'next/link';
 import React, {useEffect, useState} from 'react';
 
 const DynamicTextBanner = () => {
   const [text, setText] = useState('');
   const texts = [
+    'Hey, stranger.',
     'Welcome to my knowledge base.',
     'Hope you find something useful :)',
   ];
@@ -58,10 +60,17 @@ const DynamicTextBanner = () => {
       </p>
       <br />
       <p>
-        Software engineering is always challenging, but those challenge never
-        comes solely itself alone. <br />
-        It always comes with a sense of conquest in the end, and that&apos;s
-        what makes engineering so joyable and addictive.
+        This website originally began with my pure interest on Next.js, but now
+        it turns out to be containg quite a lot of useful stuffs.
+        <br />
+        Feel free to fork, copy and use but don&apos;t forget to star&nbsp;
+        <Link
+          href="https://github.com/jooncco/jooncco.dev-fe"
+          className="font-bold text-blue-700 dark:text-rose-600 hover:underline">
+          this repo
+        </Link>
+        . It will keep evolving, and all of the contents & source code of this
+        blog will always be open to public.
       </p>
     </div>
   );
