@@ -95,9 +95,7 @@ const experiences = [
 const Work = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>
-        Projects I have experienced in LG CNS
-      </p>
+      <p className={styles.sectionSubText}>Official projects</p>
       <h1 className={styles.sectionHeadText}>Work Experience.</h1>
     </motion.div>
 

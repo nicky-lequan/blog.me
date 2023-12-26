@@ -11,7 +11,7 @@ import SlidingCarousel from './SlidingCarousel';
 const Testimonials = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>What others say about me</p>
+      <p className={styles.sectionSubText}>Well, my colleagues say</p>
       <h1 className={styles.sectionHeadText}>Testimonials</h1>
     </motion.div>
 

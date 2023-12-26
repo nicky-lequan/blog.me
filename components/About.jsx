@@ -45,16 +45,16 @@ const About = () => (
           </p>
           <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[10px] xs:text-[14px] sm:text-[18px] lg:text-[24px] sm:leading-[24px]">
             AWS, Next.js, and Competitive Programming are the things that
-            I&apos;m into nowadays. I have other capabilities of course, so
-            please take a look at Work section if you wish to see more.
+            I&apos;m into nowadays. I build whatever I want to, using whatever I
+            need.
             <br />
             I&apos;m currently open to job opportunities by the way, especially
             those in Canada. So please don&apos;t hesitate to reach me if
             you&apos;re a manager, developer, or whatever your position is.
             Weight training, going to music festivals, phoenix dart, and snow
-            boarding are my top hobbies. I watch abc news every morning, like to
-            make friends, listen to jazzy-house mix when I work, and I&apos;m
-            also an inevitable coffee lover.
+            boarding are my top hobbies. I also love night Netflix movies,
+            making friends, and listening to jazzy-house mix when I write code.
+            I&apos;m an inevitable coffee lover.
           </p>
         </div>
         <Avatar

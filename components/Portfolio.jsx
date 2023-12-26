@@ -120,7 +120,7 @@ const tabs = [
 const Portfolio = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>My works</p>
+      <p className={styles.sectionSubText}>Art gallery</p>
       <h1 className={styles.sectionHeadText}>Portfolio</h1>
     </motion.div>
 
