@@ -45,7 +45,7 @@ const About = () => (
           </p>
           <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[10px] xs:text-[14px] sm:text-[18px] lg:text-[24px] sm:leading-[24px]">
             AWS, Next.js, and Competitive Programming are the things that
-            I&apos;m into nowadays. I build whatever I want to, using whatever I
+            I&apos;m into nowadays. I build whatever I want to, with whatever I
             need.
             <br />
             I&apos;m currently open to job opportunities by the way, especially

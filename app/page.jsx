@@ -7,7 +7,7 @@ import Skills from '@/components/Skills';
 import Portfolio from '@/components/Portfolio';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
-import Achievements from '@/components/Achievements';
+import Accomplishments from '@/components/Accomplishments';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <Skills />
       <Portfolio />
       <CompetitiveProgramming />
-      <Achievements />
+      <Accomplishments />
       <Testimonials />
       <Contact />
     </>

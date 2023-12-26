@@ -27,66 +27,66 @@ import {
 import Image from 'next/image';
 import {useState} from 'react';
 
-const achievements = [
+const accomplishments = [
   {
     title: 'Amazon EKS JAM Singapore Facilitator',
     subtitle: '25 OCT 2023',
     icon: <UserGroupIcon />,
     color: 'orange',
-    imageSrc: '/img/achievements/amazon_eks_jam_singapore.png',
+    imageSrc: '/img/accomplishments/amazon_eks_jam_singapore.png',
   },
   {
     title: '24th Place, LG Code Jam',
     subtitle: '15 SEP 2023',
     icon: <CodeBracketIcon />,
     color: 'pink',
-    imageSrc: '/img/achievements/lg_code_jam.png',
+    imageSrc: '/img/accomplishments/lg_code_jam.png',
   },
   {
     title: 'AWS JAM Winner',
     subtitle: '20 JUN 2023',
     icon: <TrophyIcon />,
     color: 'orange',
-    imageSrc: '/img/achievements/aws_jam.png',
+    imageSrc: '/img/accomplishments/aws_jam.png',
   },
   {
     title: 'AWS Certified Solutions Architect Professional',
     subtitle: '02 FEB 2023',
     icon: <IdentificationIcon />,
     color: 'orange',
-    imageSrc: '/img/achievements/aws_sap.png',
+    imageSrc: '/img/accomplishments/aws_sap.png',
   },
   {
     title: 'Codeforces Specialist',
     subtitle: '18 OCT 2020',
     icon: <CodeforcesIcon />,
     color: 'teal',
-    imageSrc: '/img/achievements/codeforces_specialist.png',
+    imageSrc: '/img/accomplishments/codeforces_specialist.png',
   },
   {
     title: 'Computer Science B.S. Yonsei, Seoul',
     subtitle: '25 FEB 2019',
     icon: <AcademicCap />,
     color: 'blue',
-    imageSrc: '/img/achievements/cs_yonsei.png',
+    imageSrc: '/img/accomplishments/cs_yonsei.png',
   },
   {
     title: 'Software Engineer, LG CNS',
     subtitle: '7 JAN 2019',
     icon: <BuildingOffice2Icon />,
     color: 'pink',
-    imageSrc: '/img/achievements/lgcns_start.png',
+    imageSrc: '/img/accomplishments/lgcns_start.png',
   },
 ];
 
-const Achievements = () => {
+const Accomplishments = () => {
   const [imageIdx, setImageId] = useState(-1);
 
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>The moments</p>
-        <h1 className={styles.sectionHeadText}>Achievements</h1>
+        <h1 className={styles.sectionHeadText}>Accomplishments</h1>
       </motion.div>
 
       <motion.div
@@ -94,17 +94,12 @@ const Achievements = () => {
         variants={fadeIn('left', 'tween', 0, 1)}>
         <div className="p-8 h-[560px] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[20px] shadow-inner">
           <Timeline>
-            {achievements.map((item, index) => (
+            {accomplishments.map((item, index) => (
               <TimelineItem
                 key={index}
                 className="h-28 max-w-[28rem]"
                 onMouseEnter={() => setImageId(index)}>
                 <TimelineConnector className="!w-[78px]" />
-                {/* <Tooltip
-              key={index}
-              content={item.tooltipContent}
-              placement="right"
-              className="p-2 bg-neutral2 hidden lg:block shadow-xl"> */}
                 <TimelineHeader className="py-3 pl-4 pr-8 relative rounded-[20px] bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800  shadow-lg">
                   <TimelineIcon
                     className="p-3"
@@ -126,7 +121,6 @@ const Achievements = () => {
                     </Typography>
                   </div>
                 </TimelineHeader>
-                {/* </Tooltip> */}
               </TimelineItem>
             ))}
           </Timeline>
@@ -139,7 +133,7 @@ const Achievements = () => {
           {imageIdx > -1 && (
             <div className="p-2 absolute right-10 top-10 rounded-3xl bg-zinc-50 dark:bg-zinc-900 hidden xl:block shadow-xl">
               <Image
-                src={achievements[imageIdx].imageSrc}
+                src={accomplishments[imageIdx].imageSrc}
                 alt="trailer"
                 width={400}
                 height={400}
@@ -153,4 +147,4 @@ const Achievements = () => {
   );
 };
 
-export default SectionWrapper(Achievements, 'achievements');
+export default SectionWrapper(Accomplishments, 'accomplishments');
