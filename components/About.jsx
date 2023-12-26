@@ -44,8 +44,8 @@ const About = () => (
             I&apos;m a full-stack engineer. <br />
           </p>
           <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[10px] xs:text-[14px] sm:text-[18px] lg:text-[24px] sm:leading-[24px]">
-            K8s, Amazon EKS, Next.js, and Competitive Programming are the things
-            that I&apos;m into nowadays. I have other capabilities of course, so
+            AWS, Next.js, and Competitive Programming are the things that
+            I&apos;m into nowadays. I have other capabilities of course, so
             please take a look at Work section if you wish to see more.
             <br />
             I&apos;m currently open to job opportunities by the way, especially
