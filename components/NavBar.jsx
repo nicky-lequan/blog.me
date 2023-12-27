@@ -139,20 +139,22 @@ const NavBar = () => {
                 <div
                   className={`${
                     !mobileMenuOpen ? 'hidden' : 'flex'
-                  } m-2 p-4 absolute top-20 right-1 min-w-[140px] z-10 bg-gradient-to-r from-white to-primary dark:from-[#18122B] dark:to-[#3F0071] shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
-                  <ul className="p-0 list-none flex justify-end items-start flex-col gap-4 font-bold">
-                    {navItems.map(({name, path}) => (
-                      <Link
-                        key={path}
-                        href={path}
-                        onClick={() => {
-                          window.scrollTo(0, 0);
-                          setMobileMenuOpen(false);
-                        }}>
-                        {name}
-                      </Link>
-                    ))}
-                  </ul>
+                  } m-2 p-[1px] absolute top-20 right-1 min-w-[140px] z-10 green-violet-gradient shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
+                  <div className="p-4 w-full bg-white/90 dark:bg-slate-950/90 rounded-xl">
+                    <ul className="p-0 list-none flex justify-end items-start flex-col gap-4 font-bold">
+                      {navItems.map(({name, path}) => (
+                        <Link
+                          key={path}
+                          href={path}
+                          onClick={() => {
+                            window.scrollTo(0, 0);
+                            setMobileMenuOpen(false);
+                          }}>
+                          {name}
+                        </Link>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
               {/* dark mode button */}
