@@ -139,9 +139,7 @@ const Work = () => (
               <ul>
                 {experience.points.map((point, index) => (
                   <li key={index}>
-                    <Typography
-                      color="gray"
-                      className="font-normal text-gray-600">
+                    <Typography className="font-normal text-stone-600 dark:text-stone">
                       {point}
                     </Typography>
                   </li>

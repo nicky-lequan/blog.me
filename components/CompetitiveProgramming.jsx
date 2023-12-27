@@ -6,10 +6,16 @@ import {SectionWrapper} from './hoc';
 import {textVariant} from '@/utils/motion';
 import {styles} from '@/app/styles';
 import {useTheme} from 'next-themes';
+import {useState, useEffect} from 'react';
 import CPCard from './CPCard';
 
 const CompetitiveProgramming = () => {
   const {systemTheme, theme} = useTheme();
+  const [isRendered, setIsRendered] = useState(false);
+
+  useEffect(() => {
+    setIsRendered(true);
+  }, []);
 
   const isDarkTheme = () => {
     return theme === 'system'
@@ -56,21 +62,22 @@ const CompetitiveProgramming = () => {
       </motion.div>
 
       <div className="mt-8 py-4 flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
-        {cards.map((card, index) => (
-          <CPCard
-            key={index}
-            index={index}
-            name={card.name}
-            iconSrc={card.iconSrc}
-            linkUrl={card.linkUrl}
-            top={card.top}
-            currentRating={card.currentRating}
-            level={card.level}
-            maxRating={card.maxRating}
-            rank={card.rank}
-            attended={card.attended}
-          />
-        ))}
+        {isRendered &&
+          cards.map((card, index) => (
+            <CPCard
+              key={index}
+              index={index}
+              name={card.name}
+              iconSrc={card.iconSrc}
+              linkUrl={card.linkUrl}
+              top={card.top}
+              currentRating={card.currentRating}
+              level={card.level}
+              maxRating={card.maxRating}
+              rank={card.rank}
+              attended={card.attended}
+            />
+          ))}
       </div>
     </>
   );

@@ -5,6 +5,10 @@ import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {textVariant} from '@/utils/motion';
 import {styles} from '@/app/styles';
+import {slideIn} from '@/utils/motion';
+import ContactForm from './ContactForm';
+import EarthCanvas from './EarthCanvas';
+import StarsCanvas from './Stars';
 
 const Contact = () => (
   <>
@@ -12,6 +16,19 @@ const Contact = () => (
       <p className={styles.sectionSubText}>I&apos;m just a few clicks away</p>
       <h1 className={styles.sectionHeadText}>Contact</h1>
     </motion.div>
+
+    <div className="relative z-0 bg-slate-800 dark:bg-transparent xl:mt-8 xl:flex-row flex-col-reverse flex gap-4 overflow-hidden rounded-[20px]">
+      <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className="z-1">
+        <ContactForm />
+      </motion.div>
+
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className="xl:w-[30%] xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+        <EarthCanvas />
+      </motion.div>
+      <StarsCanvas />
+    </div>
   </>
 );
 

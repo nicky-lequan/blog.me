@@ -131,14 +131,16 @@ const Accomplishments = () => {
             </div>
           )}
           {imageIdx > -1 && (
-            <div className="p-2 absolute right-10 top-10 rounded-3xl bg-zinc-50 dark:bg-zinc-900 hidden xl:block shadow-xl">
-              <Image
-                src={accomplishments[imageIdx].imageSrc}
-                alt="trailer"
-                width={400}
-                height={400}
-                className="bg-white/90 dark:bg-slate-950/90 rounded-[20px]"
-              />
+            <div className="p-[1px] green-violet-gradient absolute right-10 top-10 rounded-3xl hidden xl:block shadow-xl">
+              <div className="p-2 bg-zinc-50 dark:bg-zinc-900 rounded-3xl">
+                <Image
+                  src={accomplishments[imageIdx].imageSrc}
+                  alt="trailer"
+                  width={400}
+                  height={400}
+                  className="rounded-[20px]"
+                />
+              </div>
             </div>
           )}
         </div>

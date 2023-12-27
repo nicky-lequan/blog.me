@@ -18,10 +18,10 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-      <body className="bg-base">
+      <body className="bg-base flex flex-col h-screen justify-between">
         <ThemeProvider attribute="class">
           <NavBar />
-          <main className="mb-40 max-w-6xl mx-auto mt-24 min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
+          <main className="mb-20 max-w-6xl mx-auto mt-24 min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
             {children}
           </main>
           <Footer />
