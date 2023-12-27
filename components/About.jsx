@@ -21,7 +21,7 @@ const capabilities = [
     iconSrc: '/img/solid_figure_2.png',
   },
   {
-    title: 'Content Creator',
+    title: 'Problem Solver',
     iconSrc: '/img/solid_figure_4.png',
   },
 ];
@@ -41,20 +41,19 @@ const About = () => (
             Hi there. I&apos;m <span className="text-primary">JunHa.</span>
           </h1>
           <p className="mt-2 text-gray-700 dark:text-gray-500 font-medium text-[16px] xs:text-[20px] sm:text-[26px] lg:text-[30px] leading-[32px]">
-            I&apos;m a full-stack engineer. <br />
+            I&apos;M A BUILDER. <br />
           </p>
           <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[10px] xs:text-[14px] sm:text-[18px] lg:text-[24px] sm:leading-[24px]">
-            AWS, Next.js, and Competitive Programming are the things that
-            I&apos;m into nowadays. I build whatever I want to, with whatever I
-            need.
+            I build whatever I want to, with whatever I need.
             <br />
-            I&apos;m currently open to job opportunities by the way, especially
-            those in Canada. So please don&apos;t hesitate to reach me if
-            you&apos;re a manager, developer, or whatever your position is.
-            Weight training, going to music festivals, phoenix dart, and snow
-            boarding are my top hobbies. I also love night Netflix movies,
-            making friends, and listening to jazzy-house mix when I write code.
-            I&apos;m an inevitable coffee lover.
+            AWS, Next.js, and Competitive Programming are the things that
+            I&apos;m into nowadays. Weight training, going to music festivals,
+            phoenix dart, and snow boarding are my top hobbies. I also love
+            night Netflix movies, making friends, and listening to jazzy-house
+            mix when I write code. I&apos;m an inevitable coffee lover. I&apos;m
+            currently open to job opportunities by the way, especially those in
+            Canada. So please don&apos;t hesitate to reach me if you&apos;re a
+            manager, developer, or whatever your position is.
           </p>
         </div>
         <Avatar
