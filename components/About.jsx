@@ -49,7 +49,7 @@ const About = () => (
             AWS, Next.js, and Competitive Programming are the things that
             I&apos;m into nowadays. Weight training, going to music festivals,
             phoenix dart, and snow boarding are my top hobbies. I also love
-            night Netflix movies, making friends, and listening to jazzy-house
+            making friends, night Netflix movies, and listening to jazzy-house
             mix when I write code. I&apos;m an inevitable coffee lover. I&apos;m
             currently open to job opportunities by the way, especially those in
             Canada. So please don&apos;t hesitate to reach me if you&apos;re a

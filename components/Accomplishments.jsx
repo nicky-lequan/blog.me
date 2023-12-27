@@ -127,7 +127,7 @@ const Accomplishments = () => {
           {imageIdx === -1 && (
             <div className="absolute right-12 top-12 w-[400px] h-[400px] hidden xl:flex xl:flex-col items-center justify-center rounded-[20px] bg-zinc-50 dark:bg-zinc-900 shadow-xl">
               <PhotoIcon className="!h-24 !w-24" />
-              Hover to see an image
+              Hover an event to see image
             </div>
           )}
           {imageIdx > -1 && (
