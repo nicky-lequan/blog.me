@@ -4,7 +4,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {textVariant} from '@/utils/motion';
-import {styles} from '@/app/styles';
+
 import {slideIn} from '@/utils/motion';
 import ContactForm from './ContactForm';
 import EarthCanvas from './EarthCanvas';
@@ -13,8 +13,12 @@ import StarsCanvas from './Stars';
 const Contact = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>I&apos;m just a few clicks away</p>
-      <h1 className={styles.sectionHeadText}>Contact</h1>
+      <p className="md:text-[14px] text-[10px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        I&apos;m just a few clicks away
+      </p>
+      <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+        Contact
+      </h1>
     </motion.div>
 
     <div className="relative z-0 bg-slate-800 dark:bg-transparent xl:mt-8 xl:flex-row flex-col-reverse flex gap-4 overflow-hidden rounded-[20px]">

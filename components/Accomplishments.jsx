@@ -4,7 +4,6 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {textVariant} from '@/utils/motion';
-import {styles} from '@/app/styles';
 import {fadeIn} from '@/utils/motion';
 import {
   Timeline,
@@ -85,8 +84,12 @@ const Accomplishments = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>The moments</p>
-        <h1 className={styles.sectionHeadText}>Accomplishments</h1>
+        <p className="md:text-[14px] text-[10px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+          The moments
+        </p>
+        <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+          Accomplishments
+        </h1>
       </motion.div>
 
       <motion.div

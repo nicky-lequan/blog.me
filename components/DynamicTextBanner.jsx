@@ -60,8 +60,8 @@ const DynamicTextBanner = () => {
       </p>
       <br />
       <p>
-        This website originally began with my pure interest on Next.js, but now
-        it turns out to be containg quite a lot of useful stuffs.
+        This website originally started with my pure interest in Next.js, but
+        now it turns out to contain quite a lot of useful stuff.
         <br />
         Feel free to fork, copy and use but don&apos;t forget to star&nbsp;
         <Link
@@ -69,8 +69,8 @@ const DynamicTextBanner = () => {
           className="font-bold text-blue-700 dark:text-rose-600 hover:underline">
           this repo
         </Link>
-        . It will keep evolving, and all of the contents & source code of this
-        blog will always be open to public.
+        . It will keep evolving, and all of the contents & source code will
+        always be open to public.
       </p>
     </div>
   );

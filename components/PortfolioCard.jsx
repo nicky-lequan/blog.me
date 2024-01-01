@@ -40,7 +40,7 @@ const PortfolioCard = ({title, thumbnail, linkUrl, desc}) => (
         <Button
           ripple={false}
           fullWidth={true}
-          className="bg-blue-gray-200/30 text-text shadow-none hover:scale-105 hover:shadow-none">
+          className="bg-slate-200 dark:bg-slate-800 text-text shadow-none hover:scale-105 hover:shadow-none">
           CHECKOUT
         </Button>
       </Link>

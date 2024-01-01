@@ -1,8 +1,9 @@
 import React from 'react';
-import './global.css';
 import NavBar from '@/components/NavBar';
-import {ThemeProvider} from './provider';
 import Footer from '@/components/Footer';
+import AppProvider from '../providers/AppProvider';
+import AlertWithContent from '@/components/AlertWithContent';
+import './global.css';
 
 export const metadata = {
   title: {
@@ -19,13 +20,14 @@ export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body className="bg-base flex flex-col h-screen justify-between">
-        <ThemeProvider attribute="class">
+        <AppProvider>
           <NavBar />
           <main className="mb-20 max-w-6xl mx-auto mt-24 min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
             {children}
           </main>
           <Footer />
-        </ThemeProvider>
+          <AlertWithContent />
+        </AppProvider>
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {fadeIn, textVariant} from '@/utils/motion';
-import {styles} from '@/app/styles';
+
 import {
   Tabs,
   TabsHeader,
@@ -120,8 +120,12 @@ const tabs = [
 const Portfolio = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>Art gallery</p>
-      <h1 className={styles.sectionHeadText}>Portfolio</h1>
+      <p className="md:text-[14px] text-[10px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        Art gallery
+      </p>
+      <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+        Portfolio
+      </h1>
     </motion.div>
 
     <motion.div className="mt-8" variants={fadeIn('left', 'tween', 0, 1)}>

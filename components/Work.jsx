@@ -4,7 +4,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {fadeIn, textVariant} from '@/utils/motion';
-import {styles} from '@/app/styles';
+
 import {
   Timeline,
   TimelineItem,
@@ -95,10 +95,12 @@ const experiences = [
 const Work = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>
+      <p className="md:text-[14px] text-[10px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
         Projects I&apos;ve experienced in LG CNS
       </p>
-      <h1 className={styles.sectionHeadText}>Work Experience.</h1>
+      <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+        Work Experience.
+      </h1>
     </motion.div>
 
     <motion.div

@@ -4,7 +4,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {textVariant} from '@/utils/motion';
-import {styles} from '@/app/styles';
+
 import {useTheme} from 'next-themes';
 import {useState, useEffect} from 'react';
 import CPCard from './CPCard';
@@ -55,10 +55,12 @@ const CompetitiveProgramming = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>
+        <p className="md:text-[14px] text-[10px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
           Athletes do weight training, programmers do what
         </p>
-        <h1 className={styles.sectionHeadText}>Competitive Programming</h1>
+        <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+          Competitive Programming
+        </h1>
       </motion.div>
 
       <div className="mt-8 py-4 flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
