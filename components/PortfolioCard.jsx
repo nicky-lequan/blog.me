@@ -24,12 +24,12 @@ const PortfolioCard = ({title, thumbnail, linkUrl, desc}) => (
       </CardHeader>
       <CardBody>
         <div className="mb-2">
-          <Typography className="font-semibold text-text">{title}</Typography>
+          <Typography className="text-text font-bold font-raleway">{title}</Typography>
         </div>
         <div className="flex flex-wrap gap-x-1">
           <Typography
             variant="small"
-            className="font-normal opacity-75 text-slate">
+            className="font-medium opacity-75 text-slate font-heavydata">
             {desc}
           </Typography>
         </div>
@@ -40,7 +40,7 @@ const PortfolioCard = ({title, thumbnail, linkUrl, desc}) => (
         <Button
           ripple={false}
           fullWidth={true}
-          className="bg-slate-200 dark:bg-slate-800 text-text shadow-none hover:scale-105 hover:shadow-none">
+          className="bg-slate-200 dark:bg-slate-800 text-text shadow-none hover:scale-105 hover:shadow-none font-bold">
           CHECKOUT
         </Button>
       </Link>

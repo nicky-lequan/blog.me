@@ -46,7 +46,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
           className="p-8 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-[20px]">
           <label className="flex flex-col">
-            <span className="text-text font-medium mb-4">Your Name</span>
+            <span className="text-text font-semibold mb-4">Your Name</span>
             <input
               type="text"
               name="name"
@@ -57,7 +57,7 @@ const ContactForm = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-text font-medium mb-4">Your Email</span>
+            <span className="text-text font-semibold mb-4">Your Email</span>
             <input
               type="email"
               name="email"
@@ -68,7 +68,7 @@ const ContactForm = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-text font-medium mb-4">Your Message</span>
+            <span className="text-text font-semibold mb-4">Your Message</span>
             <textarea
               rows={7}
               name="message"
@@ -84,7 +84,7 @@ const ContactForm = () => {
             ripple={false}
             fullWidth={true}
             disabled={loading}
-            className="bg-slate-300 dark:bg-slate-800 text-text shadow-none hover:scale-105 hover:shadow-none">
+            className="bg-slate-300 dark:bg-slate-800 text-text shadow-none hover:scale-105 hover:shadow-none font-raleway font-bold">
             {loading ? 'Sending...' : 'Send'}
           </Button>
         </form>

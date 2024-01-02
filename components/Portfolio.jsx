@@ -132,14 +132,14 @@ const Portfolio = () => (
       <Tabs value={tabs[0].id}>
         <TabsHeader
           indicatorProps={{
-            className: 'rounded-lg bg-primary/70 shadow-inner',
+            className: 'rounded-lg bg-primary/70 shadow-inner font-extrabold',
           }}
           className="bg-slate-200 dark:bg-zinc-950/40 shadow-xl">
           {tabs.map(({id, label, icon, items}) => (
             <Tab
               key={id}
               value={id}
-              className={`rounded-lg font-semibold text-text hover:bg-primary/40 hover:shadow-inner ${
+              className={`rounded-lg font-bold text-text hover:bg-primary/40 hover:shadow-inner ${
                 items.length === 0 ? 'hidden' : ''
               }`}>
               <div className="flex gap-x-2 items-center">

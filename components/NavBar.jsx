@@ -95,7 +95,7 @@ const NavBar = () => {
                 />
                 <Typography
                   variant="h4"
-                  className="my-auto font-['raleway'] font-extrabold lg:block hidden">
+                  className="my-auto font-raleway font-extrabold lg:block hidden">
                   jooncco.dev
                 </Typography>
               </div>

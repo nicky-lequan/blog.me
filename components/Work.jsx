@@ -121,7 +121,7 @@ const Work = () => (
                 />
               </TimelineIcon>
               <div className="flex gap-4 items-center">
-                <Typography variant="h5">{experience.title}</Typography>
+                <Typography variant="h5" className="font-raleway">{experience.title}</Typography>
                 {index === 0 && (
                   <Badge
                     content="Recent"
@@ -132,16 +132,16 @@ const Work = () => (
               </div>
             </TimelineHeader>
             <TimelineBody className="pb-8">
-              <Typography variant="small" className="text-[12px] font-bold">
+              <Typography variant="small" className="text-[12px] font-bold font-raleway">
                 {experience.companyName}
               </Typography>
-              <Typography variant="small" className="text-[12px]">
+              <Typography variant="small" className="text-[12px] font-raleway">
                 {experience.date}
               </Typography>
               <ul>
                 {experience.points.map((point, index) => (
                   <li key={index}>
-                    <Typography className="font-normal text-stone-600 dark:text-stone">
+                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata">
                       {point}
                     </Typography>
                   </li>

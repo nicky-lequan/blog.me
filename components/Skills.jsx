@@ -244,7 +244,7 @@ const Skills = () => {
             className="mb-2 rounded-[20px] border border-blue-gray-100 px-4 shadow-inner">
             <AccordionHeader
               onClick={() => handleOpen(index + 1)}
-              className={`border-b-0 transition-colors ${
+              className={`border-b-0 transition-colors font-raleway font-bold ${
                 open === index + 1
                   ? 'text-text hover:text-text'
                   : 'hover:text-text'

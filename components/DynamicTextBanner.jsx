@@ -55,7 +55,7 @@ const DynamicTextBanner = () => {
   return (
     <div className="px-8 py-20 flex flex-col justify-center bg-gradient-to-r from-primary dark:from-primary/90 shadow-md shadow-current dark:shadow-gray-800 rounded-xl">
       <p className="text-5xl mb-6 h-40 sm:h-24 md:h-20">
-        <span className="font-bold">{text}</span>
+        <span className="font-bold font-raleway">{text}</span>
         <span className="font-bold text-rose-700">|</span>
       </p>
       <br />
