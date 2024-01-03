@@ -3,7 +3,7 @@ import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import AppProvider from '../providers/AppProvider';
 import AlertWithContent from '@/components/AlertWithContent';
-import './global.css';
+import './globals.css';
 
 export const metadata = {
   title: {

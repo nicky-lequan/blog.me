@@ -1,12 +1,11 @@
 import React from 'react';
-import {Typography} from '@/providers/AppProvider';
 
 export default function Posts() {
   return (
     <>
-      <Typography variant="h1" className="my-6 font-['raleway'] font-extrabold">
+      <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
         Posts
-      </Typography>
+      </h1>
       The magic you&apos;re looking for is in the work you&apos;re avoiding.
     </>
   );

@@ -23,7 +23,7 @@ const experiences = [
     companyName: 'LG Electronics',
     iconSrc: '/img/company/lg.png',
     date: 'Feb 2023 - Nov 2023',
-    points: [
+    contribution: [
       'LGE SDP AppMod project: next generation IP TV web servers.',
       'Contribution:',
       '- Implemented REST APIs for IP TVs, which authenticates & initializes client module based on device meta data.',
@@ -37,7 +37,7 @@ const experiences = [
     companyName: 'Bithumb meta',
     iconSrc: '/img/company/bithumb.png',
     date: 'Mar 2022 - Dec 2022',
-    points: [
+    contribution: [
       'NFT marketplace Naemo World: https://naemo.io',
       'Contribution:',
       '- My Wallet page & related REST APIs (connext wallet, get balance, etc.)',
@@ -53,7 +53,7 @@ const experiences = [
     companyName: 'LG U+',
     iconSrc: '/img/company/lg.png',
     date: 'Jul 2021 - Feb 2022',
-    points: [
+    contribution: [
       'Cloud resource management platform UCMP: a platform we can manage standardized GCP/AWS cloud resources with ease.',
       'Contribution: ',
       '- Implemented 2FA via email',
@@ -68,7 +68,7 @@ const experiences = [
     companyName: 'Hanwha Life Insurance',
     iconSrc: '/img/company/hanwha.png',
     date: 'Feb 2021 - Jun 2021',
-    points: [
+    contribution: [
       'Hanhwa point platform P3: reliable point management based on blockchain ledger.',
       'Contribution:',
       '- Point transaction REST APIs (payment, transfer, refund)',
@@ -81,7 +81,7 @@ const experiences = [
     companyName: 'Okimoki',
     iconSrc: '/img/company/okimoki.png',
     date: 'Jan 2020 - Dec 2020',
-    points: [
+    contribution: [
       'LG CNS coffee order chatbot Okimoki: order your coffee inside Kakao talk.',
       'Contribution:',
       '- Designed & implemented 3 back-end microservices (store, menu, order)',
@@ -135,13 +135,13 @@ const Work = () => (
               <Typography variant="small" className="text-[12px] font-bold font-raleway">
                 {experience.companyName}
               </Typography>
-              <Typography variant="small" className="text-[12px] font-raleway">
+              <Typography variant="small" className="text-[12px] font-normal font-raleway">
                 {experience.date}
               </Typography>
               <ul>
-                {experience.points.map((point, index) => (
+                {experience.contribution.map((point, index) => (
                   <li key={index}>
-                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata">
+                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
                       {point}
                     </Typography>
                   </li>
