@@ -11,7 +11,7 @@ import Accomplishments from '@/components/Accomplishments';
 
 export default function Home() {
   return (
-    <>
+    <div className="max-w-6xl min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
       <DynamicTextBanner />
       <About />
       <Work />
@@ -21,6 +21,6 @@ export default function Home() {
       <Accomplishments />
       <Testimonials />
       <Contact />
-    </>
+    </div>
   );
 }

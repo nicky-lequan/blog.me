@@ -22,9 +22,7 @@ export default function RootLayout({children}) {
       <body className="bg-base flex flex-col h-screen justify-between">
         <AppProvider>
           <NavBar />
-          <main className="mb-20 max-w-6xl mx-auto mt-24 min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
-            {children}
-          </main>
+          <main className="my-24 mx-auto">{children}</main>
           <Footer />
           <AlertWithContent />
         </AppProvider>

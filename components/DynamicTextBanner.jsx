@@ -66,7 +66,7 @@ const DynamicTextBanner = () => {
         Feel free to fork, copy and use but don&apos;t forget to star&nbsp;
         <Link
           href="https://github.com/jooncco/jooncco.dev-fe"
-          className="font-bold text-blue-700 dark:text-rose-600 hover:underline">
+          className="font-bold text-blue-700 dark:text-pink-800 hover:underline">
           this repo
         </Link>
         . It will keep evolving, and all of the contents & source code will
