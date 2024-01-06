@@ -9,18 +9,18 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Accomplishments from '@/components/Accomplishments';
 
-export default function Home() {
-  return (
-    <div className="max-w-6xl min-w-0 px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
-      <DynamicTextBanner />
-      <About />
-      <Work />
-      <Skills />
-      <Portfolio />
-      <CompetitiveProgramming />
-      <Accomplishments />
-      <Testimonials />
-      <Contact />
-    </div>
-  );
-}
+const HomePage = () => (
+  <div className="px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
+    <DynamicTextBanner />
+    <About />
+    <Work />
+    <Skills />
+    <Portfolio />
+    <CompetitiveProgramming />
+    <Accomplishments />
+    <Testimonials />
+    <Contact />
+  </div>
+);
+
+export default HomePage;

@@ -26,7 +26,7 @@ const DynamicTextBanner = () => {
     };
   });
 
-  function tick() {
+  const tick = () => {
     const fullText = texts[textIdx];
     const updatedText = isDeleting
       ? text.substring(0, text.length - 1)
@@ -50,7 +50,7 @@ const DynamicTextBanner = () => {
       setIsDeleting(true);
       setTypeInterval(period);
     }
-  }
+  };
 
   return (
     <div className="px-8 py-20 flex flex-col justify-center bg-gradient-to-r from-primary dark:from-primary/90 shadow-md shadow-current dark:shadow-gray-800 rounded-xl">

@@ -16,17 +16,19 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({children}) {
+const RootLayout = ({children}) => {
   return (
     <html lang="en">
       <body className="bg-base flex flex-col h-screen justify-between">
         <AppProvider>
           <NavBar />
-          <main className="my-24 mx-auto">{children}</main>
+          <main className="my-24 mx-auto max-w-6xl min-w-0">{children}</main>
           <Footer />
           <AlertWithContent />
         </AppProvider>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

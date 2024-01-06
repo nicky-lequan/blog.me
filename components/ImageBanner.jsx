@@ -1,12 +1,12 @@
 'use client';
 
 import React from 'react';
-import '../styles/imagebanner.css';
 import {InfinityIcon} from './Icons';
+import '../styles/imagebanner.css';
 
-const ImageBanner = () => {
+const ImageBanner = ({className}) => {
   return (
-    <div className="mx-auto canvas">
+    <div className={`${className} canvas`}>
       <InfinityIcon className="!w-[460px] !h-[460px]" />
       <svg className="h-0">
         <filter id="wave">

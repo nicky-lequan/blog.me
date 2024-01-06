@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {ThemeProvider} from 'next-themes';
-import {Typography} from '@material-tailwind/react';
+import {Typography, Button} from '@material-tailwind/react';
 import AlertProvider from './AlertProvider';
 
 const AppProvider = ({children}) => {
@@ -13,5 +13,5 @@ const AppProvider = ({children}) => {
   );
 };
 
-export {Typography};
+export {Typography, Button};
 export default AppProvider;
