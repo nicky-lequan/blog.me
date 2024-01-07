@@ -128,20 +128,20 @@ const Accomplishments = () => {
             ))}
           </Timeline>
           {imageIdx === -1 && (
-            <div className="absolute right-12 top-12 w-[400px] h-[400px] hidden xl:flex xl:flex-col items-center justify-center rounded-[20px] bg-zinc-50 dark:bg-zinc-900 shadow-xl">
+            <div className="absolute right-12 top-12 w-[400px] h-[400px] hidden xl:flex xl:flex-col items-center justify-center rounded-xl bg-zinc-50 dark:bg-zinc-900 shadow-xl">
               <PhotoIcon className="!h-24 !w-24" />
               Hover an event to see image
             </div>
           )}
           {imageIdx > -1 && (
-            <div className="p-[1px] green-violet-gradient absolute right-10 top-10 rounded-3xl hidden xl:block shadow-xl">
-              <div className="p-2 bg-zinc-50 dark:bg-zinc-900 rounded-3xl">
+            <div className="p-[1px] green-violet-gradient absolute right-10 top-10 rounded-xl hidden xl:block shadow-xl">
+              <div className="p-2 bg-zinc-50 dark:bg-zinc-900 rounded-xl">
                 <Image
                   src={accomplishments[imageIdx].imageSrc}
                   alt="trailer"
                   width={400}
                   height={400}
-                  className="rounded-[20px]"
+                  className="rounded-lg"
                 />
               </div>
             </div>
