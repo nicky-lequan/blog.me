@@ -95,7 +95,7 @@ const experiences = [
 const Work = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className="md:text-[14px] text-[10px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+      <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
         Projects I&apos;ve experienced in LG CNS
       </p>
       <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
@@ -121,7 +121,9 @@ const Work = () => (
                 />
               </TimelineIcon>
               <div className="flex gap-4 items-center">
-                <Typography variant="h5" className="font-raleway">{experience.title}</Typography>
+                <Typography variant="h5" className="font-raleway">
+                  {experience.title}
+                </Typography>
                 {index === 0 && (
                   <Badge
                     content="Recent"
@@ -132,10 +134,14 @@ const Work = () => (
               </div>
             </TimelineHeader>
             <TimelineBody className="pb-8">
-              <Typography variant="small" className="text-[12px] font-bold font-raleway">
+              <Typography
+                variant="small"
+                className="text-[12px] font-bold font-raleway">
                 {experience.companyName}
               </Typography>
-              <Typography variant="small" className="text-[12px] font-normal font-raleway">
+              <Typography
+                variant="small"
+                className="text-[12px] font-normal font-raleway">
                 {experience.date}
               </Typography>
               <ul>

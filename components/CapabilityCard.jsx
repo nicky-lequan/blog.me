@@ -7,7 +7,7 @@ import React from 'react';
 import {Tilt} from 'react-tilt';
 
 const CapabilityCard = ({index, title, iconSrc}) => (
-  <Tilt className="sm:w-[200px] w-full">
+  <Tilt className="sm:w-[200px] w-full max-w-sm">
     <motion.div
       initial="hidden"
       whileInView="show"

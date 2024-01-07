@@ -12,7 +12,7 @@ import {
   Tab,
   TabPanel,
 } from '@material-tailwind/react';
-import PortfolioCard from './PortfolioCard';
+import PortfolioCardVertical from './PortfolioCardVertical';
 import {
   BlockchainIcon,
   BrainIcon,
@@ -20,6 +20,7 @@ import {
   GlobeIcon,
   WrenchScrewdriverIcon,
 } from './Icons';
+import PortfolioCardHorizontal from './PortfolioCardHorizontal';
 
 const tabs = [
   {
@@ -120,7 +121,7 @@ const tabs = [
 const Portfolio = () => (
   <>
     <motion.div variants={textVariant()}>
-      <p className="md:text-[14px] text-[10px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+      <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
         Art gallery
       </p>
       <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
@@ -161,14 +162,23 @@ const Portfolio = () => (
               key={id}
               value={id}
               className="p-6 flex flex-wrap gap-x-6 gap-y-4">
-              {items.map(({title, thumbnail, linkUrl, desc}, index) => (
-                <PortfolioCard
-                  key={index}
-                  title={title}
-                  thumbnail={thumbnail}
-                  linkUrl={linkUrl}
-                  desc={desc}
-                />
+              {items.map(({title, thumbnail, linkUrl, desc}) => (
+                <div key={title}>
+                  <PortfolioCardVertical
+                    title={title}
+                    thumbnail={thumbnail}
+                    linkUrl={linkUrl}
+                    desc={desc}
+                    className="hidden lg:block"
+                  />
+                  <PortfolioCardHorizontal
+                    title={title}
+                    thumbnail={thumbnail}
+                    linkUrl={linkUrl}
+                    desc={desc}
+                    className="block lg:hidden"
+                  />
+                </div>
               ))}
             </TabPanel>
           ))}
