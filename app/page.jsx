@@ -10,7 +10,7 @@ import Contact from '@/components/Contact';
 import Accomplishments from '@/components/Accomplishments';
 
 const HomePage = () => (
-  <div className="px-6 py-4 flex-auto flex flex-col bg-neutral rounded-2xl">
+  <div className="p-4 flex-auto flex flex-col bg-neutral rounded-2xl">
     <DynamicTextBanner />
     <About />
     <Work />
