@@ -95,7 +95,7 @@ const NavBar = () => {
                 />
                 <Typography
                   variant="h4"
-                  className="my-auto font-caskaydia font-extrabold lg:block hidden">
+                  className="my-auto font-caskaydia font-black lg:block hidden">
                   jooncco.dev
                 </Typography>
               </div>
@@ -113,7 +113,7 @@ const NavBar = () => {
                         <Link
                           key={path}
                           href={path}
-                          className="transition-all rounded-md flex align-middle">
+                          className="transition-all rounded-md flex align-middle hover:bg-slate-600/10 dark:hover:bg-slate-400/10">
                           <span className="relative py-[5px] px-[10px] text-xl">
                             {name}
                           </span>
