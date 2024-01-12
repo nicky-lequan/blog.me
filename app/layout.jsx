@@ -19,10 +19,12 @@ export const metadata = {
 const RootLayout = ({children}) => {
   return (
     <html lang="en">
-      <body className="bg-base flex flex-col h-screen justify-between">
+      <body className="bg-base">
         <AppProvider>
           <NavBar />
-          <main className="my-24 mx-auto max-w-6xl min-w-0">{children}</main>
+          <main className="flex flex-col my-24 mx-auto max-w-6xl min-w-0">
+            {children}
+          </main>
           <Footer />
           <AlertWithContent />
         </AppProvider>
