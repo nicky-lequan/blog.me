@@ -12,7 +12,7 @@ const DynamicTextBanner = () => {
   ];
   const [textIdx, setTextIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const initialTypeInterval = 80;
+  const initialTypeInterval = 50;
   const [typeInterval, setTypeInterval] = useState(initialTypeInterval);
   const period = 2000;
 
@@ -60,17 +60,15 @@ const DynamicTextBanner = () => {
       </p>
       <br />
       <p>
-        This website originally started with my pure interest in Next.js, but
-        now it turns out to contain quite a lot of useful stuff.
+        This is the place where I collect & share what I&apos;ve learned.
         <br />
-        Feel free to fork, copy and use but don&apos;t forget to star&nbsp;
+        Wanna dig into the source code of this blog ? Visit &nbsp;
         <Link
           href="https://github.com/jooncco/jooncco.dev-fe"
           className="font-bold text-blue-700 dark:text-pink-800 hover:underline">
-          this repo
+          here
         </Link>
-        . It will keep evolving, and all of the contents & source code will
-        always be open to public.
+        . It&apos;s under MIT liscence.
       </p>
     </div>
   );
