@@ -1,10 +1,8 @@
 'use client';
 
-import React from 'react';
 import {motion} from 'framer-motion';
 import {SectionWrapper} from './hoc';
 import {fadeIn, textVariant} from '@/utils/motion';
-
 import {
   Tabs,
   TabsHeader,
@@ -12,7 +10,7 @@ import {
   Tab,
   TabPanel,
 } from '@material-tailwind/react';
-import PortfolioCardVertical from './PortfolioCardVertical';
+import PortfolioCard from './PortfolioCard';
 import {
   BlockchainIcon,
   BrainIcon,
@@ -20,7 +18,6 @@ import {
   GlobeIcon,
   WrenchScrewdriverIcon,
 } from './Icons';
-import PortfolioCardHorizontal from './PortfolioCardHorizontal';
 
 const tabs = [
   {
@@ -31,26 +28,30 @@ const tabs = [
       {
         title: 'jooncco.dev-fe',
         thumbnail: '/img/portfolio/jooncco.dev-fe.png',
-        linkUrl: 'https://github.com/jooncco/jooncco.dev-fe',
-        desc: "Jooncco's knowledge base frontend, built with Next.js 14.",
-      },
-      {
-        title: 'naemo.io',
-        thumbnail: '/img/portfolio/nftmarketplace.png',
-        linkUrl: 'https://naemo.io',
-        desc: "Exchange fancy NFTs with crypto currency such as Ethereum, Solana and more. Built with React.js and now it's maintained by bithumb meta.",
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/jooncco.dev-fe',
+        desc: "Jooncco's knowledge base front end, built with Next.js 14.",
       },
       {
         title: 'Spring Boot API Server Template',
         thumbnail: '/img/portfolio/springapiservertemplate.png',
-        linkUrl: 'https://github.com/jooncco/spring-api-server-template',
-        desc: 'Spring Boot api server example, aiming to show best practices in production-level.',
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/spring-api-server-template',
+        desc: 'Spring Boot api server example. The main goal here is to showcase best practices in a production-level server.',
       },
       {
         title: 'jooncco.github.io',
         thumbnail: '/img/portfolio/jooncco.github.io.png',
-        linkUrl: 'https://github.com/jooncco/jooncco.github.io',
-        desc: "[Deprecated] A blog based on github.io and jekyll template 'Minimal Mistakes'.",
+        demoUrl: 'https://jooncco.github.io',
+        githubUrl: 'https://github.com/jooncco/jooncco.github.io',
+        desc: "[Legacy] A blog based on github.io and jekyll template 'Minimal Mistakes'.",
+      },
+      {
+        title: 'naemo.io',
+        thumbnail: '/img/portfolio/nftmarketplace.png',
+        demoUrl: 'https://naemo.io',
+        githubUrl: '',
+        desc: "Exchange fancy NFTs with crypto currency such as Ethereum, Solana and more. Built with React.js and now it's maintained by bithumb meta.",
       },
     ],
   },
@@ -74,19 +75,22 @@ const tabs = [
       {
         title: 'Bitcoin Price Predictor',
         thumbnail: '/img/portfolio/bitcoinpricepredictor.png',
-        linkUrl: 'https://github.com/jooncco/bitcoin-price-predictor',
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/bitcoin-price-predictor',
         desc: '[Undergraduate] Bitcoin price prediction with market indicators and google trend using regression models & LSTM RNN',
       },
       {
         title: 'Coindrop Game AI Agent',
         thumbnail: '/img/portfolio/coindropgameaiagent.png',
-        linkUrl: 'https://github.com/jooncco/coindrop-game-ai-agent',
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/coindrop-game-ai-agent',
         desc: '[Undergraduate] Reflex agent trained with reinforcement learning(Q-learning). This agent plays coin drop game implemented using pygame module.',
       },
       {
         title: '"is a" Relationship Teller',
         thumbnail: '/img/portfolio/isarelationshipteller.png',
-        linkUrl: 'https://github.com/jooncco/is-A-relationship-teller',
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/is-A-relationship-teller',
         desc: '[Undergraduate] NLP for Korean words. Returns whether a given {Entity, Concept} pair is in "is-a" relationship or not.',
       },
     ],
@@ -99,19 +103,22 @@ const tabs = [
       {
         title: 'Kakaotalk Chat Exporter',
         thumbnail: '/img/portfolio/kakaotalkchatexporter.png',
-        linkUrl: 'https://github.com/jooncco/kakaotalk-chat-exporter',
-        desc: 'Automated text exporter for Kakaotalk messenger.',
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/kakaotalk-chat-exporter',
+        desc: 'Simple macro for Kakaotalk messenger app. Exports contents of a chat Uses OpenCV library.',
       },
       {
         title: 'CP Snippet Java',
         thumbnail: '/img/portfolio/cpsnippetjava.png',
-        linkUrl: 'https://github.com/jooncco/cp-snippet-java',
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/cp-snippet-java',
         desc: 'Json for java code snippets. Extremly useful when competitive programming.',
       },
       {
         title: 'CP Stamper C++',
         thumbnail: '/img/portfolio/cpstampercpp.png',
-        linkUrl: 'https://github.com/jooncco/cp-stamper-cpp',
+        demoUrl: '',
+        githubUrl: 'https://github.com/jooncco/cp-stamper-cpp',
         desc: 'Simple comment writer. The comment generated contains author and timestamp.',
       },
     ],
@@ -161,24 +168,16 @@ const Portfolio = () => (
             <TabPanel
               key={id}
               value={id}
-              className="p-6 flex flex-wrap gap-x-6 gap-y-4">
-              {items.map(({title, thumbnail, linkUrl, desc}) => (
-                <div key={title}>
-                  <PortfolioCardVertical
-                    title={title}
-                    thumbnail={thumbnail}
-                    linkUrl={linkUrl}
-                    desc={desc}
-                    className="hidden lg:block"
-                  />
-                  <PortfolioCardHorizontal
-                    title={title}
-                    thumbnail={thumbnail}
-                    linkUrl={linkUrl}
-                    desc={desc}
-                    className="block lg:hidden"
-                  />
-                </div>
+              className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {items.map(({title, thumbnail, githubUrl, demoUrl, desc}) => (
+                <PortfolioCard
+                  key={title}
+                  title={title}
+                  thumbnail={thumbnail}
+                  githubUrl={githubUrl}
+                  demoUrl={demoUrl}
+                  desc={desc}
+                />
               ))}
             </TabPanel>
           ))}
