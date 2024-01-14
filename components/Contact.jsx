@@ -14,7 +14,7 @@ const Contact = () => (
   <>
     <motion.div variants={textVariant()}>
       <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-        I&apos;m just a few clicks away
+        Tell me about your company
       </p>
       <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
         Contact

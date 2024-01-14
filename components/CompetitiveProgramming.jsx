@@ -56,7 +56,7 @@ const CompetitiveProgramming = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-          Athletes do weight training, programmers do what
+          Love problem solving
         </p>
         <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
           Competitive Programming
