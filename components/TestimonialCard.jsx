@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import React from 'react';
-
 const TestimonialCard = ({title, content, imageSource, author, jobTitle}) => (
   <figure className="mt-4 mb-12 mx-4 md:mx-auto md:w-7/12 green-violet-gradient p-[1px] rounded-[20px] drop-shadow-xl">
     <div className="p-8 flex flex-col items-center justify-center text-center bg-white/90 dark:bg-slate-950/90 shadow-lg shadow-current dark:shadow-gray-800 rounded-[20px]">

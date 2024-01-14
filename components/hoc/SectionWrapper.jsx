@@ -1,4 +1,3 @@
-import React from 'react';
 import {motion} from 'framer-motion';
 import {staggerContainer} from '@/utils/motion';
 
@@ -9,7 +8,7 @@ const SectionWrapper = (Component, idName) => {
       initial="hidden"
       whileInView="show"
       viewport={{once: true, amount: 0.25}}
-      className="my-14 px-4">
+      className="mt-32 mb-56 px-8">
       <span className="hash-span" id={idName}>
         &nbsp;
       </span>
