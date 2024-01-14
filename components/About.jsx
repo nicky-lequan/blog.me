@@ -34,7 +34,7 @@ const About = () => (
       <div className="w-5 h-5 rounded-full bg-primary" />
       <div className="w-1 sm:h-[520px] h-[480px] bg-gradient-to-b from-primary" />
     </div>
-    <div className="lg:px-4">
+    <div className="px-4">
       <div className="flex flex-row justify-between items-center">
         <div>
           <h1 className="mt-8 font-black text-[40px] xs:text-[50px] sm:text-[60px] lg:text-[80px] lg:leading-[98px]">
@@ -44,16 +44,13 @@ const About = () => (
             I&apos;M A BUILDER. <br />
           </p>
           <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[10px] xs:text-[14px] sm:text-[18px] lg:text-[24px] sm:leading-[24px]">
-            I build whatever I want to, with whatever I need.
+            I build whatever I want to, with whatever needed.
             <br />
-            AWS, Next.js, and Competitive Programming are the things that
-            I&apos;m into nowadays. Weight training, going to music festivals,
-            phoenix dart, and snow boarding are my top hobbies. I also love
-            making friends, night Netflix movies, and listening to jazzy-house
-            mix when I write code. I&apos;m an inevitable coffee lover. I&apos;m
-            currently open to job opportunities by the way, especially those in
-            Canada. So please don&apos;t hesitate to reach me if you&apos;re a
-            manager, developer, or whatever your position is.
+            Recently I&apos;m digging Next.js, Amazon EKS, and Competitive
+            Programming with Java. Weight training gives me power and positive
+            mindset and that is why I go to the gym at least 3 times a week.
+            House music, phoenix darts, computer games and snow boarding are my
+            favorite hobbies. I&apos;m an undeniable coffee aficionado.
           </p>
         </div>
         <Avatar
