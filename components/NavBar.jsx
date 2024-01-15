@@ -1,14 +1,11 @@
-'use client';
-
-import React, {useEffect, useRef, useState} from 'react';
-import {SunIcon, MoonIcon, EllipsisHorizontalIcon, XMarkIcon} from './Icons';
 import Link from 'next/link';
 import Image from 'next/image';
-import {LayoutGroup} from 'framer-motion';
-import {useTheme} from 'next-themes';
-import {IconButton, Typography} from '@material-tailwind/react';
+import {Typography} from '@/providers/AppProvider';
+import MobileMenu from './navbar/MobileMenu';
+import ThemeButton from './navbar/ThemeButton';
+import PCMenu from './navbar/PCMenu';
 
-const navItems = [
+export const navItems = [
   {
     name: 'About',
     path: '/#about',
@@ -31,149 +28,38 @@ const navItems = [
   },
 ];
 
-const NavBar = () => {
-  const {systemTheme, theme, setTheme} = useTheme();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const mobileMenuRef = useRef();
-  const [isRendered, setIsRendered] = useState(false);
-
-  useEffect(() => {
-    const handleMobileMenuClickAway = (event) => {
-      if (
-        mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target)
-      ) {
-        setMobileMenuOpen(false);
-      }
-    };
-
-    window.addEventListener('mousedown', handleMobileMenuClickAway);
-    setIsRendered(true);
-    return () => {
-      window.removeEventListener('mousedown', handleMobileMenuClickAway);
-    };
-  }, [mobileMenuRef]);
-
-  const isDarkTheme = () => {
-    return theme === 'system'
-      ? systemTheme === 'dark'
-        ? true
-        : false
-      : theme === 'dark'
-      ? true
-      : false;
-  };
-
-  const toggleTheme = () => {
-    setTheme(isDarkTheme() ? 'light' : 'dark');
-  };
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(mobileMenuOpen ? false : true);
-  };
-
+function NavBar() {
   return (
-    <>
-      <div className="fixed top-0 w-full z-50 bg-[#DEF2FF]/90 dark:bg-[#0A090D]/90">
-        <div className="mx-auto sm:px-4 px-2 flex flex-row h-[81px] max-w-7xl justify-between items-center">
-          {/* left */}
-          <div className="flex flex-row my-auto">
-            {/* logo */}
-            <Link
-              href="/"
-              className="my-auto"
-              onClick={() => {
-                window.scrollTo(0, 0);
-              }}>
-              <div className="flex flex-row space-x-2">
-                <Image
-                  src="/img/logo.png"
-                  alt="logo image"
-                  width={70}
-                  height={70}
-                  priority={true}
-                />
-                <Typography
-                  variant="h4"
-                  className="my-auto font-caskaydia font-black lg:block hidden">
-                  jooncco.dev
-                </Typography>
-              </div>
-            </Link>
-          </div>
-          {/* right */}
-          {isRendered && (
-            <div className="flex flex-row my-auto space-x-1">
-              {/* pc menu */}
-              <div className="my-auto md:block hidden">
-                <LayoutGroup>
-                  <nav className="flex space-x-4">
-                    {navItems.map(({name, path}) => {
-                      return (
-                        <Link
-                          key={path}
-                          href={path}
-                          className="transition-all rounded-md flex align-middle hover:bg-slate-600/10 dark:hover:bg-slate-400/10">
-                          <span className="relative py-[5px] px-[10px] text-xl">
-                            {name}
-                          </span>
-                        </Link>
-                      );
-                    })}
-                  </nav>
-                </LayoutGroup>
-              </div>
-              {/* mobile menu */}
-              <div
-                ref={mobileMenuRef}
-                className="md:hidden flex flex-1 justify-end items-center">
-                <IconButton
-                  size="sm"
-                  variant="text"
-                  className="my-auto rounded-full text-black dark:text-white"
-                  onClick={toggleMobileMenu}>
-                  {!mobileMenuOpen && <EllipsisHorizontalIcon />}
-                  {mobileMenuOpen && <XMarkIcon />}
-                </IconButton>
-
-                <div
-                  className={`${
-                    !mobileMenuOpen ? 'hidden' : 'flex'
-                  } m-2 p-[1px] absolute top-20 right-1 min-w-[140px] z-10 green-violet-gradient shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
-                  <div className="p-4 w-full bg-white/90 dark:bg-slate-950/90 rounded-xl">
-                    <ul className="p-0 list-none flex justify-end items-start flex-col gap-4 font-bold">
-                      {navItems.map(({name, path}) => (
-                        <Link
-                          key={path}
-                          href={path}
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            setMobileMenuOpen(false);
-                          }}>
-                          {name}
-                        </Link>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              {/* dark mode button */}
-              <div className="flex flex-row px-2">
-                <IconButton
-                  size="sm"
-                  variant="text"
-                  className="my-auto rounded-full text-black dark:text-white"
-                  onClick={toggleTheme}>
-                  {isDarkTheme() && <MoonIcon className="h-6 w-6" />}
-                  {!isDarkTheme() && <SunIcon className="h-6 w-6" />}
-                </IconButton>
-              </div>
+    <div className="fixed top-0 w-full z-50 bg-[#DEF2FF]/90 dark:bg-[#0A090D]/90">
+      <div className="mx-auto sm:px-4 px-2 flex flex-row h-[81px] max-w-7xl justify-between items-center">
+        {/* left */}
+        <div className="flex flex-row my-auto">
+          {/* logo */}
+          <Link href="/" className="my-auto">
+            <div className="flex flex-row space-x-2">
+              <Image
+                src="/img/logo.png"
+                alt="logo image"
+                width={70}
+                height={70}
+                priority={true}
+              />
+              <Typography
+                variant="h4"
+                className="my-auto font-caskaydia font-black lg:block hidden">
+                jooncco.dev
+              </Typography>
             </div>
-          )}
+          </Link>
+        </div>
+        <div className="flex flex-row my-auto space-x-1">
+          <PCMenu />
+          <MobileMenu />
+          <ThemeButton />
         </div>
       </div>
-    </>
+    </div>
   );
-};
+}
 
 export default NavBar;

@@ -1,5 +1,4 @@
 import React from 'react';
-import DynamicTextBanner from '../components/DynamicTextBanner';
 import About from '../components/About';
 import Work from '@/components/Work';
 import CompetitiveProgramming from '@/components/CompetitiveProgramming';
