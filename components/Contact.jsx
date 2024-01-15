@@ -21,7 +21,7 @@ const Contact = () => (
       </h1>
     </motion.div>
 
-    <div className="relative z-0 bg-slate-800 dark:bg-transparent xl:mt-8 xl:flex-row flex-col-reverse flex gap-4 overflow-hidden rounded-[20px]">
+    <div className="relative z-0 bg-slate-900 dark:bg-transparent mt-8 xl:flex-row flex-col-reverse flex gap-4 overflow-hidden rounded-[20px]">
       <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className="z-1">
         <ContactForm />
       </motion.div>
