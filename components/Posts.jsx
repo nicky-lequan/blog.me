@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useState} from 'react';
+import {useState} from 'react';
 import {Button} from '@/providers/AppProvider';
 import PostCardVertical from './PostCardVertical';
 import PostCardHorizontal from './PostCardHorizontal';
@@ -23,7 +23,7 @@ const tags = [
   'cloud',
 ];
 
-const Posts = () => {
+function Posts() {
   const [seletedTags, setSelectedTags] = useState([]);
 
   const handleClick = (tag) => {
@@ -78,6 +78,6 @@ const Posts = () => {
       </div>
     </>
   );
-};
+}
 
 export default Posts;

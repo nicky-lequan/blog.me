@@ -1,8 +1,7 @@
 'use client';
 
-import React from 'react';
+import SectionWrapper from './hoc/SectionWrapper';
 import {motion} from 'framer-motion';
-import {SectionWrapper} from './hoc';
 import {fadeIn, textVariant} from '@/utils/motion';
 
 import {
@@ -15,7 +14,7 @@ import {
   Typography,
   Avatar,
   Badge,
-} from '@material-tailwind/react';
+} from '@/providers/AppProvider';
 
 const experiences = [
   {
@@ -91,91 +90,93 @@ const experiences = [
   },
 ];
 
-const Work = () => (
-  <>
-    <motion.div variants={textVariant()}>
-      <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-        Projects
-      </p>
-      <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
-        Work Experience.
-      </h1>
-    </motion.div>
+function Work() {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+          Projects
+        </p>
+        <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+          Work Experience.
+        </h1>
+      </motion.div>
 
-    <motion.div
-      className="mt-8 flex flex-col h-[960px] overflow-scroll px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[20px] shadow-inner"
-      variants={fadeIn('left', 'tween', 0, 1)}>
-      <Timeline>
-        {experiences.map((experience, index) => (
-          <TimelineItem key={index}>
-            <TimelineConnector />
-            <TimelineHeader>
-              <TimelineIcon className="p-0">
-                <Avatar
-                  size="sm"
-                  src={experience.iconSrc}
-                  alt={experience.companyName}
-                  withBorder
-                  className="border-gray-200 bg-white"
-                />
-              </TimelineIcon>
-              <div className="flex gap-4 items-center">
-                <Typography variant="h5" className="font-raleway">
-                  {experience.title}
-                </Typography>
-                {index === 0 && (
-                  <Badge
-                    content="Recent"
-                    className="text-[8px] font-bold bg-gradient-to-r from-primary to-indigo-500 dark:via-purple-500 dark:to-pink-500">
-                    &nbsp;
-                  </Badge>
-                )}
-              </div>
-            </TimelineHeader>
-            <TimelineBody className="pb-8">
-              <Typography
-                variant="small"
-                className="text-[12px] font-bold font-raleway">
-                Client: {experience.companyName}
-              </Typography>
-              <Typography
-                variant="small"
-                className="text-[12px] font-normal font-raleway">
-                {experience.date}
-              </Typography>
-              <ul>
-                <li>
-                  <Typography className="font-bold text-stone-600 dark:text-stone font-heavydata text-[14px]">
-                    {experience.description}
+      <motion.div
+        className="mt-8 flex flex-col h-[960px] overflow-scroll px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[20px] shadow-inner"
+        variants={fadeIn('left', 'tween', 0, 1)}>
+        <Timeline>
+          {experiences.map((experience, index) => (
+            <TimelineItem key={index}>
+              <TimelineConnector />
+              <TimelineHeader>
+                <TimelineIcon className="p-0">
+                  <Avatar
+                    size="sm"
+                    src={experience.iconSrc}
+                    alt={experience.companyName}
+                    withBorder
+                    className="border-gray-200 bg-white"
+                  />
+                </TimelineIcon>
+                <div className="flex gap-4 items-center">
+                  <Typography variant="h5" className="font-raleway">
+                    {experience.title}
                   </Typography>
-                </li>
-                {experience.contributions && (
+                  {index === 0 && (
+                    <Badge
+                      content="Recent"
+                      className="text-[8px] font-bold bg-gradient-to-r from-primary to-indigo-500 dark:via-purple-500 dark:to-pink-500">
+                      &nbsp;
+                    </Badge>
+                  )}
+                </div>
+              </TimelineHeader>
+              <TimelineBody className="pb-8">
+                <Typography
+                  variant="small"
+                  className="text-[12px] font-bold font-raleway">
+                  Client: {experience.companyName}
+                </Typography>
+                <Typography
+                  variant="small"
+                  className="text-[12px] font-normal font-raleway">
+                  {experience.date}
+                </Typography>
+                <ul>
                   <li>
-                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
-                      Contributions:
+                    <Typography className="font-bold text-stone-600 dark:text-stone font-heavydata text-[14px]">
+                      {experience.description}
                     </Typography>
                   </li>
-                )}
-                {experience.contributions &&
-                  experience.contributions.map((contribution, index) => (
-                    <li key={index}>
+                  {experience.contributions && (
+                    <li>
                       <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
-                        - {contribution}
+                        Contributions:
                       </Typography>
                     </li>
-                  ))}
-                <li>
-                  <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
-                    Stack: {experience.stack}
-                  </Typography>
-                </li>
-              </ul>
-            </TimelineBody>
-          </TimelineItem>
-        ))}
-      </Timeline>
-    </motion.div>
-  </>
-);
+                  )}
+                  {experience.contributions &&
+                    experience.contributions.map((contribution, index) => (
+                      <li key={index}>
+                        <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
+                          - {contribution}
+                        </Typography>
+                      </li>
+                    ))}
+                  <li>
+                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
+                      Stack: {experience.stack}
+                    </Typography>
+                  </li>
+                </ul>
+              </TimelineBody>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </motion.div>
+    </>
+  );
+}
 
 export default SectionWrapper(Work, 'work');

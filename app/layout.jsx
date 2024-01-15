@@ -1,4 +1,3 @@
-import React from 'react';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import AppProvider from '../providers/AppProvider';
@@ -16,7 +15,7 @@ export const metadata = {
   },
 };
 
-const RootLayout = ({children}) => {
+function RootLayout({children}) {
   return (
     <html lang="en">
       <body className="bg-base">
@@ -31,6 +30,6 @@ const RootLayout = ({children}) => {
       </body>
     </html>
   );
-};
+}
 
 export default RootLayout;

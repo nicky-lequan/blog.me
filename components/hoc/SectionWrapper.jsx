@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion';
 import {staggerContainer} from '@/utils/motion';
 
-const SectionWrapper = (Component, idName) => {
+function SectionWrapper(Component, idName) {
   const WrappedSection = () => (
     <motion.section
       variants={staggerContainer()}
@@ -17,6 +17,6 @@ const SectionWrapper = (Component, idName) => {
   );
 
   return WrappedSection;
-};
+}
 
 export default SectionWrapper;

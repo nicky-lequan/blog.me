@@ -13,7 +13,7 @@ function ThemeButton() {
     setIsRendered(true);
   }, []);
 
-  const isDarkTheme = () => {
+  function isDarkTheme() {
     return theme === 'system'
       ? systemTheme === 'dark'
         ? true
@@ -21,26 +21,25 @@ function ThemeButton() {
       : theme === 'dark'
       ? true
       : false;
-  };
-  const toggleTheme = () => {
+  }
+
+  function toggleTheme() {
     setTheme(isDarkTheme() ? 'light' : 'dark');
-  };
+  }
 
   return (
-    <>
+    <div className="flex flex-row px-2 w-12">
       {isRendered && (
-        <div className="flex flex-row px-2">
-          <IconButton
-            size="sm"
-            variant="text"
-            className="my-auto rounded-full text-black dark:text-white"
-            onClick={toggleTheme}>
-            {isDarkTheme() && <MoonIcon className="h-6 w-6" />}
-            {!isDarkTheme() && <SunIcon className="h-6 w-6" />}
-          </IconButton>
-        </div>
+        <IconButton
+          size="sm"
+          variant="text"
+          className="my-auto rounded-full text-black dark:text-white dark:hover:bg-slate-400/10"
+          onClick={toggleTheme}>
+          {isDarkTheme() && <MoonIcon className="h-6 w-6" />}
+          {!isDarkTheme() && <SunIcon className="h-6 w-6" />}
+        </IconButton>
       )}
-    </>
+    </div>
   );
 }
 

@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 
-const DynamicTextBanner = () => {
+function DynamicTextBanner() {
   const [text, setText] = useState('');
   const texts = [
     'Hey, stranger.',
@@ -26,7 +26,7 @@ const DynamicTextBanner = () => {
     };
   });
 
-  const tick = () => {
+  function tick() {
     const fullText = texts[textIdx];
     const updatedText = isDeleting
       ? text.substring(0, text.length - 1)
@@ -50,7 +50,7 @@ const DynamicTextBanner = () => {
       setIsDeleting(true);
       setTypeInterval(period);
     }
-  };
+  }
 
   return (
     <div className="px-8 py-20 flex flex-col justify-center bg-gradient-to-r from-primary dark:from-primary/90 shadow-md shadow-current dark:shadow-gray-800 rounded-xl">
@@ -72,6 +72,6 @@ const DynamicTextBanner = () => {
       </p>
     </div>
   );
-};
+}
 
 export default DynamicTextBanner;

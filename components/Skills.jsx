@@ -1,17 +1,16 @@
 'use client';
 
-import React from 'react';
+import {useState} from 'react';
+import SectionWrapper from './hoc/SectionWrapper';
 import {motion} from 'framer-motion';
-import {SectionWrapper} from './hoc';
 import {fadeIn, textVariant} from '@/utils/motion';
-
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
   Avatar,
   Tooltip,
-} from '@material-tailwind/react';
+} from '@/providers/AppProvider';
 
 const skills = [
   {
@@ -221,8 +220,8 @@ const skills = [
   },
 ];
 
-const Skills = () => {
-  const [open, setOpen] = React.useState(1);
+function Skills() {
+  const [open, setOpen] = useState(1);
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
@@ -269,6 +268,6 @@ const Skills = () => {
       </motion.div>
     </>
   );
-};
+}
 
 export default SectionWrapper(Skills, 'skills');

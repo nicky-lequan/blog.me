@@ -1,15 +1,13 @@
 'use client';
 
-import React from 'react';
-import {motion} from 'framer-motion';
-import {SectionWrapper} from './hoc';
-import {textVariant} from '@/utils/motion';
-
-import {useTheme} from 'next-themes';
 import {useState, useEffect} from 'react';
+import {useTheme} from 'next-themes';
+import {textVariant} from '@/utils/motion';
+import {motion} from 'framer-motion';
+import SectionWrapper from './hoc/SectionWrapper';
 import CPCard from './CPCard';
 
-const CompetitiveProgramming = () => {
+function CompetitiveProgramming() {
   const {systemTheme, theme} = useTheme();
   const [isRendered, setIsRendered] = useState(false);
 
@@ -17,7 +15,7 @@ const CompetitiveProgramming = () => {
     setIsRendered(true);
   }, []);
 
-  const isDarkTheme = () => {
+  function isDarkTheme() {
     return theme === 'system'
       ? systemTheme === 'dark'
         ? true
@@ -25,7 +23,7 @@ const CompetitiveProgramming = () => {
       : theme === 'dark'
       ? true
       : false;
-  };
+  }
 
   const cards = [
     {
@@ -83,7 +81,7 @@ const CompetitiveProgramming = () => {
       </div>
     </>
   );
-};
+}
 
 export default SectionWrapper(
   CompetitiveProgramming,

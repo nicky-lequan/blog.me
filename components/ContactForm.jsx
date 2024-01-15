@@ -1,12 +1,11 @@
 'use client';
 
-import React, {useContext} from 'react';
-import {useState, useRef} from 'react';
-import {Button} from '@material-tailwind/react';
-import {AlertContext} from '@/providers/AlertProvider';
+import {useContext, useState, useRef} from 'react';
 import {CheckCircleIcon} from './Icons';
+import {AlertContext} from '@/providers/AlertProvider';
+import {Button} from '@/providers/AppProvider';
 
-const ContactForm = () => {
+function ContactForm() {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -91,6 +90,6 @@ const ContactForm = () => {
       </div>
     </>
   );
-};
+}
 
 export default ContactForm;

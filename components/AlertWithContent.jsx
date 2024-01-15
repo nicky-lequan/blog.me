@@ -1,10 +1,10 @@
 'use client';
 
-import {AlertContext} from '@/providers/AlertProvider';
-import {Alert, Typography} from '@material-tailwind/react';
 import {useContext} from 'react';
+import {AlertContext} from '@/providers/AlertProvider';
+import {Alert, Typography} from '@/providers/AppProvider';
 
-const AlertWithContent = () => {
+function AlertWithContent() {
   const {alertState, setAlertState} = useContext(AlertContext);
 
   return (
@@ -22,6 +22,6 @@ const AlertWithContent = () => {
       </Typography>
     </Alert>
   );
-};
+}
 
 export default AlertWithContent;

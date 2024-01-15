@@ -1,10 +1,9 @@
 'use client';
 
-import React from 'react';
+import {useState} from 'react';
 import {motion} from 'framer-motion';
-import {SectionWrapper} from './hoc';
-import {textVariant} from '@/utils/motion';
-import {fadeIn} from '@/utils/motion';
+import SectionWrapper from './hoc/SectionWrapper';
+import {fadeIn, textVariant} from '@/utils/motion';
 import {
   Timeline,
   TimelineItem,
@@ -12,7 +11,7 @@ import {
   TimelineIcon,
   Typography,
   TimelineHeader,
-} from '@material-tailwind/react';
+} from '@/providers/AppProvider';
 import {
   AcademicCap,
   BuildingOffice2Icon,
@@ -24,7 +23,6 @@ import {
   UserGroupIcon,
 } from './Icons';
 import Image from 'next/image';
-import {useState} from 'react';
 
 const accomplishments = [
   {
@@ -78,7 +76,7 @@ const accomplishments = [
   },
 ];
 
-const Accomplishments = () => {
+function Accomplishments() {
   const [imageIdx, setImageId] = useState(-1);
 
   return (
@@ -150,6 +148,6 @@ const Accomplishments = () => {
       </motion.div>
     </>
   );
-};
+}
 
 export default SectionWrapper(Accomplishments, 'accomplishments');

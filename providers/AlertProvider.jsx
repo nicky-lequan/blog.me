@@ -1,6 +1,6 @@
 'use client';
 
-import React, {createContext, useReducer} from 'react';
+import {createContext, useReducer} from 'react';
 
 export const AlertContext = createContext();
 
@@ -23,7 +23,7 @@ const reducer = (state, action) => {
   }
 };
 
-const AlertProvider = ({children}) => {
+function AlertProvider({children}) {
   const [alertState, setAlertState] = useReducer(reducer, {
     open: false,
     icon: '',
@@ -36,6 +36,6 @@ const AlertProvider = ({children}) => {
       {children}
     </AlertContext.Provider>
   );
-};
+}
 
 export default AlertProvider;
