@@ -8,16 +8,16 @@ import {motion} from 'framer-motion';
 
 const capabilities = [
   {
-    title: 'Solutions Architect',
-    iconSrc: '/img/solid_figure_3.png',
-  },
-  {
-    title: 'Full-stack Engineer',
+    title: 'Full Stack Developer',
     iconSrc: '/img/solid_figure_1.png',
   },
   {
-    title: 'Backend Engineer',
+    title: 'Back End Developer',
     iconSrc: '/img/solid_figure_2.png',
+  },
+  {
+    title: 'Solutions Architect',
+    iconSrc: '/img/solid_figure_3.png',
   },
   {
     title: 'Problem Solver',
