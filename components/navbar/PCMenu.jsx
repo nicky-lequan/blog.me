@@ -11,7 +11,9 @@ function PCMenu() {
               key={path}
               href={path}
               className="rounded-md flex align-middle hover:bg-slate-600/10 dark:hover:bg-slate-400/10">
-              <span className="py-[5px] px-[10px] text-xl">{name}</span>
+              <span className="py-[0.313rem] px-[0.625rem] text-xl">
+                {name}
+              </span>
             </Link>
           );
         })}

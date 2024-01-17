@@ -31,7 +31,7 @@ export const navItems = [
 function NavBar() {
   return (
     <div className="fixed top-0 w-full z-50 bg-[#DEF2FF]/90 dark:bg-[#0A090D]/90">
-      <div className="mx-auto sm:px-4 px-2 flex flex-row h-[81px] max-w-7xl justify-between items-center">
+      <div className="mx-auto sm:px-4 px-2 flex flex-row h-[5.063rem] max-w-7xl justify-between items-center">
         {/* left */}
         <div className="flex flex-row my-auto">
           {/* logo */}

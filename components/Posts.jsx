@@ -36,7 +36,7 @@ function Posts() {
 
   return (
     <>
-      <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+      <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
         Posts
       </h1>
       <div id="tag-button-group" className="mt-6 flex flex-wrap gap-2">

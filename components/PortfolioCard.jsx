@@ -10,7 +10,7 @@ import {GithubIcon, GlobeIcon} from './Icons';
 
 function PortfolioCardVertical({title, thumbnail, demoUrl, githubUrl, desc}) {
   return (
-    <Card className="h-[480px] xl:h-[460px] bg-zinc-100 dark:bg-zinc-900 drop-shadow-md">
+    <Card className="h-[30rem] xl:h-[28.75rem] bg-zinc-100 dark:bg-zinc-900 drop-shadow-md">
       <CardHeader
         shadow={false}
         floated={false}
@@ -32,7 +32,7 @@ function PortfolioCardVertical({title, thumbnail, demoUrl, githubUrl, desc}) {
           </Typography>
           <Typography
             variant="small"
-            className="text-[14px] font-bold opacity-75 text-slate font-heavydata">
+            className="text-[0.875rem] font-bold opacity-75 text-slate font-heavydata">
             {desc}
           </Typography>
         </CardBody>

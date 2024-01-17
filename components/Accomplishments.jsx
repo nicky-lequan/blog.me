@@ -82,10 +82,10 @@ function Accomplishments() {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
           My small wins
         </p>
-        <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
           Accomplishments
         </h1>
       </motion.div>
@@ -93,15 +93,15 @@ function Accomplishments() {
       <motion.div
         className="mt-8 relative"
         variants={fadeIn('left', 'tween', 0, 1)}>
-        <div className="p-8 h-[560px] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[20px] shadow-inner">
+        <div className="p-8 h-[35rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
           <Timeline>
             {accomplishments.map((item, index) => (
               <TimelineItem
                 key={index}
                 className="h-28 max-w-[28rem]"
                 onMouseEnter={() => setImageId(index)}>
-                <TimelineConnector className="!w-[78px]" />
-                <TimelineHeader className="py-3 pl-4 pr-8 relative rounded-[20px] bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800  shadow-lg">
+                <TimelineConnector className="!w-[4.875rem]" />
+                <TimelineHeader className="py-3 pl-4 pr-8 relative rounded-[1.25rem] bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800  shadow-lg">
                   <TimelineIcon
                     className="p-3"
                     variant="ghost"
@@ -126,13 +126,13 @@ function Accomplishments() {
             ))}
           </Timeline>
           {imageIdx === -1 && (
-            <div className="absolute right-12 top-12 w-[400px] h-[400px] hidden xl:flex xl:flex-col items-center justify-center rounded-xl bg-zinc-50 dark:bg-zinc-900 shadow-xl">
+            <div className="absolute right-12 top-12 w-[25rem] h-[25rem] hidden xl:flex xl:flex-col items-center justify-center rounded-xl bg-zinc-50 dark:bg-zinc-900 shadow-xl">
               <PhotoIcon className="!h-24 !w-24" />
               Hover an event to see image
             </div>
           )}
           {imageIdx > -1 && (
-            <div className="p-[1px] green-violet-gradient absolute right-10 top-10 rounded-xl hidden xl:block shadow-xl">
+            <div className="p-[0.063rem] green-violet-gradient absolute right-10 top-10 rounded-xl hidden xl:block shadow-xl">
               <div className="p-2 bg-zinc-50 dark:bg-zinc-900 rounded-xl">
                 <Image
                   src={accomplishments[imageIdx].imageSrc}

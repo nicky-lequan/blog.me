@@ -9,10 +9,10 @@ function Testimonials() {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
           Shoutouts
         </p>
-        <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
           Testimonials
         </h1>
       </motion.div>

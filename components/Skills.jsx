@@ -227,10 +227,10 @@ function Skills() {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
           Hammer and wrench
         </p>
-        <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
           Skills
         </h1>
       </motion.div>
@@ -240,7 +240,7 @@ function Skills() {
           <Accordion
             key={index + 1}
             open={open === index + 1}
-            className="mb-2 rounded-[20px] border border-blue-gray-100 px-4 shadow-inner">
+            className="mb-2 rounded-[1.25rem] border border-blue-gray-100 px-4 shadow-inner">
             <AccordionHeader
               onClick={() => handleOpen(index + 1)}
               className={`border-b-0 transition-colors font-raleway font-bold ${

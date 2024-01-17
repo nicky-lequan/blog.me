@@ -46,7 +46,7 @@ function MobileMenu() {
       <div
         className={`${
           !mobileMenuOpen ? 'hidden' : 'flex'
-        } m-2 p-[1px] absolute top-20 right-1 min-w-[140px] z-10 green-violet-gradient shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
+        } m-2 p-[0.063rem] absolute top-20 right-1 min-w-[8.75rem] z-10 green-violet-gradient shadow-md shadow-current dark:shadow-gray-800 rounded-xl`}>
         <div className="p-0 w-full bg-white/90 dark:bg-slate-950/90 rounded-xl">
           <ul className="py-2 list-none flex justify-end items-start flex-col font-bold">
             {navItems.map(({name, path}) => (

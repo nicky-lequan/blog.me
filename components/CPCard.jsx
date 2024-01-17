@@ -25,9 +25,9 @@ function CPCard({
       variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}
       whileHover={{scale: 1.05}}
       whileTap={{scale: 1}}
-      className="min-w-[380px] sm:min-w-[400px] md:min-w-[440px] max-w-[520px] green-violet-gradient p-[1px] rounded-[20px] drop-shadow-xl">
+      className="min-w-[23.75rem] sm:min-w-[25rem] md:min-w-[27.5rem] max-w-[32.5rem] green-violet-gradient p-[0.063rem] rounded-[1.25rem] drop-shadow-xl">
       <Link href={linkUrl}>
-        <div className="bg-white/90 dark:bg-slate-950/90 rounded-[20px]">
+        <div className="bg-white/90 dark:bg-slate-950/90 rounded-[1.25rem]">
           <div className="p-4 flex flex-row justify-between">
             <div className="flex flex-col space-y-2">
               <div className="flex flex-row space-x-1 items-center">
@@ -51,7 +51,7 @@ function CPCard({
                   </Typography>
                 </div>
 
-                <div className="min-w-[80px] flex flex-col items-center justify-center gap-1">
+                <div className="min-w-[5rem] flex flex-col items-center justify-center gap-1">
                   <Typography
                     variant="small"
                     className="font-semibold text-stone dark:text-stone-400 font-heavydata">

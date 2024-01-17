@@ -94,16 +94,16 @@ function Work() {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className="md:text-[16px] text-[12px] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
           Projects
         </p>
-        <h1 className="text-text font-black md:text-[50px] sm:text-[42px] text-[30px]">
+        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
           Work Experience.
         </h1>
       </motion.div>
 
       <motion.div
-        className="mt-8 flex flex-col h-[960px] overflow-scroll px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[20px] shadow-inner"
+        className="mt-8 flex flex-col h-[60rem] overflow-scroll px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner"
         variants={fadeIn('left', 'tween', 0, 1)}>
         <Timeline>
           {experiences.map((experience, index) => (
@@ -126,7 +126,7 @@ function Work() {
                   {index === 0 && (
                     <Badge
                       content="Recent"
-                      className="text-[8px] font-bold bg-gradient-to-r from-primary to-indigo-500 dark:via-purple-500 dark:to-pink-500">
+                      className="text-[0.5rem] font-bold bg-gradient-to-r from-primary to-indigo-500 dark:via-purple-500 dark:to-pink-500">
                       &nbsp;
                     </Badge>
                   )}
@@ -135,23 +135,23 @@ function Work() {
               <TimelineBody className="pb-8">
                 <Typography
                   variant="small"
-                  className="text-[12px] font-bold font-raleway">
+                  className="text-[0.75rem] font-bold font-raleway">
                   Client: {experience.companyName}
                 </Typography>
                 <Typography
                   variant="small"
-                  className="text-[12px] font-normal font-raleway">
+                  className="text-[0.75rem] font-normal font-raleway">
                   {experience.date}
                 </Typography>
                 <ul>
                   <li>
-                    <Typography className="font-bold text-stone-600 dark:text-stone font-heavydata text-[14px]">
+                    <Typography className="font-bold text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
                       {experience.description}
                     </Typography>
                   </li>
                   {experience.contributions && (
                     <li>
-                      <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
+                      <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
                         Contributions:
                       </Typography>
                     </li>
@@ -159,13 +159,13 @@ function Work() {
                   {experience.contributions &&
                     experience.contributions.map((contribution, index) => (
                       <li key={index}>
-                        <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
+                        <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
                           - {contribution}
                         </Typography>
                       </li>
                     ))}
                   <li>
-                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[14px]">
+                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
                       Stack: {experience.stack}
                     </Typography>
                   </li>

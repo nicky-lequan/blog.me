@@ -39,11 +39,11 @@ function ContactForm() {
 
   return (
     <>
-      <div className="m-8 xl:w-full green-violet-gradient p-[1px] rounded-[20px]">
+      <div className="m-8 xl:w-full green-violet-gradient p-[0.063rem] rounded-[1.25rem]">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="p-8 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-[20px]">
+          className="p-8 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-[1.25rem]">
           <label className="flex flex-col">
             <span className="text-text font-semibold mb-4">Your Name</span>
             <input

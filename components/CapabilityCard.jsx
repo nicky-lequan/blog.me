@@ -5,16 +5,16 @@ import {Tilt} from 'react-tilt';
 
 function CapabilityCard({index, title, iconSrc}) {
   return (
-    <Tilt className="w-full md:w-[200px] max-w-md">
+    <Tilt className="w-full md:w-[12.5rem] max-w-md">
       <motion.div
         initial="hidden"
         whileInView="show"
         viewport={{once: true}}
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className="w-full green-violet-gradient p-[1px] rounded-[20px] drop-shadow-xl">
+        className="w-full green-violet-gradient p-[0.063rem] rounded-[1.25rem] drop-shadow-xl">
         <div
           options={{max: 45, scale: 1, speed: 450}}
-          className="bg-white/90 dark:bg-slate-950/90 rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center">
+          className="bg-white/90 dark:bg-slate-950/90 rounded-[1.25rem] py-5 px-12 min-h-[17.5rem] flex flex-col justify-evenly items-center">
           <Image
             src={iconSrc}
             alt={title}
@@ -22,7 +22,7 @@ function CapabilityCard({index, title, iconSrc}) {
             height={100}
             className="w-16 h-16 object-contain"
           />
-          <h3 className="text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-[1.25rem] font-bold text-center">{title}</h3>
         </div>
       </motion.div>
     </Tilt>
