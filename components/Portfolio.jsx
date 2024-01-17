@@ -46,13 +46,6 @@ const tabs = [
         githubUrl: 'https://github.com/jooncco/jooncco.github.io',
         desc: "[Legacy] A blog based on github.io and jekyll template 'Minimal Mistakes'.",
       },
-      {
-        title: 'naemo.io',
-        thumbnail: '/img/portfolio/nftmarketplace.png',
-        demoUrl: 'https://naemo.io',
-        githubUrl: '',
-        desc: "Exchange fancy NFTs with crypto currency such as Ethereum, Solana and more. Built with React.js and now it's maintained by bithumb meta.",
-      },
     ],
   },
   {

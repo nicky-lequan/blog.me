@@ -47,8 +47,8 @@ function Footer() {
     <footer className="px-8 py-2 w-full bg-neutral">
       <div className="px-2 flex flex-col flex-wrap items-center justify-center gap-x-12 text-center">
         <Image
-          width={100}
-          height={100}
+          width={60}
+          height={60}
           src="/img/logo.png"
           alt="jooncco.dev"
           className="w-14"

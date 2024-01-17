@@ -36,12 +36,12 @@ function NavBar() {
         <div className="flex flex-row my-auto">
           {/* logo */}
           <Link href="/" className="my-auto">
-            <div className="flex flex-row space-x-2">
+            <div className="flex gap-1">
               <Image
                 src="/img/logo.png"
                 alt="logo image"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
                 priority={true}
               />
               <Typography
