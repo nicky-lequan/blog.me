@@ -18,7 +18,7 @@ import {
 
 const experiences = [
   {
-    title: 'Backend Engineer',
+    title: 'Back End Engineer',
     companyName: 'LG Electronics',
     iconSrc: '/img/company/lg.png',
     date: 'Feb 2023 - Nov 2023',
@@ -31,7 +31,7 @@ const experiences = [
     stack: 'Spring Boot, MyBatis, MySQL, AWS',
   },
   {
-    title: 'Full-stack Engineer',
+    title: 'Full Stack Engineer',
     companyName: 'Bithumb meta',
     iconSrc: '/img/company/bithumb.png',
     date: 'Mar 2022 - Dec 2022',
@@ -47,7 +47,7 @@ const experiences = [
       'Spring Boot, Spring Data JPA, QueryDSL-JPA, MySQL, React.js with mobX, AWS',
   },
   {
-    title: 'Full-stack Engineer',
+    title: 'Full Stack Engineer',
     companyName: 'LG U+',
     iconSrc: '/img/company/lg.png',
     date: 'Jul 2021 - Feb 2022',
@@ -62,7 +62,7 @@ const experiences = [
     stack: 'Spring Boot, MyBatis, Thymeleaf, React.js, MySQL, AWS, Github APIs',
   },
   {
-    title: 'Full-stack Engineer',
+    title: 'Full Stack Engineer',
     companyName: 'Hanwha Life Insurance',
     iconSrc: '/img/company/hanwha.png',
     date: 'Feb 2021 - Jun 2021',
@@ -75,7 +75,7 @@ const experiences = [
     stack: 'Spring Boot, MyBatis, React.js, MySQL, AWS',
   },
   {
-    title: 'Backend Engineer',
+    title: 'Back End Engineer',
     companyName: 'Okimoki',
     iconSrc: '/img/company/okimoki.png',
     date: 'Jan 2020 - Dec 2020',
