@@ -13,32 +13,32 @@ const footerItems = [
   {
     name: 'Github',
     href: 'https://github.com/jooncco',
-    icon: <GithubIcon />,
+    icon: <GithubIcon className="text-text" />,
   },
   {
     name: 'Leetcode',
     href: 'https://leetcode.com/jooncco',
-    icon: <LeetcodeIcon />,
+    icon: <LeetcodeIcon className="text-text" />,
   },
   {
     name: 'Codeforces',
     href: 'https://codeforces.com/profile/jooncco',
-    icon: <CodeforcesIcon />,
+    icon: <CodeforcesIcon className="text-text" />,
   },
   {
     name: 'Linkedin',
     href: 'https://linkedin.com/in/jooncco',
-    icon: <LinkedinIcon />,
+    icon: <LinkedinIcon className="text-text" />,
   },
   {
     name: 'Instagram',
     href: 'https://instagram.com/jooncco',
-    icon: <InstagramIcon />,
+    icon: <InstagramIcon className="text-text" />,
   },
   {
     name: 'Facebook',
     href: 'https://facebook.com/jooncco',
-    icon: <FacebookIcon />,
+    icon: <FacebookIcon className="text-text" />,
   },
 ];
 
@@ -59,14 +59,16 @@ function Footer() {
               key={name}
               as="a"
               href={href}
-              className="opacity-80 transition-opacity hover:opacity-100">
+              className="opacity-70 transition-opacity hover:opacity-100">
               {icon}
             </Typography>
           ))}
         </div>
       </div>
-      <hr className="my-4 border-blue-gray-900" />
-      <Typography color="blue-gray" className="mt-4 text-center font-normal">
+      <hr className="my-4 border-blue-gray-100 dark:border-blue-gray-800" />
+      <Typography
+        color="blue-gray"
+        className="mt-4 text-center font-normal text-text">
         &copy; 2023 Junha Jeong
       </Typography>
     </footer>

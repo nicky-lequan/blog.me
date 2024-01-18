@@ -42,7 +42,7 @@ function PortfolioCardVertical({title, thumbnail, demoUrl, githubUrl, desc}) {
               as="a"
               href={githubUrl}
               className="opacity-60 transition-opacity hover:opacity-100">
-              {<GithubIcon className="!w-8 !h-8" />}
+              {<GithubIcon className="!w-8 !h-8 text-text" />}
             </Typography>
           )}
           {demoUrl && (
@@ -50,7 +50,7 @@ function PortfolioCardVertical({title, thumbnail, demoUrl, githubUrl, desc}) {
               as="a"
               href={demoUrl}
               className="opacity-60 transition-opacity hover:opacity-100">
-              {<GlobeIcon className="!w-8 !h-8" />}
+              {<GlobeIcon className="!w-8 !h-8 text-text" />}
             </Typography>
           )}
         </CardFooter>
