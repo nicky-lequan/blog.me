@@ -18,11 +18,39 @@ import {
 
 const experiences = [
   {
-    title: 'Back End Engineer',
+    title: 'Front End Developer',
+    companyName: 'KRX',
+    iconSrc: '/img/company/krx.png',
+    date: 'Jan 2024 - Feb 2024',
+    description: 'Prototyping: Next.js clone app of www.krx.co.kr',
+    contributions: [
+      'Implemented navbar and pages',
+      'Implemented download modal with pause & resume download functionality',
+    ],
+    stack: 'Next.js 14, Tailwindcss, Zustand, Axios',
+  },
+  {
+    title: 'Solutions Architect',
+    companyName: 'GS Global',
+    iconSrc: '/img/company/gsglobal.png',
+    date: 'Dec 2023 - Dec 2023',
+    description:
+      'Prototyping: automated scrapper & notifier for T4K truck customers feedback.',
+    contributions: [
+      'Overall system design',
+      'Implemented Python App for automated export of chat text.',
+      'Implemented Spring Boot App for parsing chat text, uploading parsed text to S3 bucket.',
+    ],
+    stack:
+      'Amazon EC2, AWS Lambda, Amazon S3, Amazon RDS, Amazon Comprehend, Amazon SES, Python, OpenCV, Spring Boot',
+  },
+  {
+    title: 'Back End Developer',
     companyName: 'LG Electronics',
     iconSrc: '/img/company/lg.png',
     date: 'Feb 2023 - Nov 2023',
-    description: 'LGE SDP AppMod project: next generation IP TV web servers.',
+    description:
+      'LGE SDP App Modernization project: next generation IP TV web servers.',
     contributions: [
       'Implemented REST APIs for IP TVs: authenticates & initializes client module based on device meta data.',
       'Reduced execution time of a device initialization API into half by applying async executors (@Async annotation in Spring).',
@@ -31,7 +59,7 @@ const experiences = [
     stack: 'Spring Boot, MyBatis, MySQL, AWS',
   },
   {
-    title: 'Full Stack Engineer',
+    title: 'Full Stack Developer',
     companyName: 'Bithumb meta',
     iconSrc: '/img/company/bithumb.png',
     date: 'Mar 2022 - Dec 2022',
@@ -47,7 +75,7 @@ const experiences = [
       'Spring Boot, Spring Data JPA, QueryDSL-JPA, MySQL, React.js with mobX, AWS',
   },
   {
-    title: 'Full Stack Engineer',
+    title: 'Full Stack Developer',
     companyName: 'LG U+',
     iconSrc: '/img/company/lg.png',
     date: 'Jul 2021 - Feb 2022',
@@ -62,7 +90,7 @@ const experiences = [
     stack: 'Spring Boot, MyBatis, Thymeleaf, React.js, MySQL, AWS, Github APIs',
   },
   {
-    title: 'Full Stack Engineer',
+    title: 'Full Stack Developer',
     companyName: 'Hanwha Life Insurance',
     iconSrc: '/img/company/hanwha.png',
     date: 'Feb 2021 - Jun 2021',
@@ -75,7 +103,7 @@ const experiences = [
     stack: 'Spring Boot, MyBatis, React.js, MySQL, AWS',
   },
   {
-    title: 'Back End Engineer',
+    title: 'Back End Developer',
     companyName: 'Okimoki',
     iconSrc: '/img/company/okimoki.png',
     date: 'Jan 2020 - Dec 2020',
