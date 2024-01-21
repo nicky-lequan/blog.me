@@ -25,7 +25,7 @@ const experiences = [
     description: 'Prototyping: Next.js clone app of www.krx.co.kr',
     contributions: [
       'Implemented navbar and pages',
-      'Implemented download modal with pause & resume download functionality',
+      'Implemented download modal with pause & resume functionality',
     ],
     stack: 'Next.js 14, Tailwindcss, Zustand, Axios',
   },
@@ -68,7 +68,7 @@ const experiences = [
       'My Wallet page & related REST APIs (connext wallet, get balance, etc.)',
       'SNS OAuth (Twitter, Discord, Telegram, Instagram)',
       'SNS Event Mission page & related REST APIs',
-      'Ethereum/Solana withdraw REST API',
+      'REST APIs for Ethereum/Solana withdraw',
       'Admin Launchpad List page & related REST APIs. Launchpad is a collection of NFTs in promo.',
     ],
     stack:
@@ -85,7 +85,7 @@ const experiences = [
       'Implemented 2FA via email',
       'Sign up, sign out page & related REST APIs',
       'Cloud resource creation page & related REST APIs',
-      'Email notification using Amazon SNS',
+      'Email notification using Amazon SES',
     ],
     stack: 'Spring Boot, MyBatis, Thymeleaf, React.js, MySQL, AWS, Github APIs',
   },
