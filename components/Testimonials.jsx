@@ -1,7 +1,7 @@
 'use client';
 
 import {motion} from 'framer-motion';
-import {fadeIn, textVariant} from '@/utils/motion';
+import {fadeIn, textVariant} from '@/utility/motion';
 import SectionWrapper from './hoc/SectionWrapper';
 import SlidingCarousel from './SlidingCarousel';
 

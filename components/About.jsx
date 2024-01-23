@@ -2,26 +2,26 @@
 
 import CapabilityCard from './CapabilityCard';
 import SectionWrapper from './hoc/SectionWrapper';
-import {textVariant} from '@/utils/motion';
+import {textVariant} from '@/utility/motion';
 import {Avatar} from '@/providers/AppProvider';
 import {motion} from 'framer-motion';
 
 const capabilities = [
   {
     title: 'Full Stack Developer',
-    iconSrc: '/img/solid_figure_1.png',
+    iconSrc: '/assets/images/solid_figure_1.png',
   },
   {
     title: 'Back End Developer',
-    iconSrc: '/img/solid_figure_2.png',
+    iconSrc: '/assets/images/solid_figure_2.png',
   },
   {
     title: 'Solutions Architect',
-    iconSrc: '/img/solid_figure_3.png',
+    iconSrc: '/assets/images/solid_figure_3.png',
   },
   {
     title: 'Problem Solver',
-    iconSrc: '/img/solid_figure_4.png',
+    iconSrc: '/assets/images/solid_figure_4.png',
   },
 ];
 
@@ -58,7 +58,7 @@ function About() {
             alt="profile"
             withBorder
             className="mt-12 hidden lg:block lg:w-[20rem] lg:h-[18.75rem] border-2 border-primary"
-            src="/img/profile.jpg"
+            src="/assets/images/profile.jpg"
           />
         </div>
         <div className="mt-10 flex flex-wrap gap-6">

@@ -1,7 +1,7 @@
 'use client';
 
 import {motion} from 'framer-motion';
-import {slideIn, textVariant} from '@/utils/motion';
+import {slideIn, textVariant} from '@/utility/motion';
 import SectionWrapper from './hoc/SectionWrapper';
 import ContactForm from './ContactForm';
 import EarthCanvas from './EarthCanvas';

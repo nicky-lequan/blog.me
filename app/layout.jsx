@@ -11,7 +11,7 @@ export const metadata = {
   },
   description: "Developer jooncco's blog.",
   icons: {
-    shortcut: '/img/favicon.ico',
+    shortcut: '/assets/images/favicon.ico',
   },
 };
 

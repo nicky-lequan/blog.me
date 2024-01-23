@@ -2,7 +2,7 @@
 
 import {motion} from 'framer-motion';
 import SectionWrapper from './hoc/SectionWrapper';
-import {fadeIn, textVariant} from '@/utils/motion';
+import {fadeIn, textVariant} from '@/utility/motion';
 import {
   Tabs,
   TabsHeader,
@@ -27,21 +27,21 @@ const tabs = [
     items: [
       {
         title: 'jooncco.dev-fe',
-        thumbnail: '/img/portfolio/jooncco.dev-fe.png',
+        thumbnail: '/assets/images/portfolio/jooncco.dev-fe.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/jooncco.dev-fe',
         desc: "Jooncco's knowledge base front end, built with Next.js 14.",
       },
       {
         title: 'Spring Boot API Server Template',
-        thumbnail: '/img/portfolio/springapiservertemplate.png',
+        thumbnail: '/assets/images/portfolio/springapiservertemplate.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/spring-api-server-template',
         desc: 'Spring Boot api server example. The main goal here is to showcase best practices in a production-level server.',
       },
       {
         title: 'jooncco.github.io',
-        thumbnail: '/img/portfolio/jooncco.github.io.png',
+        thumbnail: '/assets/images/portfolio/jooncco.github.io.png',
         demoUrl: 'https://jooncco.github.io',
         githubUrl: 'https://github.com/jooncco/jooncco.github.io',
         desc: "[Legacy] A blog based on github.io and jekyll template 'Minimal Mistakes'.",
@@ -67,21 +67,21 @@ const tabs = [
     items: [
       {
         title: 'Bitcoin Price Predictor',
-        thumbnail: '/img/portfolio/bitcoinpricepredictor.png',
+        thumbnail: '/assets/images/portfolio/bitcoinpricepredictor.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/bitcoin-price-predictor',
         desc: '[Undergraduate] Bitcoin price prediction with market indicators and google trend using regression models & LSTM RNN',
       },
       {
         title: 'Coindrop Game AI Agent',
-        thumbnail: '/img/portfolio/coindropgameaiagent.png',
+        thumbnail: '/assets/images/portfolio/coindropgameaiagent.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/coindrop-game-ai-agent',
         desc: '[Undergraduate] Reflex agent trained with reinforcement learning(Q-learning). This agent plays coin drop game implemented using pygame module.',
       },
       {
         title: '"is a" Relationship Teller',
-        thumbnail: '/img/portfolio/isarelationshipteller.png',
+        thumbnail: '/assets/images/portfolio/isarelationshipteller.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/is-A-relationship-teller',
         desc: '[Undergraduate] NLP for Korean words. Returns whether a given {Entity, Concept} pair is in "is-a" relationship or not.',
@@ -95,21 +95,21 @@ const tabs = [
     items: [
       {
         title: 'Kakaotalk Chat Exporter',
-        thumbnail: '/img/portfolio/kakaotalkchatexporter.png',
+        thumbnail: '/assets/images/portfolio/kakaotalkchatexporter.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/kakaotalk-chat-exporter',
         desc: 'Simple macro for Kakaotalk messenger app. Exports contents of a chat Uses OpenCV library.',
       },
       {
         title: 'CP Snippet Java',
-        thumbnail: '/img/portfolio/cpsnippetjava.png',
+        thumbnail: '/assets/images/portfolio/cpsnippetjava.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/cp-snippet-java',
         desc: 'Json for java code snippets. Extremly useful when competitive programming.',
       },
       {
         title: 'CP Stamper C++',
-        thumbnail: '/img/portfolio/cpstampercpp.png',
+        thumbnail: '/assets/images/portfolio/cpstampercpp.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/cp-stamper-cpp',
         desc: 'Simple comment writer. The comment generated contains author and timestamp.',

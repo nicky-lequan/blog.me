@@ -3,7 +3,7 @@
 import {useState} from 'react';
 import {motion} from 'framer-motion';
 import SectionWrapper from './hoc/SectionWrapper';
-import {fadeIn, textVariant} from '@/utils/motion';
+import {fadeIn, textVariant} from '@/utility/motion';
 import {
   Timeline,
   TimelineItem,
@@ -30,49 +30,49 @@ const accomplishments = [
     subtitle: '25 OCT 2023',
     icon: <UserGroupIcon />,
     color: 'orange',
-    imageSrc: '/img/accomplishments/amazon_eks_jam_singapore.png',
+    imageSrc: '/assets/images/accomplishments/amazon_eks_jam_singapore.png',
   },
   {
     title: '24th Place, LG Code Jam',
     subtitle: '15 SEP 2023',
     icon: <CodeBracketIcon />,
     color: 'pink',
-    imageSrc: '/img/accomplishments/lg_code_jam.png',
+    imageSrc: '/assets/images/accomplishments/lg_code_jam.png',
   },
   {
     title: 'AWS JAM Winner',
     subtitle: '20 JUN 2023',
     icon: <TrophyIcon />,
     color: 'orange',
-    imageSrc: '/img/accomplishments/aws_jam.png',
+    imageSrc: '/assets/images/accomplishments/aws_jam.png',
   },
   {
     title: 'AWS Certified Solutions Architect Professional',
     subtitle: '02 FEB 2023',
     icon: <IdentificationIcon />,
     color: 'orange',
-    imageSrc: '/img/accomplishments/aws_sap.png',
+    imageSrc: '/assets/images/accomplishments/aws_sap.png',
   },
   {
     title: 'Codeforces Specialist',
     subtitle: '18 OCT 2020',
     icon: <CodeforcesIcon />,
     color: 'teal',
-    imageSrc: '/img/accomplishments/codeforces_specialist.png',
+    imageSrc: '/assets/images/accomplishments/codeforces_specialist.png',
   },
   {
     title: 'Computer Science B.S. Yonsei, Seoul',
     subtitle: '25 FEB 2019',
     icon: <AcademicCap />,
     color: 'blue',
-    imageSrc: '/img/accomplishments/cs_yonsei.png',
+    imageSrc: '/assets/images/accomplishments/cs_yonsei.png',
   },
   {
     title: 'Software Engineer, LG CNS',
     subtitle: '7 JAN 2019',
     icon: <BuildingOffice2Icon />,
     color: 'pink',
-    imageSrc: '/img/accomplishments/lgcns_start.png',
+    imageSrc: '/assets/images/accomplishments/lgcns_start.png',
   },
 ];
 

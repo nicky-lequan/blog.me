@@ -2,7 +2,7 @@
 
 import {useState, useEffect} from 'react';
 import {useTheme} from 'next-themes';
-import {textVariant} from '@/utils/motion';
+import {textVariant} from '@/utility/motion';
 import {motion} from 'framer-motion';
 import SectionWrapper from './hoc/SectionWrapper';
 import CPCard from './CPCard';
@@ -28,7 +28,9 @@ function CompetitiveProgramming() {
   const cards = [
     {
       name: 'LeetCode',
-      iconSrc: `/img/leetcode_${isDarkTheme() ? 'dark' : 'light'}.png`,
+      iconSrc: `/assets/images/leetcode_${
+        isDarkTheme() ? 'dark' : 'light'
+      }.png`,
       linkUrl: 'https://leetcode.com/jooncco',
       top: 2.91,
       currentRating: 1993,
@@ -39,7 +41,7 @@ function CompetitiveProgramming() {
     },
     {
       name: 'Codeforces',
-      iconSrc: '/img/codeforces.png',
+      iconSrc: '/assets/images/codeforces.png',
       linkUrl: 'https://codeforces.com/profile/jooncco',
       top: 2.77,
       currentRating: 1516,

@@ -3,7 +3,7 @@
 import {useState} from 'react';
 import SectionWrapper from './hoc/SectionWrapper';
 import {motion} from 'framer-motion';
-import {fadeIn, textVariant} from '@/utils/motion';
+import {fadeIn, textVariant} from '@/utility/motion';
 import {
   Accordion,
   AccordionHeader,
@@ -18,55 +18,55 @@ const skills = [
     tools: [
       {
         name: 'Java',
-        iconSrc: '/img/skills/java.png',
+        iconSrc: '/assets/images/skills/java.png',
       },
       {
         name: 'Spring',
-        iconSrc: '/img/skills/spring.png',
+        iconSrc: '/assets/images/skills/spring.png',
       },
       {
         name: 'Spring Boot',
-        iconSrc: '/img/skills/springboot.png',
+        iconSrc: '/assets/images/skills/springboot.png',
       },
       {
         name: 'Node.js',
-        iconSrc: '/img/skills/nodejs.png',
+        iconSrc: '/assets/images/skills/nodejs.png',
       },
       {
         name: 'AWS Lambda',
-        iconSrc: '/img/skills/awslambda.png',
+        iconSrc: '/assets/images/skills/awslambda.png',
       },
       {
         name: 'Hibernate',
-        iconSrc: '/img/skills/hibernate.png',
+        iconSrc: '/assets/images/skills/hibernate.png',
       },
       {
         name: 'QueryDSL JPA',
-        iconSrc: '/img/skills/querydsl.png',
+        iconSrc: '/assets/images/skills/querydsl.png',
       },
       {
         name: 'MyBatis',
-        iconSrc: '/img/skills/mybatis.png',
+        iconSrc: '/assets/images/skills/mybatis.png',
       },
       {
         name: 'Flyway',
-        iconSrc: '/img/skills/flyway.png',
+        iconSrc: '/assets/images/skills/flyway.png',
       },
       {
         name: 'MySQL',
-        iconSrc: '/img/skills/mysql.png',
+        iconSrc: '/assets/images/skills/mysql.png',
       },
       {
         name: 'PostgreSQL',
-        iconSrc: '/img/skills/postgresql.png',
+        iconSrc: '/assets/images/skills/postgresql.png',
       },
       {
         name: 'Gradle',
-        iconSrc: '/img/skills/gradle.png',
+        iconSrc: '/assets/images/skills/gradle.png',
       },
       {
         name: 'Maven',
-        iconSrc: '/img/skills/maven.png',
+        iconSrc: '/assets/images/skills/maven.png',
       },
     ],
   },
@@ -75,43 +75,43 @@ const skills = [
     tools: [
       {
         name: 'React.js',
-        iconSrc: '/img/skills/reactjs.png',
+        iconSrc: '/assets/images/skills/reactjs.png',
       },
       {
         name: 'Next.js',
-        iconSrc: '/img/skills/nextjs.png',
+        iconSrc: '/assets/images/skills/nextjs.png',
       },
       {
         name: 'Tailwind CSS',
-        iconSrc: '/img/skills/tailwindcss.png',
+        iconSrc: '/assets/images/skills/tailwindcss.png',
       },
       {
         name: 'Material UI',
-        iconSrc: '/img/skills/mui.png',
+        iconSrc: '/assets/images/skills/mui.png',
       },
       {
         name: 'Formik',
-        iconSrc: '/img/skills/formik.png',
+        iconSrc: '/assets/images/skills/formik.png',
       },
       {
         name: 'MobX',
-        iconSrc: '/img/skills/mobx.png',
+        iconSrc: '/assets/images/skills/mobx.png',
       },
       {
         name: 'Html 5',
-        iconSrc: '/img/skills/html.png',
+        iconSrc: '/assets/images/skills/html.png',
       },
       {
         name: 'CSS 3',
-        iconSrc: '/img/skills/css.png',
+        iconSrc: '/assets/images/skills/css.png',
       },
       {
         name: 'Javascript (ESNext)',
-        iconSrc: '/img/skills/javascript.png',
+        iconSrc: '/assets/images/skills/javascript.png',
       },
       {
         name: 'Typescript',
-        iconSrc: '/img/skills/typescript.png',
+        iconSrc: '/assets/images/skills/typescript.png',
       },
     ],
   },
@@ -120,47 +120,47 @@ const skills = [
     tools: [
       {
         name: 'Git',
-        iconSrc: '/img/skills/git.png',
+        iconSrc: '/assets/images/skills/git.png',
       },
       {
         name: 'Docker',
-        iconSrc: '/img/skills/docker.png',
+        iconSrc: '/assets/images/skills/docker.png',
       },
       {
         name: 'Github Action',
-        iconSrc: '/img/skills/githubaction.png',
+        iconSrc: '/assets/images/skills/githubaction.png',
       },
       {
         name: 'ArgoCD',
-        iconSrc: '/img/skills/argocd.png',
+        iconSrc: '/assets/images/skills/argocd.png',
       },
       {
         name: 'Jenkins',
-        iconSrc: '/img/skills/jenkins.png',
+        iconSrc: '/assets/images/skills/jenkins.png',
       },
       {
         name: 'Amazon EC2',
-        iconSrc: '/img/skills/amazonec2.png',
+        iconSrc: '/assets/images/skills/amazonec2.png',
       },
       {
         name: 'Amazon S3',
-        iconSrc: '/img/skills/amazons3.png',
+        iconSrc: '/assets/images/skills/amazons3.png',
       },
       {
         name: 'Terraform',
-        iconSrc: '/img/skills/terraform.png',
+        iconSrc: '/assets/images/skills/terraform.png',
       },
       {
         name: 'K8s',
-        iconSrc: '/img/skills/kubernetes.png',
+        iconSrc: '/assets/images/skills/kubernetes.png',
       },
       {
         name: 'Amazon EKS',
-        iconSrc: '/img/skills/amazoneks.png',
+        iconSrc: '/assets/images/skills/amazoneks.png',
       },
       {
         name: 'AWS CodePipeline',
-        iconSrc: '/img/skills/awscodepipeline.png',
+        iconSrc: '/assets/images/skills/awscodepipeline.png',
       },
     ],
   },
@@ -169,11 +169,11 @@ const skills = [
     tools: [
       {
         name: 'Tensorflow',
-        iconSrc: '/img/skills/tensorflow.png',
+        iconSrc: '/assets/images/skills/tensorflow.png',
       },
       {
         name: 'Amazon Comprehend',
-        iconSrc: '/img/skills/amazoncomprehend.png',
+        iconSrc: '/assets/images/skills/amazoncomprehend.png',
       },
     ],
   },
@@ -182,39 +182,39 @@ const skills = [
     tools: [
       {
         name: 'Amazon API Gateway',
-        iconSrc: '/img/skills/amazonapigateway.png',
+        iconSrc: '/assets/images/skills/amazonapigateway.png',
       },
       {
         name: 'AWS VPC',
-        iconSrc: '/img/skills/awsvpc.png',
+        iconSrc: '/assets/images/skills/awsvpc.png',
       },
       {
         name: 'Amazon EC2',
-        iconSrc: '/img/skills/amazonec2.png',
+        iconSrc: '/assets/images/skills/amazonec2.png',
       },
       {
         name: 'Amazon S3',
-        iconSrc: '/img/skills/amazons3.png',
+        iconSrc: '/assets/images/skills/amazons3.png',
       },
       {
         name: 'AWS Lambda',
-        iconSrc: '/img/skills/awslambda.png',
+        iconSrc: '/assets/images/skills/awslambda.png',
       },
       {
         name: 'Amazon RDS',
-        iconSrc: '/img/skills/amazonrds.png',
+        iconSrc: '/assets/images/skills/amazonrds.png',
       },
       {
         name: 'C++',
-        iconSrc: '/img/skills/cpp.png',
+        iconSrc: '/assets/images/skills/cpp.png',
       },
       {
         name: 'Python',
-        iconSrc: '/img/skills/python.png',
+        iconSrc: '/assets/images/skills/python.png',
       },
       {
         name: 'OpenCV',
-        iconSrc: '/img/skills/opencv.png',
+        iconSrc: '/assets/images/skills/opencv.png',
       },
     ],
   },

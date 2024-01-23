@@ -2,7 +2,7 @@
 
 import SectionWrapper from './hoc/SectionWrapper';
 import {motion} from 'framer-motion';
-import {fadeIn, textVariant} from '@/utils/motion';
+import {fadeIn, textVariant} from '@/utility/motion';
 
 import {
   Timeline,
@@ -20,7 +20,7 @@ const experiences = [
   {
     title: 'Front End Developer',
     companyName: 'KRX',
-    iconSrc: '/img/company/krx.png',
+    iconSrc: '/assets/images/company/krx.png',
     date: 'Jan 2024 - Feb 2024',
     description: 'Prototyping: Next.js clone app of www.krx.co.kr',
     contributions: [
@@ -32,7 +32,7 @@ const experiences = [
   {
     title: 'Solutions Architect',
     companyName: 'GS Global',
-    iconSrc: '/img/company/gsglobal.png',
+    iconSrc: '/assets/images/company/gsglobal.png',
     date: 'Dec 2023 - Dec 2023',
     description:
       'Prototyping: automated scrapper & notifier for T4K truck customers feedback.',
@@ -47,7 +47,7 @@ const experiences = [
   {
     title: 'Back End Developer',
     companyName: 'LG Electronics',
-    iconSrc: '/img/company/lg.png',
+    iconSrc: '/assets/images/company/lg.png',
     date: 'Feb 2023 - Nov 2023',
     description:
       'LGE SDP App Modernization project: next generation IP TV web servers.',
@@ -61,7 +61,7 @@ const experiences = [
   {
     title: 'Full Stack Developer',
     companyName: 'Bithumb meta',
-    iconSrc: '/img/company/bithumb.png',
+    iconSrc: '/assets/images/company/bithumb.png',
     date: 'Mar 2022 - Dec 2022',
     description: 'NFT marketplace Naemo World: https://naemo.io',
     contributions: [
@@ -77,7 +77,7 @@ const experiences = [
   {
     title: 'Full Stack Developer',
     companyName: 'LG U+',
-    iconSrc: '/img/company/lg.png',
+    iconSrc: '/assets/images/company/lg.png',
     date: 'Jul 2021 - Feb 2022',
     description:
       'Cloud resource management platform UCMP: a platform we can manage standardized GCP/AWS cloud resources with ease.',
@@ -92,7 +92,7 @@ const experiences = [
   {
     title: 'Full Stack Developer',
     companyName: 'Hanwha Life Insurance',
-    iconSrc: '/img/company/hanwha.png',
+    iconSrc: '/assets/images/company/hanwha.png',
     date: 'Feb 2021 - Jun 2021',
     description:
       'Hanhwa point platform P3: reliable point management based on blockchain ledger.',
@@ -105,7 +105,7 @@ const experiences = [
   {
     title: 'Back End Developer',
     companyName: 'Okimoki',
-    iconSrc: '/img/company/okimoki.png',
+    iconSrc: '/assets/images/company/okimoki.png',
     date: 'Jan 2020 - Dec 2020',
     description:
       'LG CNS coffee order chatbot Okimoki: order your coffee inside Kakao talk.',

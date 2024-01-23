@@ -4,7 +4,7 @@ import {OrbitControls, useGLTF} from '@react-three/drei';
 import Loader from './Loader';
 
 function Earth() {
-  const earth = useGLTF('/3d/earth/scene.gltf');
+  const earth = useGLTF('/assets/3d/earth/scene.gltf');
 
   return (
     <primitive

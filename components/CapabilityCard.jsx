@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import {fadeIn} from '../utils/motion';
+import {fadeIn} from '../utility/motion';
 import {motion} from 'framer-motion';
 import {Tilt} from 'react-tilt';
 

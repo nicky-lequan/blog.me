@@ -49,7 +49,7 @@ function Footer() {
         <Image
           width={60}
           height={60}
-          src="/img/logo.png"
+          src="/assets/images/logo.png"
           alt="jooncco.dev"
           className="w-14"
         />

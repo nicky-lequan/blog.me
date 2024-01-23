@@ -38,7 +38,7 @@ function NavBar() {
           <Link href="/" className="my-auto">
             <div className="flex gap-1">
               <Image
-                src="/img/logo.png"
+                src="/assets/images/logo.png"
                 alt="logo image"
                 width={60}
                 height={60}
@@ -46,7 +46,7 @@ function NavBar() {
               />
               <Typography
                 variant="h4"
-                className="my-auto font-caskaydia font-black lg:block hidden">
+                className="my-auto font-bold lg:block hidden">
                 jooncco.dev
               </Typography>
             </div>

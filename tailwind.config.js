@@ -187,9 +187,9 @@ module.exports = withMT({
       screens: {
         xs: '450px',
       },
-    },
-    fontFamily: {
-      raleway: ['raleway', 'sans-serif'],
+      fontFamily: {
+        sans: ['raleway', 'sans-serif'],
+      },
     },
   },
   darkMode: 'class',

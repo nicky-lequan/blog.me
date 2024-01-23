@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: 'raleway';
-  src: url('../public/font/RalewayFont.ttf');
+  src: url('/assets/font/RalewayFont.ttf');
 }
 
 @font-face {
   font-family: 'caskaydia';
-  src: url('../public/font/CaskaydiaCoveNerdFont.ttf');
+  src: url('/assets/font/CaskaydiaCoveNerdFont.ttf');
 }
 
 @font-face {
   font-family: 'heavydata';
-  src: url('../public/font/HeavyDataNerdFont.ttf');
+  src: url('/assets/font/HeavyDataNerdFont.ttf');
 }
 
 * {

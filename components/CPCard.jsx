@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {fadeIn} from '@/utils/motion';
-import {numberWithCommas} from '@/utils/numbers';
+import {fadeIn} from '@/utility/motion';
+import {numberWithCommas} from '@/utility/numbers';
 import {Typography} from '@/providers/AppProvider';
 import {motion} from 'framer-motion';
 
