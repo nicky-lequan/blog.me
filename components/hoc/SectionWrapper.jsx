@@ -8,7 +8,7 @@ function SectionWrapper(Component, idName) {
       initial="hidden"
       whileInView="show"
       viewport={{once: true, amount: 0.25}}
-      className="mt-32 mb-56 px-8">
+      className="mt-8 mb-80 px-8">
       <span className="hash-span" id={idName}>
         &nbsp;
       </span>

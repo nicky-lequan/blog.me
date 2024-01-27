@@ -9,7 +9,7 @@ import Accomplishments from '@/components/Accomplishments';
 
 function HomePage() {
   return (
-    <div className="p-8 flex flex-col bg-neutral rounded-2xl drop-shadow-lg">
+    <div className="px-8 flex flex-col bg-neutral rounded-2xl drop-shadow-lg">
       <About />
       <Work />
       <Skills />
