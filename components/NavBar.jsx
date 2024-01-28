@@ -22,10 +22,10 @@ export const navItems = [
     name: 'Contact',
     path: '/#contact',
   },
-  {
-    name: 'Posts',
-    path: '/posts',
-  },
+  // {
+  //   name: 'Posts',
+  //   path: '/posts',
+  // },
 ];
 
 function NavBar() {

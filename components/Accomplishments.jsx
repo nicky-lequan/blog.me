@@ -126,7 +126,7 @@ function Accomplishments() {
             ))}
           </Timeline>
           {imageIdx === -1 && (
-            <div className="absolute right-12 top-12 w-[25rem] h-[25rem] hidden xl:flex xl:flex-col items-center justify-center rounded-xl bg-white dark:bg-[#303542] shadow-xl">
+            <div className="absolute right-12 top-12 w-[25rem] h-[25rem] hidden xl:flex xl:flex-col items-center justify-center rounded-xl bg-white dark:bg-zinc-900 shadow-xl">
               <PhotoIcon className="!h-24 !w-24" />
               Hover an event to see image
             </div>

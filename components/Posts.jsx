@@ -2,8 +2,7 @@
 
 import {useState} from 'react';
 import {Button} from '@/providers/AppProvider';
-import PostCardVertical from './PostCardVertical';
-import PostCardHorizontal from './PostCardHorizontal';
+import PostCard from './PostCard';
 
 const tags = [
   'aws',
@@ -54,27 +53,79 @@ function Posts() {
           </Button>
         ))}
       </div>
-      <div id="card-container" className="mt-8 flex flex-wrap gap-4">
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
-        <PostCardVertical className="hidden lg:block" />
-        <PostCardHorizontal className="block lg:hidden" />
+      <div
+        id="card-container"
+        className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-1.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-2.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-3.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-2.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-3.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-1.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-2.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-3.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-1.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
+        <PostCard
+          thumbnailSrc="/assets/images/default/thumbnail-1.jpg"
+          title="UI/UX Review Check"
+          description="Because it's about motivating the doers. Because I'm here to
+          follow my dreams and inspire others."
+          views={14272329}
+        />
       </div>
     </>
   );

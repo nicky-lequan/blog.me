@@ -8,7 +8,13 @@ import {
 import Image from 'next/image';
 import {GithubIcon, GlobeIcon} from './Icons';
 
-function PortfolioCardVertical({title, thumbnail, demoUrl, githubUrl, desc}) {
+function PortfolioCardVertical({
+  title,
+  thumbnailSrc,
+  demoUrl,
+  githubUrl,
+  desc,
+}) {
   return (
     <Card className="h-[30rem] xl:h-[28.75rem] bg-zinc-100 dark:bg-zinc-900 drop-shadow-md">
       <CardHeader
@@ -16,7 +22,7 @@ function PortfolioCardVertical({title, thumbnail, demoUrl, githubUrl, desc}) {
         floated={false}
         className="mb-0 h-60 md:h-36 bg-zinc-100 dark:bg-zinc-900">
         <Image
-          src={thumbnail}
+          src={thumbnailSrc}
           alt={title}
           fill
           style={{

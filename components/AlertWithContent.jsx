@@ -9,15 +9,14 @@ function AlertWithContent() {
 
   return (
     <Alert
-      variant="gradient"
       open={alertState.open}
-      className="mx-auto z-50 fixed inset-x-0 bottom-20 w-[80%] max-w-screen-md bg-gradient-to-r from-slate-800 via-indigo-500 to-primary dark:from-slate-950 dark:to-primary shadow-md shadow-gray dark:shadow-gray-700"
+      className="mx-auto z-50 fixed inset-x-0 bottom-20 w-[80%] max-w-screen-md bg-slate-100 dark:bg-zinc-900 shadow-md shadow-gray dark:shadow-zinc-800 text-text"
       icon={alertState.icon}
       onClose={() => setAlertState({type: 'HIDE'})}>
-      <Typography variant="h5" className="text-white font-black font-raleway">
+      <Typography variant="h5" className="font-black font-raleway">
         {alertState.title}
       </Typography>
-      <Typography className="mt-2 font-bold text-white font-raleway">
+      <Typography className="mt-2 font-bold font-raleway">
         {alertState.content}
       </Typography>
     </Alert>
