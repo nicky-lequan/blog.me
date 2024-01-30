@@ -24,6 +24,7 @@ const experiences = [
     date: 'Jan 2024 - Feb 2024',
     description: 'Prototyping: Next.js clone app of www.krx.co.kr',
     contributions: [
+      'Reduced large file download time to 50%, by implementing custom multipart downaload.',
       'Implemented navbar and pages',
       'Implemented download modal with pause & resume functionality',
     ],

@@ -134,10 +134,10 @@ const skills = [
         name: 'ArgoCD',
         iconSrc: '/assets/images/skills/argocd.png',
       },
-      {
-        name: 'Jenkins',
-        iconSrc: '/assets/images/skills/jenkins.png',
-      },
+      // {
+      //   name: 'Jenkins',
+      //   iconSrc: '/img/skills/jenkins.png',
+      // },
       {
         name: 'Amazon EC2',
         iconSrc: '/assets/images/skills/amazonec2.png',
@@ -146,14 +146,14 @@ const skills = [
         name: 'Amazon S3',
         iconSrc: '/assets/images/skills/amazons3.png',
       },
-      {
-        name: 'Terraform',
-        iconSrc: '/assets/images/skills/terraform.png',
-      },
-      {
-        name: 'K8s',
-        iconSrc: '/assets/images/skills/kubernetes.png',
-      },
+      // {
+      //   name: 'Terraform',
+      //   iconSrc: '/img/skills/terraform.png',
+      // },
+      // {
+      //   name: 'K8s',
+      //   iconSrc: '/img/skills/kubernetes.png',
+      // },
       {
         name: 'Amazon EKS',
         iconSrc: '/assets/images/skills/amazoneks.png',
