@@ -1,9 +1,7 @@
 'use client';
 
 import {useState} from 'react';
-import {motion} from 'framer-motion';
 import SectionWrapper from './hoc/SectionWrapper';
-import {fadeIn, textVariant} from '@/utility/motion';
 import {
   Timeline,
   TimelineItem,
@@ -81,18 +79,14 @@ function Accomplishments() {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-          My small wins
-        </p>
-        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
-          Accomplishments
-        </h1>
-      </motion.div>
+      <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        My small wins
+      </p>
+      <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
+        Accomplishments
+      </h1>
 
-      <motion.div
-        className="mt-8 relative"
-        variants={fadeIn('left', 'tween', 0, 1)}>
+      <div className="relative mt-8">
         <div className="p-8 h-[35rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
           <Timeline>
             {accomplishments.map((item, index) => (
@@ -139,13 +133,14 @@ function Accomplishments() {
                   alt="trailer"
                   width={400}
                   height={400}
+                  priority={true}
                   className="rounded-lg"
                 />
               </div>
             </div>
           )}
         </div>
-      </motion.div>
+      </div>
     </>
   );
 }

@@ -1,3 +1,5 @@
+'use client';
+
 import {Carousel} from '@material-tailwind/react';
 import TestimonialCard from './TestimonialCard';
 

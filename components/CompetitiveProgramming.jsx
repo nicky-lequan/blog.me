@@ -54,14 +54,12 @@ function CompetitiveProgramming() {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-          Love problem solving
-        </p>
-        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
-          Competitive Programming
-        </h1>
-      </motion.div>
+      <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        Love problem solving
+      </p>
+      <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
+        Competitive Programming
+      </h1>
 
       <div className="mt-8 py-4 flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
         {isRendered &&

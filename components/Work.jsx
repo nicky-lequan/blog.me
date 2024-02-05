@@ -1,9 +1,6 @@
 'use client';
 
 import SectionWrapper from './hoc/SectionWrapper';
-import {motion} from 'framer-motion';
-import {fadeIn, textVariant} from '@/utility/motion';
-
 import {
   Timeline,
   TimelineItem,
@@ -24,7 +21,7 @@ const experiences = [
     date: 'Jan 2024 - Feb 2024',
     description: 'Prototyping: Next.js clone app of www.krx.co.kr',
     contributions: [
-      'Reduced large file download time to 50%, by implementing custom multipart downaload.',
+      'Reduced large file(1.2TB) download time %, by implementing custom multipart downaload.',
       'Implemented navbar and pages',
       'Implemented download modal with pause & resume functionality',
     ],
@@ -122,18 +119,14 @@ const experiences = [
 function Work() {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-          Projects
-        </p>
-        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
-          Work Experience.
-        </h1>
-      </motion.div>
+      <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        Projects
+      </p>
+      <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
+        Work Experience.
+      </h1>
 
-      <motion.div
-        className="mt-8 flex flex-col h-[60rem] overflow-scroll px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner"
-        variants={fadeIn('left', 'tween', 0, 1)}>
+      <div className="mt-8 flex flex-col h-[60rem] overflow-scroll px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
         <Timeline>
           {experiences.map((experience, index) => (
             <TimelineItem key={index}>
@@ -203,7 +196,7 @@ function Work() {
             </TimelineItem>
           ))}
         </Timeline>
-      </motion.div>
+      </div>
     </>
   );
 }

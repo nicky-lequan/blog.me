@@ -16,8 +16,8 @@ function HomePage() {
       <Portfolio />
       <CompetitiveProgramming />
       <Accomplishments />
-      {/* <Testimonials /> */}
-      <Contact />
+      {/* <Testimandanonials /> */}
+      {/* <Contact /> */}
     </div>
   );
 }

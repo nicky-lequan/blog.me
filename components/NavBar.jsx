@@ -19,9 +19,13 @@ export const navItems = [
     path: '/#portfolio',
   },
   {
-    name: 'Contact',
-    path: '/#contact',
+    name: 'Accomplishments',
+    path: '/#accomplishments',
   },
+  // {
+  //   name: 'Contact',
+  //   path: '/#contact',
+  // },
   // {
   //   name: 'Posts',
   //   path: '/posts',
@@ -55,7 +59,7 @@ function NavBar() {
         <div className="flex flex-row my-auto space-x-1">
           <PCMenu />
           <MobileMenu />
-          <ThemeButton />
+          {/* <ThemeButton /> */}
         </div>
       </div>
     </div>

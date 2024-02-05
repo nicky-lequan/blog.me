@@ -2,8 +2,6 @@
 
 import {useState} from 'react';
 import SectionWrapper from './hoc/SectionWrapper';
-import {motion} from 'framer-motion';
-import {fadeIn, textVariant} from '@/utility/motion';
 import {
   Accordion,
   AccordionHeader,
@@ -36,10 +34,10 @@ const skills = [
         name: 'AWS Lambda',
         iconSrc: '/assets/images/skills/awslambda.png',
       },
-      {
-        name: 'Hibernate',
-        iconSrc: '/assets/images/skills/hibernate.png',
-      },
+      // {
+      //   name: 'Hibernate',
+      //   iconSrc: '/assets/images/skills/hibernate.png',
+      // },
       {
         name: 'QueryDSL JPA',
         iconSrc: '/assets/images/skills/querydsl.png',
@@ -109,10 +107,10 @@ const skills = [
         name: 'Javascript (ESNext)',
         iconSrc: '/assets/images/skills/javascript.png',
       },
-      {
-        name: 'Typescript',
-        iconSrc: '/assets/images/skills/typescript.png',
-      },
+      // {
+      //   name: 'Typescript',
+      //   iconSrc: '/assets/images/skills/typescript.png',
+      // },
     ],
   },
   {
@@ -154,10 +152,10 @@ const skills = [
       //   name: 'K8s',
       //   iconSrc: '/img/skills/kubernetes.png',
       // },
-      {
-        name: 'Amazon EKS',
-        iconSrc: '/assets/images/skills/amazoneks.png',
-      },
+      // {
+      //   name: 'Amazon EKS',
+      //   iconSrc: '/assets/images/skills/amazoneks.png',
+      // },
       {
         name: 'AWS CodePipeline',
         iconSrc: '/assets/images/skills/awscodepipeline.png',
@@ -226,16 +224,14 @@ function Skills() {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-          Hammer and wrench
-        </p>
-        <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
-          Skills
-        </h1>
-      </motion.div>
+      <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
+        Hammer and wrench
+      </p>
+      <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
+        Skills
+      </h1>
 
-      <motion.div className="mt-8" variants={fadeIn('left', 'tween', 0, 1)}>
+      <div className="mt-8">
         {skills.map((skill, index) => (
           <Accordion
             key={index + 1}
@@ -265,7 +261,7 @@ function Skills() {
             </AccordionBody>
           </Accordion>
         ))}
-      </motion.div>
+      </div>
     </>
   );
 }

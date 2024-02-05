@@ -2,9 +2,7 @@
 
 import CapabilityCard from './CapabilityCard';
 import SectionWrapper from './hoc/SectionWrapper';
-import {textVariant} from '@/utility/motion';
 import {Avatar} from '@/providers/AppProvider';
-import {motion} from 'framer-motion';
 
 const capabilities = [
   {
@@ -27,9 +25,7 @@ const capabilities = [
 
 function About() {
   return (
-    <motion.div
-      variants={textVariant()}
-      className="flex flex-row items-start gap-5">
+    <div className="flex flex-row items-start gap-5">
       <div className="flex flex-col justify-center items-center mt-5">
         <div className="w-5 h-5 rounded-full bg-primary" />
         <div className="w-1 sm:h-[32.5rem] h-[30rem] bg-gradient-to-b from-primary" />
@@ -71,7 +67,7 @@ function About() {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
