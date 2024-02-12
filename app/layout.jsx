@@ -7,8 +7,9 @@ import './globals.css';
 export const metadata = {
   title: {
     default: 'jooncco',
+    template: '%s | jooncco',
   },
-  description: "Developer jooncco's blog.",
+  description: 'About developer jooncco.',
   icons: {
     shortcut: '/assets/images/favicon.ico',
   },
