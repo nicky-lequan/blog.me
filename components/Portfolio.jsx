@@ -26,7 +26,7 @@ const tabs = [
         thumbnailSrc: '/assets/images/portfolio/about-jooncco.png',
         demoUrl: '',
         githubUrl: 'https://github.com/jooncco/about-jooncco',
-        desc: "Jooncco's knowledge base front end, built with Next.js 14.",
+        desc: "Developer jooncco's portfolio page made with Next.js 14.",
       },
       {
         title: 'Spring Boot API Server Template',
