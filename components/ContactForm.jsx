@@ -81,7 +81,7 @@ function ContactForm() {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="p-8 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-[1.25rem]">
+        className="p-5 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-[1.25rem]">
         <label className="flex flex-col">
           <span className="text-text font-semibold mb-4">Your Name</span>
           <input

@@ -2,8 +2,6 @@
 
 import {useState, useEffect} from 'react';
 import {useTheme} from 'next-themes';
-import {textVariant} from '@/utility/motion';
-import {motion} from 'framer-motion';
 import SectionWrapper from './hoc/SectionWrapper';
 import CPCard from './CPCard';
 

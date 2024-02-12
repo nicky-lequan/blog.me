@@ -87,7 +87,7 @@ function Achievements() {
       </h1>
 
       <div className="relative mt-8">
-        <div className="p-8 h-[35rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
+        <div className="p-2 sm:p-8 h-[35rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
           <Timeline>
             {achievements.map((item, index) => (
               <TimelineItem
@@ -106,12 +106,12 @@ function Achievements() {
                     <Typography
                       variant="h6"
                       color="blue-gray"
-                      className="text-text text-sm md:text-md font-semibold font-heavydata">
+                      className="text-text text-[0.6rem] sm:text-[0.8rem] font-semibold font-heavydata">
                       {item.title}
                     </Typography>
                     <Typography
                       variant="small"
-                      className="text-xs font-normal text-gray dark:text-gray-400 font-heavydata">
+                      className="text-[0.6rem] sm:text-[0.8rem] font-normal text-gray dark:text-gray-400 font-heavydata">
                       {item.subtitle}
                     </Typography>
                   </div>

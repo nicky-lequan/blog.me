@@ -15,8 +15,8 @@ function Contact() {
         Contact
       </h1>
 
-      <div className="relative mt-8 p-6 z-0 bg-slate-800 dark:bg-transparent xl:flex-row flex-col-reverse flex gap-4 overflow-hidden rounded-[1.25rem]">
-        <div className="m-2 xl:w-[50%] z-1">
+      <div className="relative mt-8 p-0 sm:p-6 z-0 bg-slate-800 dark:bg-transparent xl:flex-row flex-col-reverse flex gap-4 overflow-hidden rounded-[1.25rem]">
+        <div className="xl:w-[50%] z-1">
           <ContactForm />
         </div>
 

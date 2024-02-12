@@ -126,7 +126,7 @@ function Work() {
         Work Experience.
       </h1>
 
-      <div className="mt-8 flex flex-col h-[60rem] overflow-scroll px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
+      <div className="mt-8 flex flex-col h-[60rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
         <Timeline>
           {experiences.map((experience, index) => (
             <TimelineItem key={index}>
@@ -142,7 +142,9 @@ function Work() {
                   />
                 </TimelineIcon>
                 <div className="flex gap-4 items-center">
-                  <Typography variant="h5" className="font-raleway">
+                  <Typography
+                    variant="h5"
+                    className="font-raleway text-[1.2rem] sm:text-[1.6rem]">
                     {experience.title}
                   </Typography>
                   {index === 0 && (
@@ -167,13 +169,13 @@ function Work() {
                 </Typography>
                 <ul>
                   <li>
-                    <Typography className="font-bold text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
+                    <Typography className="font-bold text-stone-600 dark:text-stone font-heavydata text-[0.5rem] sm:text-[0.875rem]">
                       {experience.description}
                     </Typography>
                   </li>
                   {experience.contributions && (
                     <li>
-                      <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
+                      <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.5rem] sm:text-[0.875rem]">
                         Contributions:
                       </Typography>
                     </li>
@@ -181,13 +183,13 @@ function Work() {
                   {experience.contributions &&
                     experience.contributions.map((contribution, index) => (
                       <li key={index}>
-                        <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
+                        <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.5rem] sm:text-[0.875rem]">
                           - {contribution}
                         </Typography>
                       </li>
                     ))}
                   <li>
-                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.875rem]">
+                    <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.5rem] sm:text-[0.875rem]">
                       Stack: {experience.stack}
                     </Typography>
                   </li>
