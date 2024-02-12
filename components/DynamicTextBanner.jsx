@@ -64,7 +64,7 @@ function DynamicTextBanner() {
         <br />
         Wanna dig into the source code of this blog ? Visit &nbsp;
         <Link
-          href="https://github.com/jooncco/jooncco.dev-fe"
+          href="https://github.com/jooncco/about-jooncco"
           className="font-bold text-blue-700 dark:text-pink-800 hover:underline">
           here
         </Link>

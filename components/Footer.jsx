@@ -50,7 +50,7 @@ function Footer() {
           width={60}
           height={60}
           src="/assets/images/logo.png"
-          alt="jooncco.dev"
+          alt="logo"
           className="w-14"
         />
         <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

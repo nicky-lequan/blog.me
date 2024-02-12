@@ -22,10 +22,10 @@ const tabs = [
     icon: <GlobeIcon />,
     items: [
       {
-        title: 'jooncco.dev-fe',
-        thumbnailSrc: '/assets/images/portfolio/jooncco.dev-fe.png',
+        title: 'about-jooncco',
+        thumbnailSrc: '/assets/images/portfolio/about-jooncco.png',
         demoUrl: '',
-        githubUrl: 'https://github.com/jooncco/jooncco.dev-fe',
+        githubUrl: 'https://github.com/jooncco/about-jooncco',
         desc: "Jooncco's knowledge base front end, built with Next.js 14.",
       },
       {
