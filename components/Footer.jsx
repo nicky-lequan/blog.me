@@ -45,13 +45,13 @@ const footerItems = [
 function Footer() {
   return (
     <footer className="px-8 py-2 w-full bg-neutral">
-      <div className="px-2 flex flex-col flex-wrap items-center justify-center gap-x-12 text-center">
+      <div className="px-2 flex flex-col flex-wrap items-center justify-center gap-x-12 gap-y-2 text-center">
         <Image
           width={60}
           height={60}
           src="/assets/images/logo.png"
           alt="logo"
-          className="w-14"
+          className="w-12"
         />
         <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
           {footerItems.map(({name, href, icon}) => (
