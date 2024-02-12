@@ -42,11 +42,12 @@ function About() {
             <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[0.625rem] xs:text-[0.875rem] sm:text-[1.125rem] lg:text-[1.5rem] sm:leading-[1.5rem]">
               I build whatever I want to, with whatever needed.
               <br />
-              Recently I&apos;m digging Next.js, Amazon EKS, and Competitive
-              Programming with Java. Weight training gives me power and positive
-              mindset and that is why I go to the gym at least 3 times a week.
-              House music, phoenix darts, computer games and snow boarding are
-              my favorite hobbies. I&apos;m an undeniable coffee aficionado.
+              Recently I&apos;m digging Golang, Nuxt.js, and Competitive
+              Programming with Golang. Weight training gives me power and
+              positive mindset and that is why I go to the gym at least 3 times
+              a week. House music, phoenix darts, computer games and snow
+              boarding are my favorite hobbies. I&apos;m an undeniable coffee
+              aficionado.
             </p>
           </div>
           <Avatar

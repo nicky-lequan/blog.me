@@ -1,7 +1,8 @@
 # About Jooncco
 
 This is a portfolio page made with Next.js 14, tailwindcss and three.js.  
-Feel free to clone & fork and use in whatever form you want to.
+Feel free to clone & fork and use in whatever form you want to.  
+You can see the demo [here](https://about-jooncco.vercel.app).
 
 ## Getting Started
 
