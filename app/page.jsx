@@ -5,7 +5,7 @@ import Skills from '@/components/Skills';
 import Portfolio from '@/components/Portfolio';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
-import Accomplishments from '@/components/Accomplishments';
+import Achievements from '@/components/Achievements';
 
 function HomePage() {
   return (
@@ -15,9 +15,9 @@ function HomePage() {
       <Skills />
       <Portfolio />
       <CompetitiveProgramming />
-      <Accomplishments />
+      <Achievements />
       {/* <Testimandanonials /> */}
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

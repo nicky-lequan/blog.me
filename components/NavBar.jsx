@@ -19,13 +19,13 @@ export const navItems = [
     path: '/#portfolio',
   },
   {
-    name: 'Accomplishments',
-    path: '/#accomplishments',
+    name: 'Achievements',
+    path: '/#achievements',
   },
-  // {
-  //   name: 'Contact',
-  //   path: '/#contact',
-  // },
+  {
+    name: 'Contact',
+    path: '/#contact',
+  },
   // {
   //   name: 'Posts',
   //   path: '/posts',
@@ -51,7 +51,7 @@ function NavBar() {
               <Typography
                 variant="h4"
                 className="my-auto font-bold lg:block hidden">
-                jooncco.dev
+                jooncco
               </Typography>
             </div>
           </Link>
@@ -59,7 +59,7 @@ function NavBar() {
         <div className="flex flex-row my-auto space-x-1">
           <PCMenu />
           <MobileMenu />
-          {/* <ThemeButton /> */}
+          <ThemeButton />
         </div>
       </div>
     </div>

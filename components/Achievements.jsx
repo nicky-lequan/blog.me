@@ -22,59 +22,59 @@ import {
 } from './Icons';
 import Image from 'next/image';
 
-const accomplishments = [
+const achievements = [
   {
     title: 'Amazon EKS JAM Singapore Facilitator',
     subtitle: '25 OCT 2023',
     icon: <UserGroupIcon />,
     color: 'orange',
-    imageSrc: '/assets/images/accomplishments/amazon_eks_jam_singapore.png',
+    imageSrc: '/assets/images/achievements/amazon_eks_jam_singapore.png',
   },
   {
     title: '24th Place, LG Code Jam',
     subtitle: '15 SEP 2023',
     icon: <CodeBracketIcon />,
     color: 'pink',
-    imageSrc: '/assets/images/accomplishments/lg_code_jam.png',
+    imageSrc: '/assets/images/achievements/lg_code_jam.png',
   },
   {
     title: 'AWS JAM Winner',
     subtitle: '20 JUN 2023',
     icon: <TrophyIcon />,
     color: 'orange',
-    imageSrc: '/assets/images/accomplishments/aws_jam.png',
+    imageSrc: '/assets/images/achievements/aws_jam.png',
   },
   {
     title: 'AWS Certified Solutions Architect Professional',
     subtitle: '02 FEB 2023',
     icon: <IdentificationIcon />,
     color: 'orange',
-    imageSrc: '/assets/images/accomplishments/aws_sap.png',
+    imageSrc: '/assets/images/achievements/aws_sap.png',
   },
   {
     title: 'Codeforces Specialist',
     subtitle: '18 OCT 2020',
     icon: <CodeforcesIcon />,
     color: 'teal',
-    imageSrc: '/assets/images/accomplishments/codeforces_specialist.png',
+    imageSrc: '/assets/images/achievements/codeforces_specialist.png',
   },
   {
     title: 'Computer Science B.S. Yonsei, Seoul',
     subtitle: '25 FEB 2019',
     icon: <AcademicCap />,
     color: 'blue',
-    imageSrc: '/assets/images/accomplishments/cs_yonsei.png',
+    imageSrc: '/assets/images/achievements/cs_yonsei.png',
   },
   {
     title: 'Software Engineer, LG CNS',
     subtitle: '7 JAN 2019',
     icon: <BuildingOffice2Icon />,
     color: 'pink',
-    imageSrc: '/assets/images/accomplishments/lgcns_start.png',
+    imageSrc: '/assets/images/achievements/lgcns_start.png',
   },
 ];
 
-function Accomplishments() {
+function Achievements() {
   const [imageIdx, setImageId] = useState(-1);
 
   return (
@@ -83,13 +83,13 @@ function Accomplishments() {
         My small wins
       </p>
       <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
-        Accomplishments
+        Achievements
       </h1>
 
       <div className="relative mt-8">
         <div className="p-8 h-[35rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
           <Timeline>
-            {accomplishments.map((item, index) => (
+            {achievements.map((item, index) => (
               <TimelineItem
                 key={index}
                 className="h-28 max-w-[28rem]"
@@ -129,7 +129,7 @@ function Accomplishments() {
             <div className="p-[0.063rem] green-violet-gradient absolute right-10 top-10 rounded-xl hidden xl:block shadow-xl">
               <div className="p-2 bg-zinc-50 dark:bg-zinc-900 rounded-xl">
                 <Image
-                  src={accomplishments[imageIdx].imageSrc}
+                  src={achievements[imageIdx].imageSrc}
                   alt="trailer"
                   width={400}
                   height={400}
@@ -145,4 +145,4 @@ function Accomplishments() {
   );
 }
 
-export default SectionWrapper(Accomplishments, 'accomplishments');
+export default SectionWrapper(Achievements, 'achievements');
