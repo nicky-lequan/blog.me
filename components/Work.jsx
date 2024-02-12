@@ -17,7 +17,7 @@ const experiences = [
   {
     title: 'Front End Developer',
     companyName: 'KRX',
-    iconSrc: '/assets/images/company/krx.png',
+    iconSrc: '/assets/images/company/lg.png',
     date: 'Jan 2024 - Feb 2024',
     description: 'Prototyping: Next.js clone app of www.krx.co.kr',
     contributions: [
@@ -30,7 +30,7 @@ const experiences = [
   {
     title: 'Solutions Architect',
     companyName: 'GS Global',
-    iconSrc: '/assets/images/company/gsglobal.png',
+    iconSrc: '/assets/images/company/lg.png',
     date: 'Dec 2023 - Dec 2023',
     description:
       'Prototyping: automated scrapper & notifier for T4K truck customers feedback.',
@@ -59,7 +59,7 @@ const experiences = [
   {
     title: 'Full Stack Developer',
     companyName: 'Bithumb meta',
-    iconSrc: '/assets/images/company/bithumb.png',
+    iconSrc: '/assets/images/company/lg.png',
     date: 'Mar 2022 - Dec 2022',
     description: 'NFT marketplace Naemo World: https://naemo.io',
     contributions: [
@@ -90,7 +90,7 @@ const experiences = [
   {
     title: 'Full Stack Developer',
     companyName: 'Hanwha Life Insurance',
-    iconSrc: '/assets/images/company/hanwha.png',
+    iconSrc: '/assets/images/company/lg.png',
     date: 'Feb 2021 - Jun 2021',
     description:
       'Hanhwa point platform P3: reliable point management based on blockchain ledger.',
@@ -103,7 +103,7 @@ const experiences = [
   {
     title: 'Back End Developer',
     companyName: 'Okimoki',
-    iconSrc: '/assets/images/company/okimoki.png',
+    iconSrc: '/assets/images/company/lg.png',
     date: 'Jan 2020 - Dec 2020',
     description:
       'LG CNS coffee order chatbot Okimoki: order your coffee inside Kakao talk.',
