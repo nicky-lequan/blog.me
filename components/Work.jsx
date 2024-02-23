@@ -116,14 +116,14 @@ const experiences = [
   },
 ];
 
-function Work() {
+function Projects() {
   return (
     <>
       <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-        Projects
+        Work Experience
       </p>
       <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
-        Work Experience.
+        Projects.
       </h1>
 
       <div className="mt-8 flex flex-col h-[60rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
@@ -203,4 +203,4 @@ function Work() {
   );
 }
 
-export default SectionWrapper(Work, 'work');
+export default SectionWrapper(Projects, 'projects');

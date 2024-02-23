@@ -40,14 +40,18 @@ function About() {
               I&apos;M A BUILDER. <br />
             </p>
             <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[0.625rem] xs:text-[0.875rem] sm:text-[1.125rem] lg:text-[1.5rem] sm:leading-[1.5rem]">
-              I build whatever I want to, with whatever needed.
-              <br />
-              Recently I&apos;m digging Golang, Nuxt.js, and Competitive
-              Programming with Golang. Weight training gives me power and
-              positive mindset and that is why I go to the gym at least 3 times
-              a week. House music, phoenix darts, computer games and snow
-              boarding are my favorite hobbies. I&apos;m an undeniable coffee
-              aficionado.
+              I started my career as a back-end engineer, but I found that I
+              could be the full-stack engineer that my team would LOVE to work
+              with. I&apos;ve led many business critical projects to success,
+              ranging from small to big scales. You can find the details&nbsp;
+              <a
+                className="text-cyan-500 dark:text-violet-500 underline"
+                href="#projects">
+                here
+              </a>
+              . Workout at a gym, phoenix darts at a pub, watching movies and
+              snow boarding are what I like to do whenever I need mental clarity
+              and recovery.
             </p>
           </div>
           <Avatar
