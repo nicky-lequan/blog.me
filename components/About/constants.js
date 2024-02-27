@@ -1,10 +1,10 @@
 export const CAPABILITIES = [
     {
-        title: 'Full Stack Developer',
+        title: 'Full Stack Engineer',
         iconSrc: '/assets/images/solid_figure_1.png',
     },
     {
-        title: 'Back End Developer',
+        title: 'Back End Engineer',
         iconSrc: '/assets/images/solid_figure_2.png',
     },
     {

@@ -14,7 +14,7 @@ function About() {
       </div>
       <div className="px-4">
         <div className="flex flex-row justify-between items-center">
-          <div>
+          <article>
             <h1 className="mt-8 font-black text-[2.5rem] xs:text-[3.125rem] sm:text-[3.75rem] lg:text-[5rem] lg:leading-[6.125rem]">
               Hi there. I&apos;m <span className="text-primary">JunHa.</span>
             </h1>
@@ -32,10 +32,10 @@ function About() {
                 here
               </a>
               . Workout at a gym, phoenix darts at a pub, watching movies and
-              snow boarding are what I like to do whenever I need mental clarity
-              and recovery.
+              snow boarding are what I do whenever I need mental clarity and
+              recovery.
             </p>
-          </div>
+          </article>
           <Avatar
             variant="circular"
             alt="profile"
