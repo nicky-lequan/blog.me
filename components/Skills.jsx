@@ -34,10 +34,6 @@ const skills = [
         name: 'AWS Lambda',
         iconSrc: '/assets/images/skills/awslambda.png',
       },
-      // {
-      //   name: 'Hibernate',
-      //   iconSrc: '/assets/images/skills/hibernate.png',
-      // },
       {
         name: 'QueryDSL JPA',
         iconSrc: '/assets/images/skills/querydsl.png',

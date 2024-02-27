@@ -1,27 +1,9 @@
 'use client';
 
 import CapabilityCard from './CapabilityCard';
-import SectionWrapper from './hoc/SectionWrapper';
+import SectionWrapper from '../hoc/SectionWrapper';
 import {Avatar} from '@/providers/AppProvider';
-
-const capabilities = [
-  {
-    title: 'Full Stack Developer',
-    iconSrc: '/assets/images/solid_figure_1.png',
-  },
-  {
-    title: 'Back End Developer',
-    iconSrc: '/assets/images/solid_figure_2.png',
-  },
-  {
-    title: 'Solutions Architect',
-    iconSrc: '/assets/images/solid_figure_3.png',
-  },
-  {
-    title: 'Problem Solver',
-    iconSrc: '/assets/images/solid_figure_4.png',
-  },
-];
+import {CAPABILITIES} from './constants';
 
 function About() {
   return (
@@ -63,12 +45,8 @@ function About() {
           />
         </div>
         <div className="mt-10 flex flex-wrap gap-6">
-          {capabilities.map((capability, idx) => (
-            <CapabilityCard
-              key={capability.title}
-              index={idx}
-              {...capability}
-            />
+          {CAPABILITIES.map((capability) => (
+            <CapabilityCard key={capability.title} {...capability} />
           ))}
         </div>
       </div>

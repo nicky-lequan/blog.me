@@ -5,6 +5,7 @@ import {CheckCircleIcon, ExclamationCircleIcon} from './Icons';
 import {AlertContext} from '@/providers/AlertProvider';
 import {Button} from '@/providers/AppProvider';
 import emailjs from '@emailjs/browser';
+import AlertWithContent from './AlertWithContent';
 
 function ContactForm() {
   const formRef = useRef();

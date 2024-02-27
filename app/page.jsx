@@ -1,4 +1,4 @@
-import About from '../components/About';
+import About from '../components/About/About';
 import Work from '@/components/Work';
 import CompetitiveProgramming from '@/components/CompetitiveProgramming';
 import Skills from '@/components/Skills';

@@ -4,6 +4,7 @@ import SectionWrapper from './hoc/SectionWrapper';
 import ContactForm from './ContactForm';
 import EarthCanvas from './EarthCanvas';
 import StarsCanvas from './Stars';
+import AlertWithContent from './AlertWithContent';
 
 function Contact() {
   return (

@@ -1,6 +1,6 @@
 function SectionWrapper(Component, idName) {
   const WrappedSection = () => (
-    <section className="mt-8 mb-80 px-4 md:px-8">
+    <section className="mt-8 mb-10 xl:mb-20 px-4 md:px-8">
       <span className="hash-span" id={idName}>
         &nbsp;
       </span>
