@@ -1,19 +1,19 @@
 'use client';
 
-import {useState} from 'react';
+import React, {useState} from 'react';
 import SectionWrapper from '../hoc/SectionWrapper';
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
-  Avatar,
   Tooltip,
 } from '@/providers/AppProvider';
 import {SKILLS} from './constants';
+import Image from 'next/image';
 
 function Skills() {
-  const [open, setOpen] = useState(1);
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const [openIndex, setOpenIndex] = useState(0);
+  const handleOpen = (value) => setOpenIndex(open === value ? 0 : value);
 
   return (
     <>
@@ -27,30 +27,37 @@ function Skills() {
       <div className="mt-8">
         {SKILLS.map((skill, index) => (
           <Accordion
-            key={index + 1}
-            open={open === index + 1}
-            className="mb-2 rounded-[1.25rem] border border-blue-gray-100 px-4 shadow-inner">
+            key={index}
+            open={openIndex === index}
+            className="mb-2 rounded-lg border border-blue-gray-100 px-4 shadow-inner">
             <AccordionHeader
-              onClick={() => handleOpen(index + 1)}
+              onClick={() => handleOpen(index)}
               className={`border-b-0 transition-colors font-raleway font-bold ${
-                open === index + 1
+                openIndex === index
                   ? 'text-text hover:text-text'
                   : 'hover:text-text'
               }`}>
               {skill.category}
             </AccordionHeader>
             <AccordionBody className="pt-0 flex flex-wrap">
-              {skill.tools.map((tool, index) => (
-                <Tooltip
-                  key={index}
-                  content={tool.name}
-                  animate={{
-                    mount: {scale: 1, y: 0},
-                    unmount: {scale: 0, y: 25},
-                  }}>
-                  <Avatar src={tool.iconSrc} alt={tool.name} variant="square" />
-                </Tooltip>
-              ))}
+              {index === openIndex &&
+                skill.tools.map((tool) => (
+                  <Tooltip
+                    key={tool.name}
+                    content={tool.name}
+                    animate={{
+                      mount: {scale: 1, y: 0},
+                      unmount: {scale: 0, y: 25},
+                    }}>
+                    <Image
+                      src={tool.iconSrc}
+                      alt={tool.name}
+                      width={48}
+                      height={48}
+                      priority={true}
+                    />
+                  </Tooltip>
+                ))}
             </AccordionBody>
           </Accordion>
         ))}

@@ -17,9 +17,9 @@ function CPCard({
   attended,
 }) {
   return (
-    <div className="min-w-0 sm:min-w-[25rem] md:min-w-[27.5rem] max-w-[30rem] green-violet-gradient p-[0.063rem] rounded-[1.25rem] drop-shadow-xl">
+    <div className="min-w-0 sm:min-w-[25rem] md:min-w-[27.5rem] max-w-[30rem] green-violet-gradient p-[0.063rem] rounded-lg drop-shadow-xl">
       <Link href={linkUrl}>
-        <div className="bg-white/90 dark:bg-slate-950/90 rounded-[1.25rem]">
+        <div className="bg-white/90 dark:bg-slate-950/90 rounded-lg">
           <div className="p-4 flex flex-col sm:flex-row justify-between gap-2 sm:gap-0">
             <div className="flex flex-col space-y-2">
               <div className="flex flex-row space-x-1 items-center">

@@ -3,13 +3,13 @@
 import {useState} from 'react';
 import SectionWrapper from '../hoc/SectionWrapper';
 import {
+  Button,
   Timeline,
   TimelineItem,
   TimelineConnector,
   TimelineIcon,
   Typography,
   TimelineHeader,
-  Button,
 } from '@/providers/AppProvider';
 import {PhotoIcon} from '../Icons';
 import Image from 'next/image';
@@ -20,7 +20,7 @@ import {
 } from './constants';
 
 function Achievements() {
-  const [imageIdx, setImageId] = useState(-1);
+  const [imageIdx, setImageIdx] = useState(-1);
   const [achievements, setAchievements] = useState(
     ALL_ACHIEVEMENTS.slice(0, INITIAL_ACHIEVEMENTS_COUNT)
   );
@@ -41,17 +41,17 @@ function Achievements() {
       </h1>
 
       <div className="relative mt-8">
-        <div className="p-2 sm:p-8 h-[36rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
+        <div className="p-2 sm:p-8 h-[36rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-lg shadow-inner">
           <Timeline>
             {achievements.map((item, index) => (
               <TimelineItem
                 key={index}
                 className="h-28 max-w-[28rem]"
-                onMouseEnter={() => setImageId(index)}>
+                onMouseEnter={() => setImageIdx(index)}>
                 {index < ALL_ACHIEVEMENTS.length - 1 && (
                   <TimelineConnector className="!w-[4.875rem]" />
                 )}
-                <TimelineHeader className="py-3 pl-4 pr-8 relative rounded-[1.25rem] bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800  shadow-lg">
+                <TimelineHeader className="py-3 pl-4 pr-8 relative rounded-lg bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800  shadow-lg">
                   <TimelineIcon
                     className="p-3"
                     variant="ghost"
@@ -92,14 +92,15 @@ function Achievements() {
           )}
           {imageIdx > -1 && (
             <div className="p-[0.063rem] green-violet-gradient absolute right-10 top-10 rounded-xl hidden xl:block shadow-xl">
-              <div className="p-2 bg-zinc-50 dark:bg-zinc-900 rounded-xl">
+              <div className="p-2 bg-zinc-50 dark:bg-zinc-900 rounded-xl flex justify-center items-center">
                 <Image
                   src={achievements[imageIdx].imageSrc}
                   alt="trailer"
                   width={400}
                   height={400}
-                  priority={true}
                   className="rounded-lg"
+                  placeholder="blur"
+                  priority={true}
                 />
               </div>
             </div>

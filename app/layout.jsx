@@ -8,7 +8,7 @@ export const metadata = {
   metadataBase: new URL('https://jooncco.me/'),
   title: {
     default: 'jooncco.me',
-    template: '%s | jooncco',
+    template: '%s | jooncco.me',
   },
   description: 'This cool nerd never stops.',
   keywords: ['jooncco', 'developer', 'web', 'portfolio'],

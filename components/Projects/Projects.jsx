@@ -39,7 +39,7 @@ function Projects() {
         Projects.
       </h1>
 
-      <article className="relative mt-8 flex flex-col h-[52rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-100 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
+      <article className="relative mt-8 flex flex-col h-[52rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-100 dark:bg-stone-950 rounded-lg shadow-inner">
         <Timeline>
           {projects.map((project, index) => (
             <TimelineItem key={index}>

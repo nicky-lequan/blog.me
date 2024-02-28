@@ -10,7 +10,7 @@ function SlidingCarousel({
   contents = [],
 }) {
   return (
-    <div className="bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
+    <div className="bg-slate-200 dark:bg-stone-950 rounded-lg shadow-inner">
       <Carousel
         className="rounded-xl items-center"
         autoplay={autoplay}

@@ -94,11 +94,11 @@ function ContactForm() {
   };
 
   return (
-    <div className="green-violet-gradient p-[0.063rem] rounded-[1.25rem]">
+    <div className="green-violet-gradient p-[0.063rem] rounded-lg">
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="p-5 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-[1.25rem]">
+        className="p-5 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-lg">
         <label className="flex flex-col">
           <span className="text-text font-semibold mb-4">Your Name</span>
           <input
