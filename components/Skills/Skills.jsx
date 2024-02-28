@@ -40,24 +40,24 @@ function Skills() {
               {skill.category}
             </AccordionHeader>
             <AccordionBody className="pt-0 flex flex-wrap">
-              {index === openIndex &&
-                skill.tools.map((tool) => (
-                  <Tooltip
-                    key={tool.name}
-                    content={tool.name}
-                    animate={{
-                      mount: {scale: 1, y: 0},
-                      unmount: {scale: 0, y: 25},
-                    }}>
-                    <Image
-                      src={tool.iconSrc}
-                      alt={tool.name}
-                      width={48}
-                      height={48}
-                      priority={true}
-                    />
-                  </Tooltip>
-                ))}
+              {skill.tools.map((tool) => (
+                <Tooltip
+                  key={tool.name}
+                  content={tool.name}
+                  animate={{
+                    mount: {scale: 1, y: 0},
+                    unmount: {scale: 0, y: 25},
+                  }}>
+                  <Image
+                    src={tool.iconSrc}
+                    alt={tool.name}
+                    width={48}
+                    height={48}
+                    priority
+                    quality={1}
+                  />
+                </Tooltip>
+              ))}
             </AccordionBody>
           </Accordion>
         ))}

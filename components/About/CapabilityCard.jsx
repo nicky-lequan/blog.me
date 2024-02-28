@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import {Tilt} from 'react-tilt';
 import {useIsDesktop} from '@/hooks/useIsDesktop';
+import {Typography} from '@/providers/AppProvider';
 
 function CapabilityCard({title, iconSrc}) {
   const isDesktop = useIsDesktop();
@@ -14,10 +15,11 @@ function CapabilityCard({title, iconSrc}) {
           width={100}
           height={100}
           className="w-16 h-16 object-contain"
+          priority
         />
-        <h3 className="text-[1.1rem] md:text-[1.25rem] font-bold text-center">
+        <Typography className="text-[1.1rem] md:text-[1.25rem] font-bold text-center">
           {title}
-        </h3>
+        </Typography>
       </div>
     </figure>
   );
