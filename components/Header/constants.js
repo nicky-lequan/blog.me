@@ -12,11 +12,11 @@ export const NAV_ITEMS = [
       path: '/#portfolio',
     },
     {
-      name: 'Achievements',
-      path: '/#achievements',
+      name: 'Testimonials',
+      path: '/#testimonials',
     },
     {
       name: 'Contact',
-      path: '/#contact',
+      path: '/contact',
     },
   ];

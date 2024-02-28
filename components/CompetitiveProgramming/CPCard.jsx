@@ -2,13 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import {fadeIn} from '@/utility/motion';
 import {numberWithCommas} from '@/utility/number';
 import {Typography} from '@/providers/AppProvider';
-import {motion} from 'framer-motion';
 
 function CPCard({
-  index,
   name,
   iconSrc,
   linkUrl,
@@ -20,14 +17,7 @@ function CPCard({
   attended,
 }) {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      viewport={{once: true}}
-      variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}
-      whileHover={{scale: 1.05}}
-      whileTap={{scale: 1}}
-      className="min-w-0 sm:min-w-[25rem] md:min-w-[27.5rem] max-w-[30rem] green-violet-gradient p-[0.063rem] rounded-[1.25rem] drop-shadow-xl">
+    <div className="min-w-0 sm:min-w-[25rem] md:min-w-[27.5rem] max-w-[30rem] green-violet-gradient p-[0.063rem] rounded-[1.25rem] drop-shadow-xl">
       <Link href={linkUrl}>
         <div className="bg-white/90 dark:bg-slate-950/90 rounded-[1.25rem]">
           <div className="p-4 flex flex-col sm:flex-row justify-between gap-2 sm:gap-0">
@@ -109,7 +99,7 @@ function CPCard({
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 'use client';
 
 import {useState} from 'react';
-import SectionWrapper from './hoc/SectionWrapper';
+import SectionWrapper from '../hoc/SectionWrapper';
 import {
   Timeline,
   TimelineItem,
@@ -9,73 +9,27 @@ import {
   TimelineIcon,
   Typography,
   TimelineHeader,
+  Button,
 } from '@/providers/AppProvider';
-import {
-  AcademicCap,
-  BuildingOffice2Icon,
-  CodeBracketIcon,
-  CodeforcesIcon,
-  IdentificationIcon,
-  PhotoIcon,
-  TrophyIcon,
-  UserGroupIcon,
-} from './Icons';
+import {PhotoIcon} from '../Icons';
 import Image from 'next/image';
-
-const achievements = [
-  {
-    title: 'Amazon EKS JAM Singapore Facilitator',
-    subtitle: '25 OCT 2023',
-    icon: <UserGroupIcon />,
-    color: 'orange',
-    imageSrc: '/assets/images/achievements/amazon_eks_jam_singapore.png',
-  },
-  {
-    title: '24th Place, LG Code Jam',
-    subtitle: '15 SEP 2023',
-    icon: <CodeBracketIcon />,
-    color: 'pink',
-    imageSrc: '/assets/images/achievements/lg_code_jam.png',
-  },
-  {
-    title: 'AWS JAM Winner',
-    subtitle: '20 JUN 2023',
-    icon: <TrophyIcon />,
-    color: 'orange',
-    imageSrc: '/assets/images/achievements/aws_jam.png',
-  },
-  {
-    title: 'AWS Certified Solutions Architect Professional',
-    subtitle: '02 FEB 2023',
-    icon: <IdentificationIcon />,
-    color: 'orange',
-    imageSrc: '/assets/images/achievements/aws_sap.png',
-  },
-  {
-    title: 'Codeforces Specialist',
-    subtitle: '18 OCT 2020',
-    icon: <CodeforcesIcon />,
-    color: 'teal',
-    imageSrc: '/assets/images/achievements/codeforces_specialist.png',
-  },
-  {
-    title: 'Computer Science B.S. Yonsei, Seoul',
-    subtitle: '25 FEB 2019',
-    icon: <AcademicCap />,
-    color: 'blue',
-    imageSrc: '/assets/images/achievements/cs_yonsei.png',
-  },
-  {
-    title: 'Software Engineer, LG CNS',
-    subtitle: '7 JAN 2019',
-    icon: <BuildingOffice2Icon />,
-    color: 'pink',
-    imageSrc: '/assets/images/achievements/lgcns_start.png',
-  },
-];
+import {
+  ALL_ACHIEVEMENTS,
+  INITIAL_ACHIEVEMENTS_COUNT,
+  LOAD_MORE_ACHIEVEMENTS_COUNT,
+} from './constants';
 
 function Achievements() {
   const [imageIdx, setImageId] = useState(-1);
+  const [achievements, setAchievements] = useState(
+    ALL_ACHIEVEMENTS.slice(0, INITIAL_ACHIEVEMENTS_COUNT)
+  );
+
+  const handleLoadMore = () => {
+    setAchievements((prev) =>
+      ALL_ACHIEVEMENTS.slice(0, prev.length + LOAD_MORE_ACHIEVEMENTS_COUNT)
+    );
+  };
 
   return (
     <>
@@ -87,14 +41,16 @@ function Achievements() {
       </h1>
 
       <div className="relative mt-8">
-        <div className="p-2 sm:p-8 h-[35rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
+        <div className="p-2 sm:p-8 h-[36rem] overflow-scroll bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
           <Timeline>
             {achievements.map((item, index) => (
               <TimelineItem
                 key={index}
                 className="h-28 max-w-[28rem]"
                 onMouseEnter={() => setImageId(index)}>
-                <TimelineConnector className="!w-[4.875rem]" />
+                {index < ALL_ACHIEVEMENTS.length - 1 && (
+                  <TimelineConnector className="!w-[4.875rem]" />
+                )}
                 <TimelineHeader className="py-3 pl-4 pr-8 relative rounded-[1.25rem] bg-zinc-50 hover:bg-zinc-100 dark:bg-zinc-900 dark:hover:bg-zinc-800  shadow-lg">
                   <TimelineIcon
                     className="p-3"
@@ -119,6 +75,15 @@ function Achievements() {
               </TimelineItem>
             ))}
           </Timeline>
+          {achievements.length < ALL_ACHIEVEMENTS.length && (
+            <div className="flex justify-center md:block">
+              <Button
+                className="md:mx-40 my-4 max-w-[9rem] bg-primary text-text shadow-none font-raleway font-bold rounded-2xl"
+                onClick={() => handleLoadMore()}>
+                Load More
+              </Button>
+            </div>
+          )}
           {imageIdx === -1 && (
             <div className="absolute right-12 top-12 w-[25rem] h-[25rem] hidden xl:flex xl:flex-col items-center justify-center rounded-xl bg-white dark:bg-zinc-900 shadow-xl">
               <PhotoIcon className="!h-24 !w-24" />

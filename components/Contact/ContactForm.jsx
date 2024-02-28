@@ -1,11 +1,10 @@
 'use client';
 
 import {useContext, useState, useRef} from 'react';
-import {CheckCircleIcon, ExclamationCircleIcon} from './Icons';
+import {CheckCircleIcon, ExclamationCircleIcon} from '../Icons';
 import {AlertContext} from '@/providers/AlertProvider';
 import {Button} from '@/providers/AppProvider';
 import emailjs from '@emailjs/browser';
-import AlertWithContent from './AlertWithContent';
 
 function ContactForm() {
   const formRef = useRef();
@@ -24,57 +23,74 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setForm({
-      name: '',
-      email: '',
-      message: '',
-    });
-    emailjs
-      .send(
-        'service_4j3gakh',
-        'template_sdrabwr',
-        {
-          from_name: form.name,
-          to_name: 'Junha',
-          from_email: form.email,
-          to_email: 'jooncco.g@gmail.com',
-          message: form.message,
-        },
-        'CtIpJ1djxBL8HweJH'
-      )
-      .then(
-        () => {
-          setAlertState({
-            type: 'SHOW',
-            data: {
-              icon: <CheckCircleIcon className="!w-7 !h-7" />,
-              title: 'Email Sent',
-              content: "Thanks. I'll get back to you ASAP ;)",
-            },
+    const valid = form.email && form.name && form.message;
+    if (valid) {
+      setLoading(true);
+      emailjs
+        .send(
+          'service_4j3gakh',
+          'template_sdrabwr',
+          {
+            from_name: form.name,
+            to_name: 'Junha',
+            from_email: form.email,
+            to_email: 'jooncco.g@gmail.com',
+            message: form.message,
+          },
+          'CtIpJ1djxBL8HweJH'
+        )
+        .then(
+          () => {
+            setAlertState({
+              type: 'SHOW',
+              data: {
+                icon: <CheckCircleIcon className="!w-7 !h-7" />,
+                title: 'Email Sent',
+                content: "Thanks. I'll get back to you ASAP ;)",
+              },
+            });
+            setTimeout(() => {
+              setAlertState({type: 'HIDE'});
+              setLoading(false);
+            }, 4000);
+          },
+          (error) => {
+            console.error(error);
+            setAlertState({
+              type: 'SHOW',
+              data: {
+                icon: <ExclamationCircleIcon className="!w-7 !h-7" />,
+                title: 'Fail',
+                content:
+                  "Something went wrong :( Sometimes lengthy message leads to an error, so if that's the case, please email me directly.",
+              },
+            });
+            setTimeout(() => {
+              setAlertState({type: 'HIDE'});
+              setLoading(false);
+            }, 10000);
+          }
+        )
+        .finally(() => {
+          setForm({
+            name: '',
+            email: '',
+            message: '',
           });
-          setTimeout(() => {
-            setAlertState({type: 'HIDE'});
-            setLoading(false);
-          }, 4000);
+        });
+    } else {
+      setAlertState({
+        type: 'SHOW',
+        data: {
+          icon: <ExclamationCircleIcon className="!w-7 !h-7" />,
+          title: 'Incomplete Form',
+          content: 'Please fill in all the fields.',
         },
-        (error) => {
-          console.error(error);
-          setAlertState({
-            type: 'SHOW',
-            data: {
-              icon: <ExclamationCircleIcon className="!w-7 !h-7" />,
-              title: 'Fail',
-              content:
-                "Something went wrong :( Sometimes lengthy message leads to an error, so if that's the case, please email me directly.",
-            },
-          });
-          setTimeout(() => {
-            setAlertState({type: 'HIDE'});
-            setLoading(false);
-          }, 10000);
-        }
-      );
+      });
+      setTimeout(() => {
+        setAlertState({type: 'HIDE'});
+      }, 4000);
+    }
   };
 
   return (
@@ -122,7 +138,7 @@ function ContactForm() {
           ripple={false}
           fullWidth={true}
           disabled={loading}
-          className="bg-slate-300 dark:bg-slate-800 text-text shadow-none hover:scale-105 hover:shadow-none font-raleway font-bold">
+          className="bg-primary text-text shadow-none hover:scale-105 hover:shadow-none font-raleway font-bold">
           {loading ? 'Sending...' : 'Send'}
         </Button>
       </form>

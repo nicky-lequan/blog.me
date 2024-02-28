@@ -6,7 +6,7 @@ import {
   Typography,
 } from '@/providers/AppProvider';
 import Image from 'next/image';
-import {GithubIcon, GlobeIcon} from './Icons';
+import {GithubIcon, GlobeIcon} from '../Icons';
 
 function PortfolioCardVertical({
   title,

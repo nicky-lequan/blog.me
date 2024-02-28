@@ -1,5 +1,6 @@
-import SectionWrapper from './hoc/SectionWrapper';
+import SectionWrapper from '../hoc/SectionWrapper';
 import SlidingCarousel from './SlidingCarousel';
+import {TESTIMONIALS} from './constants';
 
 function Testimonials() {
   return (
@@ -12,7 +13,11 @@ function Testimonials() {
       </h1>
 
       <div className="mt-8">
-        <SlidingCarousel autoplay={false} loop={false} />
+        <SlidingCarousel
+          autoplay={false}
+          loop={false}
+          contents={TESTIMONIALS}
+        />
       </div>
     </>
   );

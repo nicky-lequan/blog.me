@@ -1,5 +1,6 @@
 'use client';
 
+import {useState} from 'react';
 import SectionWrapper from '../hoc/SectionWrapper';
 import {
   Timeline,
@@ -11,11 +12,24 @@ import {
   Typography,
   Avatar,
   Badge,
+  Button,
 } from '@/providers/AppProvider';
-import {PROJECTS} from './constants';
+import {INITIAL_LOAD_COUNT, LOAD_MORE_COUNT, ALL_PROJECTS} from './constants';
 import Link from 'next/link';
 
 function Projects() {
+  const [projects, setProjects] = useState(
+    ALL_PROJECTS.slice(0, INITIAL_LOAD_COUNT)
+  );
+
+  const handleLoadMore = () => {
+    const projectCount = Math.min(
+      ALL_PROJECTS.length,
+      projects.length + LOAD_MORE_COUNT
+    );
+    setProjects(ALL_PROJECTS.slice(0, projectCount));
+  };
+
   return (
     <>
       <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
@@ -25,11 +39,11 @@ function Projects() {
         Projects.
       </h1>
 
-      <div className="mt-8 flex flex-col h-[60rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-200 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
+      <article className="relative mt-8 flex flex-col h-[52rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-100 dark:bg-stone-950 rounded-[1.25rem] shadow-inner">
         <Timeline>
-          {PROJECTS.map((project, index) => (
+          {projects.map((project, index) => (
             <TimelineItem key={index}>
-              <TimelineConnector />
+              {index < ALL_PROJECTS.length - 1 && <TimelineConnector />}
               <TimelineHeader>
                 <TimelineIcon className="p-0">
                   <Avatar
@@ -40,7 +54,7 @@ function Projects() {
                     className="border-gray-200 bg-white"
                   />
                 </TimelineIcon>
-                <div className="flex gap-4 items-center">
+                <article className="flex gap-4 items-center">
                   <Typography
                     variant="h5"
                     className="font-raleway text-[1.2rem] sm:text-[1.6rem]">
@@ -53,13 +67,13 @@ function Projects() {
                       &nbsp;
                     </Badge>
                   )}
-                </div>
+                </article>
               </TimelineHeader>
               <TimelineBody className="pb-8">
                 <Typography
                   variant="small"
                   className="text-[0.75rem] font-bold font-raleway">
-                  Client: {project.companyName} / Position: {project.position}
+                  Client: {project.companyName}
                 </Typography>
                 <Typography
                   variant="small"
@@ -107,7 +121,16 @@ function Projects() {
             </TimelineItem>
           ))}
         </Timeline>
-      </div>
+        {projects.length < ALL_PROJECTS.length && (
+          <div className="flex justify-center">
+            <Button
+              className="max-w-[9rem] bg-primary text-text shadow-none font-raleway font-bold rounded-2xl"
+              onClick={() => handleLoadMore()}>
+              Load More
+            </Button>
+          </div>
+        )}
+      </article>
     </>
   );
 }

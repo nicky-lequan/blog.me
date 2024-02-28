@@ -22,10 +22,11 @@ function About() {
               I&apos;M A BUILDER. <br />
             </p>
             <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[0.625rem] xs:text-[0.875rem] sm:text-[1.125rem] lg:text-[1.5rem] sm:leading-[1.5rem]">
-              I started my career as a back-end engineer, but I found that I
-              could be the full-stack engineer that my team would LOVE to work
-              with. I&apos;ve led many business critical projects to success,
-              ranging from small to big scales. You can find the details&nbsp;
+              Jooncco is a developer handle of mine. I started my career as a
+              back-end engineer, but I found that I could be the full-stack
+              engineer that my team would LOVE to work with. I&apos;ve led many
+              business critical projects to success, ranging from small to big
+              scales. You can find the details&nbsp;
               <a
                 className="text-cyan-500 dark:text-violet-500 underline"
                 href="#projects">
@@ -41,7 +42,7 @@ function About() {
             alt="profile"
             withBorder
             className="mt-12 hidden lg:block lg:w-[20rem] lg:h-[18.75rem] border-2 border-primary"
-            src="/assets/images/profile.jpg"
+            src="/assets/images/about/profile.jpg"
           />
         </div>
         <div className="mt-10 flex flex-wrap gap-6">

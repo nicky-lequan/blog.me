@@ -1,4 +1,6 @@
-export const PROJECTS = [
+export const INITIAL_LOAD_COUNT = 3;
+export const LOAD_MORE_COUNT = 2;
+export const ALL_PROJECTS = [
     {
       title: 'Fast Download for TB scale files',
       companyName: 'KRX',
@@ -109,3 +111,5 @@ export const PROJECTS = [
       stack: 'Spring Boot, Spring Data JPA, Spring Webflux, Postgre SQL, AWS',
     },
   ];
+
+  

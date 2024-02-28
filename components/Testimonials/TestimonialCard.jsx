@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import {Avatar} from '@/providers/AppProvider';
+
 function TestimonialCard({title, content, imageSource, author, jobTitle}) {
   return (
     <figure className="mt-4 mb-12 mx-4 md:mx-auto md:w-7/12 green-violet-gradient p-[0.063rem] rounded-[1.25rem] drop-shadow-xl">
@@ -19,10 +22,12 @@ function TestimonialCard({title, content, imageSource, author, jobTitle}) {
           <p className="my-4">&quot;{content}&quot;</p>
         </blockquote>
         <figcaption className="flex items-center justify-center space-x-3 mb-4">
-          <img
-            className="rounded-full w-9 h-9"
+          <Avatar
+            size="md"
             src={imageSource}
-            alt={author}
+            alt="avatar"
+            withBorder
+            className="border-violet-200 dark:border-violet-300"
           />
           <div className="space-y-0.5 font-medium text-black dark:text-white text-left">
             <div>{author}</div>
