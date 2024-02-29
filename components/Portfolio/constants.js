@@ -13,18 +13,18 @@ export const TABS = [
         icon: <GlobeIcon />,
         items: [
             {
-                title: 'about-jooncco',
-                thumbnailSrc: '/assets/images/portfolio/about-jooncco.png',
-                demoUrl: 'https://jooncco.me',
-                githubUrl: 'https://github.com/jooncco/about-jooncco',
-                desc: "A portfolio page made with Next.js 14, tailwindcss, and 💜. Fork this repo for your own portfolio page.",
-            },
-            {
                 title: 'Spring Boot API Server Template',
                 thumbnailSrc: '/assets/images/portfolio/springapiservertemplate.png',
                 demoUrl: '',
                 githubUrl: 'https://github.com/jooncco/spring-api-server-template',
                 desc: 'Spring Boot api server template. Provides example of a production-level REST APIs for productivity boost🔥.',
+            },
+            {
+                title: 'about-jooncco',
+                thumbnailSrc: '/assets/images/portfolio/about-jooncco.png',
+                demoUrl: 'https://jooncco.me',
+                githubUrl: 'https://github.com/jooncco/about-jooncco',
+                desc: "A portfolio page made with Next.js 14, tailwindcss, and 💜. Fork this repo for your own portfolio page.",
             },
             {
                 title: 'jooncco.github.io',
