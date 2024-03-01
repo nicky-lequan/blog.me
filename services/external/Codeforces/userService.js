@@ -1,5 +1,5 @@
-import axios from "axios";
-import { API_ENDPOINT } from "./constants";
+import axios from 'axios';
+import {API_ENDPOINT} from './config';
 
 /**
  * Retrieves the contest ranking information for a given username.
@@ -10,29 +10,29 @@ import { API_ENDPOINT } from "./constants";
  * @property {number} attended - The number of contests the user has attended.
  */
 export async function getContestRankingInfo(username) {
-    // Fetch user info
-    const userInfo = await axios
-        .get(`${API_ENDPOINT}/user.info?handles=${username}`)
-        .then((res) => res.data.result[0])
-        .catch((err) => {
-            console.error("error fetching user info", err);
-            return null;
-        });
+  // Fetch user info
+  const userInfo = await axios
+    .get(`${API_ENDPOINT}/user.info?handles=${username}`)
+    .then((res) => res.data.result[0])
+    .catch((err) => {
+      console.error('error fetching user info', err);
+      return null;
+    });
 
-    // Fetch user contest info
-    const userContestInfo = await axios
-        .get(`${API_ENDPOINT}/user.rating?handle=${username}`)
-        .then((res) => res.data.result)
-        .catch((err) => {
-            console.error("error fetching user contest info", err);
-            return null;
-        });
-    
-    return {
-        level: userInfo.rank,
-        rating: userInfo.rating,
-        attended: userContestInfo.length,
-    }
+  // Fetch user contest info
+  const userContestInfo = await axios
+    .get(`${API_ENDPOINT}/user.rating?handle=${username}`)
+    .then((res) => res.data.result)
+    .catch((err) => {
+      console.error('error fetching user contest info', err);
+      return null;
+    });
+
+  return {
+    level: userInfo.rank,
+    rating: userInfo.rating,
+    attended: userContestInfo.length,
+  };
 }
 
 /**

@@ -1,5 +1,5 @@
-import axios from "axios";
-import { API_ENDPOINT } from "./constants";
+import axios from 'axios';
+import {API_ENDPOINT} from './config';
 
 /**
  * Fetches user contest ranking info from the Leetcode GraphQL API.
@@ -7,9 +7,10 @@ import { API_ENDPOINT } from "./constants";
  * @returns {Promise<UserContestData>} - The user contest ranking info. Returns null on error.
  */
 export async function getContestRankingInfo(username) {
-    return axios.post(API_ENDPOINT, {
-        operationName: "userContestRankingInfo",
-        query: `
+  return axios
+    .post(API_ENDPOINT, {
+      operationName: 'userContestRankingInfo',
+      query: `
             query userContestRankingInfo($username: String!) {
                 userContestRanking(username: $username) {
                     attendedContestsCount
@@ -23,16 +24,16 @@ export async function getContestRankingInfo(username) {
                 }
             }
         `,
-        variables: {
-            username: username
-        }
+      variables: {
+        username: username,
+      },
     })
-    .then(res => {
-        return res.data.data.userContestRanking;
+    .then((res) => {
+      return res.data.data.userContestRanking;
     })
-    .catch(err => {
-        console.error("error fetching user contest ranking info", err);
-        return null;
+    .catch((err) => {
+      console.error('error fetching user contest ranking info', err);
+      return null;
     });
 }
 

@@ -7,11 +7,12 @@ export const ALL_PROJECTS = [
     iconSrc: '/assets/images/company/lg.png',
     position: 'Front End Engineer',
     date: 'Jan 2024 - Feb 2024',
-    description: 'A front-end prototype app with multipart download functionality.',
+    description:
+      'A front-end prototype app with multipart download functionality.',
     contributions: [
-        'Prototyped a front-end app with Next.js & Tailwindcss',
-        'Designed & implemented a multipart download module with Axios.',
-        'Reduced download time of 1.2TB file by 40%.',
+      'Prototyped a front-end app with Next.js & Tailwindcss',
+      'Designed & implemented a multipart download module with Axios.',
+      'Reduced download time of 1.2TB file by 40%.',
     ],
     stack: 'Next.js 14, Tailwindcss, Zustand, Axios, Amazon S3 API',
   },
@@ -52,7 +53,8 @@ export const ALL_PROJECTS = [
     iconSrc: '/assets/images/company/lg.png',
     position: 'Full Stack Engineer',
     date: 'Mar 2022 - Dec 2022',
-    description: 'Non-fungible token marketplace for NFT creators and collectors',
+    description:
+      'Non-fungible token marketplace for NFT creators and collectors',
     linkText: 'https://naemo.io',
     link: 'https://naemo.io',
     contributions: [
@@ -87,8 +89,7 @@ export const ALL_PROJECTS = [
     iconSrc: '/assets/images/company/lg.png',
     position: 'Full Stack Engineer',
     date: 'Feb 2021 - Jun 2021',
-    description:
-      'Reliable point management based on blockchain ledger.',
+    description: 'Reliable point management based on blockchain ledger.',
     contributions: [
       'Point transaction REST APIs; payment, transfer, refund, etc.',
       'Admin: point usage history page & related REST APIs',
@@ -101,8 +102,7 @@ export const ALL_PROJECTS = [
     iconSrc: '/assets/images/company/lg.png',
     position: 'Back End Engineer',
     date: 'Jan 2020 - Dec 2020',
-    description:
-      'Order your coffee inside Kakao talk.',
+    description: 'Order your coffee inside Kakao talk.',
     contributions: [
       'Designed & implemented 3 back-end microservices: store, menu, order.',
       'Coffee coupon data modeling',

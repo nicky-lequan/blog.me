@@ -4,7 +4,7 @@ import {useContext, useState, useRef} from 'react';
 import {CheckCircleIcon, ExclamationCircleIcon} from '../Icons';
 import {AlertContext} from '@/providers/AlertProvider';
 import {Button} from '@/providers/AppProvider';
-import emailjs from '@emailjs/browser';
+import * as EmailService from '@/services/external/Emailjs/emailService';
 
 function ContactForm() {
   const formRef = useRef();
@@ -26,19 +26,13 @@ function ContactForm() {
     const valid = form.email && form.name && form.message;
     if (valid) {
       setLoading(true);
-      emailjs
-        .send(
-          'service_4j3gakh',
-          'template_sdrabwr',
-          {
-            from_name: form.name,
-            to_name: 'Junha',
-            from_email: form.email,
-            to_email: 'jooncco.g@gmail.com',
-            message: form.message,
-          },
-          'CtIpJ1djxBL8HweJH'
-        )
+      EmailService.sendEmail(
+        form.name,
+        'Junha',
+        form.email,
+        'jooncco.g@gmail.com',
+        form.message
+      )
         .then(
           () => {
             setAlertState({

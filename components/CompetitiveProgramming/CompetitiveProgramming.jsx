@@ -6,9 +6,9 @@ import {
   CP_CODEFORCES_DATA_IDX,
 } from './constants';
 import * as LeetcodeUserService from '@/services/external/Leetcode/userService';
-import {USERNAME as CP_LEETCODE_USERNAME} from '@/services/external/Leetcode/constants';
+import {USERNAME as CP_LEETCODE_USERNAME} from '@/services/external/Leetcode/config';
 import * as CodeforcesUserService from '@/services/external/Codeforces/userService';
-import {USERNAME as CP_CODEFORCES_USERNAME} from '@/services/external/Leetcode/constants';
+import {USERNAME as CP_CODEFORCES_USERNAME} from '@/services/external/Leetcode/config';
 
 async function CompetitiveProgramming() {
   const cpCardData = [...CP_CARD_FALLBACK_DATA];
