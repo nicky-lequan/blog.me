@@ -1,18 +1,93 @@
-# About Jooncco
+# about-jooncco
+A developer portfolio page made with Next.js 14, tailwindcss and three.js.  
+You can see the demo [here](https://jooncco.me).
 
-This is a portfolio page made with Next.js 14, tailwindcss and three.js.  
-Feel free to clone & fork and use in whatever form you want to.  
-You can see the demo [here](https://about-jooncco.vercel.app).
+<figure style="display: flex; gap: 20px;">
+    <img src="public/preview_dark.png" alt="preview_dark" width="50%" />
+    <img src="public/preview_light.png" alt="preview_light" width="50%" />
+</figure>
+
+## Features
+
+- 2 pages, 8 sections that can showcase your strength to get you hired.
+    - `/`
+        - About
+        - Projects
+        - Skills
+        - Portfolio
+        - Competitive Programming
+        - Achievements
+        - Testimonials
+    - `/contact`
+        - Contact
+- Leetcode & Codeforces integration for live contest data fetch
+- Send email using email.js
+- Download resume
+- Dark mode
 
 ## Getting Started
 
-Install dependencies
+### Install Node.js
+
+https://nodejs.org/
+
+
+### Clone
+Clone/fork this repo.  
+Change repo name to whatever you like, but please star this repo if you wanna say thanks :)
+```
+git clone https://github.com/jooncco/about-jooncco.git
+```
+
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run
+### Customize
+
+#### 1. Replace static files with yours.
+
+    - `/public/Resume-Junha-en.pdf`
+    - `/public/Resume-Junha-ko.pdf`
+    - `/public/assets/images/logo.png`
+    - `/public/assets/images/about/profile.png`
+    - `/public/assets/images/achievements/*{your_glorious_moments.png}`
+    - `/public/assets/images/company/*{logo_of_your_company.png}`
+    - `/public/assets/images/portfolio/*{thumbnail_of_your_project.jpg}`
+
+#### 2. Replace contents of each section with your story.
+
+Contents are maintained inside `constants.js`, in each component&apos;s derectory.
+
+#### 3. Configure competitive programming handle
+
+`/services/external/Leetcode/config.js`  
+```javascript
+export const API_ENDPOINT = "https://leetcode.com/graphql";
+export const USERNAME = "<YOUR_CODEFORCES_HANDLE>";
+```
+
+`/services/external/Codeforces/config.js`  
+```javascript
+export const API_ENDPOINT = "https://leetcode.com/graphql";
+export const USERNAME = "<YOUR_LEETCODE_ID>";
+```
+
+#### 4. Configure emailjs.
+
+First, sign up and create email template at [emailjs](https://www.emailjs.com/).  
+Fill up necessary info to send emails.  
+
+`/services/external/Emailjs/config.js`  
+```javascript
+export const EMAILJS_SERVICE_ID = '<YOUR_EMAILJS_SERVICE_ID>';
+export const EMAILJS_TEMPLATE_ID = '<YOUR_EMAILJS_TEMPLATE_ID>';
+export const EMAILJS_PUBLIC_KEY = '<YOUR_EMAILJS_PUBLIC_KEY>';
+```
+
+### Run
 
 ```bash
 npm run dev
