@@ -10,9 +10,9 @@ export const ALL_PROJECTS = [
     description:
       'A front-end prototype app with multipart download functionality.',
     contributions: [
-      'Prototyped a front-end app with Next.js & Tailwindcss',
+      'Improved download speed for a 1.2TB file, reducing time by 40%',
       'Designed & implemented a multipart download module with Axios.',
-      'Reduced download time of 1.2TB file by 40%.',
+      'Implemented a front-end app with Next.js & Tailwindcss',
     ],
     stack: 'Next.js 14, Tailwindcss, Zustand, Axios, Amazon S3 API',
   },
