@@ -33,8 +33,6 @@ https://nodejs.org/
 
 
 ### Clone
-Clone/fork this repo.  
-Change repo name to whatever you like, but please star this repo if you wanna say thanks :)
 ```
 git clone https://github.com/jooncco/about-jooncco.git
 ```
@@ -49,13 +47,13 @@ npm install
 
 #### 1. Replace static files with yours.
 
-    - `/public/Resume-Junha-en.pdf`
-    - `/public/Resume-Junha-ko.pdf`
-    - `/public/assets/images/logo.png`
-    - `/public/assets/images/about/profile.png`
-    - `/public/assets/images/achievements/*{your_glorious_moments.png}`
-    - `/public/assets/images/company/*{logo_of_your_company.png}`
-    - `/public/assets/images/portfolio/*{thumbnail_of_your_project.jpg}`
+- `/public/Resume-Junha-en.pdf`
+- `/public/Resume-Junha-ko.pdf`
+- `/public/assets/images/logo.png`
+- `/public/assets/images/about/profile.png`
+- `/public/assets/images/achievements/*{your_glorious_moments.png}`
+- `/public/assets/images/company/*{logo_of_your_company.png}`
+- `/public/assets/images/portfolio/*{thumbnail_of_your_project.jpg}`
 
 #### 2. Replace contents of each section with your story.
 
