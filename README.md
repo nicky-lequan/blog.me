@@ -1,31 +1,37 @@
 # about-jooncco
-A developer portfolio page made with Next.js 14, tailwindcss and three.js.  
-You can see the demo [here](https://jooncco.me).
 
 <figure style="display: flex; gap: 20px;">
     <img src="public/preview_dark.png" alt="preview_dark" width="50%" />
     <img src="public/preview_light.png" alt="preview_light" width="50%" />
 </figure>
 
+A developer portfolio page made with Next.js 14, tailwindcss and three.js.  
+You can see the demo [here](https://jooncco.me).
+
+This is a [Template Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), which means you can create your own repository using this repo.  
+Feel free to make your own portfolio, and don&apos;t forget to star⭐ this repository if you wanna say thanks.
+
 ## Features
 
-- 2 pages, 8 sections that can showcase your strength to get you hired.
-    - `/`
-        - About
-        - Projects
-        - Skills
-        - Portfolio
-        - Competitive Programming
-        - Achievements
-        - Testimonials
-    - `/contact`
-        - Contact
+- 8 sections that can showcase your skills that will get you hired.  
+    - About
+    - Projects
+    - Skills
+    - Portfolio
+    - Competitive Programming
+    - Achievements
+    - Testimonials
+    - Contact
 - Leetcode & Codeforces integration for live contest data fetch
-- Send email using email.js
+- Let recruiter email you via `/contact` page
 - Download resume
 - Dark mode
 
 ## Getting Started
+
+### Create your own repository
+
+[How to create repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
 ### Install Node.js
 
@@ -75,7 +81,9 @@ export const USERNAME = "<YOUR_LEETCODE_ID>";
 
 #### 4. Configure emailjs.
 
-First, sign up and create email template at [emailjs](https://www.emailjs.com/).  
+This app uses [emailjs](https://www.emailjs.com/) to let people can email to you in `/contact` page.
+
+Sign up and create email template at [emailjs](https://www.emailjs.com/).  
 Fill up necessary info to send emails.  
 
 `/services/external/Emailjs/config.js`  
