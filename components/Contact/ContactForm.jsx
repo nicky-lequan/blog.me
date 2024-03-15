@@ -7,31 +7,26 @@ import {Button} from '@/providers/AppProvider';
 import * as EmailService from '@/services/external/Emailjs/emailService';
 
 function ContactForm() {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
   const [loading, setLoading] = useState(false);
   const {setAlertState} = useContext(AlertContext);
 
-  const handleChange = (e) => {
-    const {name, value} = e.target;
-    setForm({...form, [name]: value});
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    const valid = form.email && form.name && form.message;
+    const valid =
+      nameRef.current.value &&
+      emailRef.current.value &&
+      messageRef.current.value;
     if (valid) {
       setLoading(true);
       EmailService.sendEmail(
-        form.name,
+        nameRef.current.value,
         'Junha',
-        form.email,
+        emailRef.current.value,
         'jooncco.g@gmail.com',
-        form.message
+        messageRef.current.value
       )
         .then(
           () => {
@@ -66,11 +61,9 @@ function ContactForm() {
           }
         )
         .finally(() => {
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          });
+          nameRef.current.value = '';
+          emailRef.current.value = '';
+          messageRef.current.value = '';
         });
     } else {
       setAlertState({
@@ -90,16 +83,15 @@ function ContactForm() {
   return (
     <div className="green-violet-gradient p-[0.063rem] rounded-lg">
       <form
-        ref={formRef}
         onSubmit={handleSubmit}
         className="p-5 flex flex-col bg-white/90 dark:bg-slate-950/90 gap-8 rounded-lg">
         <label className="flex flex-col">
           <span className="text-text font-semibold mb-4">Your Name</span>
           <input
+            ref={nameRef}
             type="text"
             name="name"
-            value={form.name}
-            onChange={handleChange}
+            value={nameRef.current?.value}
             placeholder="What's your name?"
             className="py-4 px-6 bg-zinc-50 dark:bg-zinc-900 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 text-text rounded-lg border dark:border-gray-600 font-medium"
           />
@@ -107,10 +99,10 @@ function ContactForm() {
         <label className="flex flex-col">
           <span className="text-text font-semibold mb-4">Your Email</span>
           <input
+            ref={emailRef}
             type="email"
             name="email"
-            value={form.email}
-            onChange={handleChange}
+            value={emailRef.current?.value}
             placeholder="What's your email?"
             className="py-4 px-6 bg-zinc-50 dark:bg-zinc-900 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 text-text rounded-lg border dark:border-gray-600 font-medium"
           />
@@ -118,10 +110,10 @@ function ContactForm() {
         <label className="flex flex-col">
           <span className="text-text font-semibold mb-4">Your Message</span>
           <textarea
+            ref={messageRef}
             rows={7}
             name="message"
-            value={form.message}
-            onChange={handleChange}
+            value={messageRef.current?.value}
             placeholder="What do you want to say?"
             className="py-4 px-6 bg-zinc-50 dark:bg-zinc-900 placeholder:text-zinc-400 dark:placeholder:text-zinc-600 text-text rounded-lg border dark:border-gray-600 font-medium resize-none"
           />
