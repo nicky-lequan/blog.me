@@ -6,7 +6,7 @@ export const CP_CARD_FALLBACK_DATA = [
     level: 'Knight',
     top: 2.98,
     currentRating: 1986,
-    rank: 14100,
+    rank: 14368,
     attended: 18,
   },
   {
