@@ -42,14 +42,6 @@ export const SKILLS = [
         name: 'PostgreSQL',
         iconSrc: '/assets/images/skills/postgresql.png',
       },
-      {
-        name: 'Gradle',
-        iconSrc: '/assets/images/skills/gradle.png',
-      },
-      {
-        name: 'Maven',
-        iconSrc: '/assets/images/skills/maven.png',
-      },
     ],
   },
   {
@@ -66,22 +58,6 @@ export const SKILLS = [
       {
         name: 'Tailwind CSS',
         iconSrc: '/assets/images/skills/tailwindcss.png',
-      },
-      {
-        name: 'Material UI',
-        iconSrc: '/assets/images/skills/mui.png',
-      },
-      {
-        name: 'MobX',
-        iconSrc: '/assets/images/skills/mobx.png',
-      },
-      {
-        name: 'Html 5',
-        iconSrc: '/assets/images/skills/html.png',
-      },
-      {
-        name: 'CSS 3',
-        iconSrc: '/assets/images/skills/css.png',
       },
       {
         name: 'Javascript (ESNext)',
