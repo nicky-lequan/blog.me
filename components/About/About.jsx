@@ -16,7 +16,7 @@ function About() {
         <div className="flex flex-row justify-between items-center">
           <article>
             <h1 className="mt-8 font-black text-[2.5rem] xs:text-[3.125rem] sm:text-[3.75rem] lg:text-[5rem] lg:leading-[6.125rem]">
-              Hey there. It&apos;s <span className="text-primary">Daniel.</span>
+              Hey there. It&apos;s <span className="text-primary">Daniel</span>.
             </h1>
             <p className="mt-2 text-gray-700 dark:text-gray-500 font-medium text-[1rem] xs:text-[1.25rem] sm:text-[1.625rem] lg:text-[1.875rem] leading-[2rem]">
               DEVELOPER | ARCHITECT | QUANT ENTHUSIAST <br />
