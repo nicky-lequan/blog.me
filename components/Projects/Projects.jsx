@@ -36,7 +36,7 @@ function Projects() {
         Work Experience
       </p>
       <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
-        Projects.
+        Projects
       </h1>
 
       <article className="relative mt-8 flex flex-col h-[52rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-100 dark:bg-stone-950 rounded-lg shadow-inner">
