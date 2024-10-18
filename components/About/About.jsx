@@ -22,13 +22,13 @@ function About() {
               DEVELOPER | ARCHITECT | QUANT ENTHUSIAST <br />
             </p>
             <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[0.625rem] xs:text-[0.875rem] sm:text-[1.125rem] lg:text-[1.5rem] sm:leading-[1.5rem]">
-              I got several aliases, and "jooncco" is one of them especially
-              when I do develop and build things. I started my career as a
-              back-end engineer at LG CNS, an awsome company to start a career,
-              and I found that I could be the full-stack engineer that any team
-              would LOVE to work with. I&apos;ve led many business critical
-              projects to success, ranging from small to big scales. You can
-              find the details&nbsp;
+              I got several aliases, and &quot;jooncco&apos; is one of them
+              especially when I do develop and build things. I started my career
+              as a back-end engineer at LG CNS, an awsome company to start a
+              career, and I found that I could be the full-stack engineer that
+              any team would LOVE to work with. I&apos;ve led many business
+              critical projects to success, ranging from small to big scales.
+              You can find the details&nbsp;
               <a
                 className="text-cyan-500 dark:text-violet-500 underline"
                 href="#projects">
