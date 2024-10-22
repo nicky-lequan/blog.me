@@ -12,7 +12,7 @@ export const CAPABILITIES = [
     iconSrc: '/assets/images/about/solid_figure_3.png',
   },
   {
-    title: 'Trader',
+    title: 'Quant Trader',
     iconSrc: '/assets/images/about/solid_figure_4.png',
   },
 ];
