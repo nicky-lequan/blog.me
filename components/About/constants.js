@@ -4,15 +4,15 @@ export const CAPABILITIES = [
     iconSrc: '/assets/images/about/solid_figure_1.png',
   },
   {
-    title: 'Solutions Architect',
+    title: 'Mobile Application Developer',
     iconSrc: '/assets/images/about/solid_figure_2.png',
   },
   {
-    title: 'DJ',
+    title: 'Solutions Architect',
     iconSrc: '/assets/images/about/solid_figure_3.png',
   },
   {
-    title: 'Quant Trader',
+    title: 'Quant Enthusiast',
     iconSrc: '/assets/images/about/solid_figure_4.png',
   },
 ];
