@@ -1,4 +1,4 @@
-# about-jooncco
+# blog.me
 
 <figure style="display: flex; gap: 20px;">
     <img src="public/preview_dark.png" alt="preview_dark" width="50%" />
@@ -40,7 +40,7 @@ https://nodejs.org/
 
 ### Clone
 ```
-git clone https://github.com/jooncco/about-jooncco.git
+git clone https://github.com/jooncco/blog.me.git
 ```
 
 ### Install dependencies

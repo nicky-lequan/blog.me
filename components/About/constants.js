@@ -8,7 +8,7 @@ export const CAPABILITIES = [
     iconSrc: '/assets/images/about/solid_figure_2.png',
   },
   {
-    title: 'DJ',
+    title: 'Mobile App Developer',
     iconSrc: '/assets/images/about/solid_figure_3.png',
   },
   {
