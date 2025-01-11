@@ -4,7 +4,7 @@ import CompetitiveProgramming from '@/components/CompetitiveProgramming/Competit
 import Skills from '@/components/Skills/Skills';
 import Portfolio from '@/components/Portfolio/Portfolio';
 import Testimonials from '@/components/Testimonials/Testimonials';
-import Achievements from '@/components/Achievements/Achievements';
+import NewsFeed from '@/components/NewsFeed/NewsFeed';
 
 function HomePage() {
   return (
@@ -14,7 +14,7 @@ function HomePage() {
       <Skills />
       <Portfolio />
       <CompetitiveProgramming />
-      <Achievements />
+      <NewsFeed />
       <Testimonials />
     </div>
   );
