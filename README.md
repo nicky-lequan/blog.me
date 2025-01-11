@@ -99,6 +99,11 @@ export const EMAILJS_PUBLIC_KEY = '<YOUR_EMAILJS_PUBLIC_KEY>';
 npm run dev
 ```
 
+### Comming up (todo)
+
+- Update: `Contact` page
+- New: `Posts` page
+
 ## License
 
 MIT License
