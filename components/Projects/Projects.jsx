@@ -33,12 +33,16 @@ function Projects() {
   return (
     <>
       <p className="md:text-[1rem] text-[0.75rem] text-gray-700 dark:text-gray-500 uppercase tracking-wider">
-        Work Experience
+        Production Experience
       </p>
       <h1 className="text-text font-black md:text-[3.125rem] sm:text-[2.625rem] text-[1.875rem]">
         Projects
       </h1>
 
+      <Typography variant="small" className="mt-2text-[0.75rem] font-raleway">
+        *Note: These projects were completed for my clients during my tenure at
+        LG CNS.
+      </Typography>
       <article className="relative mt-8 flex flex-col h-[52rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-100 dark:bg-stone-950 rounded-lg shadow-inner">
         <Timeline>
           {projects.map((project, index) => (
@@ -70,11 +74,6 @@ function Projects() {
                 </article>
               </TimelineHeader>
               <TimelineBody className="pb-8">
-                <Typography
-                  variant="small"
-                  className="text-[0.75rem] font-bold font-raleway">
-                  Client: {project.companyName}
-                </Typography>
                 <Typography
                   variant="small"
                   className="text-[0.75rem] font-normal font-raleway">
@@ -113,7 +112,10 @@ function Projects() {
                     ))}
                   <li>
                     <Typography className="font-medium text-stone-600 dark:text-stone font-heavydata text-[0.5rem] sm:text-[0.875rem]">
-                      Stack: {project.stack}
+                      Tags:{' '}
+                      <span className="text-tahiti-600 dark:text-tahiti-800">
+                        {project.tags}
+                      </span>
                     </Typography>
                   </li>
                 </ul>
@@ -122,7 +124,7 @@ function Projects() {
           ))}
         </Timeline>
         {projects.length < ALL_PROJECTS.length && (
-          <div className="flex justify-center">
+          <div className="my-8 flex justify-center">
             <Button
               className="max-w-[9rem] bg-primary text-text shadow-none font-raleway font-bold rounded-2xl"
               onClick={() => handleLoadMore()}>

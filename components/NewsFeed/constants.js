@@ -8,18 +8,18 @@ import {
   UserGroupIcon,
 } from '../Icons';
 
-import amazonEksJamSingaporeImage from '/public/assets/images/achievements/amazon_eks_jam_singapore.png';
-import lgCodeJamImage from '/public/assets/images/achievements/lg_code_jam.png';
-import awsJamImage from '/public/assets/images/achievements/aws_jam.png';
-import awsSapImage from '/public/assets/images/achievements/aws_sap.png';
-import codeforcesSpecialistImage from '/public/assets/images/achievements/codeforces_specialist.png';
-import csYonseiImage from '/public/assets/images/achievements/cs_yonsei.png';
-import lgcnsStartImage from '/public/assets/images/achievements/lgcns_start.png';
+import amazonEksJamSingaporeImage from '/public/assets/images/newsFeed/amazon_eks_jam_singapore.png';
+import lgCodeJamImage from '/public/assets/images/newsFeed/lg_code_jam.png';
+import awsJamImage from '/public/assets/images/newsFeed/aws_jam.png';
+import awsSapImage from '/public/assets/images/newsFeed/aws_sap.png';
+import codeforcesSpecialistImage from '/public/assets/images/newsFeed/codeforces_specialist.png';
+import csYonseiImage from '/public/assets/images/newsFeed/cs_yonsei.png';
+import lgcnsStartImage from '/public/assets/images/newsFeed/lgcns_start.png';
 
-export const INITIAL_ACHIEVEMENTS_COUNT = 4;
-export const LOAD_MORE_ACHIEVEMENTS_COUNT = 2;
+export const INITIAL_NEWSFEED_COUNT = 4;
+export const LOAD_MORE_NEWSFEED_COUNT = 2;
 
-export const ALL_ACHIEVEMENTS = [
+export const ALL_NEWSFEED = [
   {
     title: 'Amazon EKS JAM Singapore Facilitator',
     subtitle: '25 OCT 2023',

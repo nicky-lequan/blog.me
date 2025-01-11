@@ -2,24 +2,54 @@ export const INITIAL_LOAD_COUNT = 3;
 export const LOAD_MORE_COUNT = 2;
 export const ALL_PROJECTS = [
   {
+    title: 'OCR Meter Reading Application',
+    companyName: 'Aboitiz Power',
+    iconSrc: '/assets/images/company/aboitizpower.png',
+    position: 'Prototyping Engineer',
+    date: 'Aug 2024 - Now',
+    description:
+      'A mobile application for electricity meter reading, capable of image based intelligent meter reading.',
+    contributions: [
+      'Designed architecture of prototype web application and have led successful PoC.',
+      'Frontend React application, backend serverless application(using AWS Lambda) implementation.',
+      'Flutter application development for production.',
+    ],
+    tags: '#React18, #AWSLambda, #AmazonEC2, #AmazonTextract, #yolo9, #GOI-OCR, #Flutter',
+  },
+  {
+    title: 'GenAI Audit Assistant Bot',
+    companyName: 'GC Biopharma',
+    iconSrc: '/assets/images/company/gcbiopharma.png',
+    position: 'Prototyping Engineer',
+    date: 'Mar 2024 - Jul 2024',
+    description:
+      'A RAG(Retrieval Aumented Generation) application for regular audit assistance using Claude Sonnet v3.5.',
+    contributions: [
+      'Customized AWS RAG application sample: https://github.com/aws-samples/bedrock-claude-chat.',
+      'Prompt engineering for multi-language(Korean, English) knowledge augmentation support.',
+      'Wrote AWS Lambda function for knowledge base sync workload trigger.',
+    ],
+    tags: '#AmazonBedrock, #AmazonS3, #AWSLambda, #GenAI, #Claude, #AWSCDK',
+  },
+  {
     title: 'Fast Download for TB scale files',
     companyName: 'KRX',
-    iconSrc: '/assets/images/company/lg.png',
-    position: 'Front End Engineer',
+    iconSrc: '/assets/images/company/krx.png',
+    position: 'Frontend Engineer',
     date: 'Jan 2024 - Feb 2024',
     description:
       'A front-end prototype app with multipart download functionality.',
     contributions: [
-      'Improved download speed for a 1.2TB file, reducing time by 40%',
+      'Improved download speed for a 1.2TB file, reducing time by 40%.',
       'Designed & implemented a multipart download module with Axios.',
-      'Implemented a front-end app with Next.js & Tailwindcss',
+      'Implemented a front-end app with Next.js & Tailwindcss.',
     ],
-    stack: 'Next.js 14, Tailwindcss, Zustand, Axios, Amazon S3 API',
+    tags: '#Next.js14, #Tailwindcss, #Zustand, #Axios, #AmazonS3',
   },
   {
     title: 'Automated Notification System for T4K Truck Customers Feedback',
     companyName: 'GS Global',
-    iconSrc: '/assets/images/company/lg.png',
+    iconSrc: '/assets/images/company/gsglobal.png',
     position: 'Solutions Architect',
     date: 'Dec 2023 - Dec 2023',
     description:
@@ -29,14 +59,13 @@ export const ALL_PROJECTS = [
       'Implemented Scrapper: A Python app responsible for automated export of Kakaotalk chat contents.',
       'Implemented Uploader: A Spring Boot app parses chat text, and uploads those parsed text to S3 bucket.',
     ],
-    stack:
-      'Amazon EC2, AWS Lambda, Amazon S3, Amazon RDS, Amazon Comprehend, Amazon SES, Python, OpenCV, Spring Boot',
+    tags: '#AmazonEC2, #AWSLambda, #AmazonS3, #AmazonRDS, #AmazonComprehend, #AmazonSES, #Python, #OpenCV, #SpringBoot',
   },
   {
-    title: 'IP TV Web Server App Mod',
+    title: 'IP TV Web Application Modernization',
     companyName: 'LG Electronics',
     iconSrc: '/assets/images/company/lg.png',
-    position: 'Back End Engineer',
+    position: 'Backend Engineer',
     date: 'Feb 2023 - Nov 2023',
     description:
       'LGE SDP App Modernization project: next generation IP TV web servers.',
@@ -45,12 +74,12 @@ export const ALL_PROJECTS = [
       'Reduced execution time of a device initialization API by 50% with executor threads.',
       'Designed & implemented a batch micro service which periodically uploads log files to S3 bucket for monitoring.',
     ],
-    stack: 'Spring Boot, MyBatis, MySQL, AWS',
+    tags: '#SpringBoot, #MyBatis, #MySQL, #AWS',
   },
   {
     title: 'NFT Marketplace "Naemo World"',
     companyName: 'Bithumb meta',
-    iconSrc: '/assets/images/company/lg.png',
+    iconSrc: '/assets/images/company/bithumb.png',
     position: 'Full Stack Engineer',
     date: 'Mar 2022 - Dec 2022',
     description:
@@ -64,8 +93,7 @@ export const ALL_PROJECTS = [
       'REST APIs for Ethereum/Solana withdraw',
       'Admin Launchpad List page & related REST APIs. Launchpad is a collection of NFTs in promo.',
     ],
-    stack:
-      'Spring Boot, Spring Data JPA, QueryDSL-JPA, MySQL, React.js with mobX, AWS',
+    tags: '#SpringBoot, #SpringDataJPA, #QueryDSL-JPA, #MySQL, #React.js, #MobX, #AWS',
   },
   {
     title: 'UCMP: Cloud Resource Management Platform',
@@ -81,12 +109,12 @@ export const ALL_PROJECTS = [
       'Cloud resource creation page & related REST APIs',
       'Email notification using Amazon SES',
     ],
-    stack: 'Spring Boot, MyBatis, Thymeleaf, React.js, MySQL, AWS, Github APIs',
+    tags: '#SpringBoot, #MyBatis, #Thymeleaf, #React.js, #MySQL, #AWS, #GithubAPI',
   },
   {
     title: 'Life Insurence Point Platform "P3"',
     companyName: 'Hanwha',
-    iconSrc: '/assets/images/company/lg.png',
+    iconSrc: '/assets/images/company/hanwha.png',
     position: 'Full Stack Engineer',
     date: 'Feb 2021 - Jun 2021',
     description: 'Reliable point management based on blockchain ledger.',
@@ -94,13 +122,13 @@ export const ALL_PROJECTS = [
       'Point transaction REST APIs; payment, transfer, refund, etc.',
       'Admin: point usage history page & related REST APIs',
     ],
-    stack: 'Spring Boot, MyBatis, React.js, MySQL, AWS',
+    tags: '#SpringBoot, #MyBatis, #React.js, #MySQL, #AWS',
   },
   {
     title: '"Okimoki": Coffee Order Chatbot for LG CNSers',
     companyName: 'Okimoki',
-    iconSrc: '/assets/images/company/lg.png',
-    position: 'Back End Engineer',
+    iconSrc: '/assets/images/company/okimoki.png',
+    position: 'Backend Engineer',
     date: 'Jan 2020 - Dec 2020',
     description: 'Order your coffee inside Kakao talk.',
     contributions: [
@@ -108,6 +136,6 @@ export const ALL_PROJECTS = [
       'Coffee coupon data modeling',
       'Designed & implemented 2FA',
     ],
-    stack: 'Spring Boot, Spring Data JPA, Spring Webflux, Postgre SQL, AWS',
+    tags: '#SpringBoot, #SpringDataJPA, #SpringWebflux, #PostgreSQL, #AWS',
   },
 ];

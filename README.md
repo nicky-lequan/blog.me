@@ -19,7 +19,7 @@ Feel free to make your own portfolio, and don&apos;t forget to star⭐ this repo
     - Skills
     - Portfolio
     - Competitive Programming
-    - Achievements
+    - News Feed
     - Testimonials
     - Contact
 - Leetcode & Codeforces integration for live contest data fetch
@@ -57,7 +57,7 @@ npm install
 - `/public/Resume-Junha-ko.pdf`
 - `/public/assets/images/logo.png`
 - `/public/assets/images/about/profile.png`
-- `/public/assets/images/achievements/*{your_glorious_moments.png}`
+- `/public/assets/images/newsFeed/*{your_glorious_moments.png}`
 - `/public/assets/images/company/*{logo_of_your_company.png}`
 - `/public/assets/images/portfolio/*{thumbnail_of_your_project.jpg}`
 
@@ -98,6 +98,11 @@ export const EMAILJS_PUBLIC_KEY = '<YOUR_EMAILJS_PUBLIC_KEY>';
 ```bash
 npm run dev
 ```
+
+### Comming up (todo)
+
+- Update: `Contact` page
+- New: `Posts` page
 
 ## License
 
