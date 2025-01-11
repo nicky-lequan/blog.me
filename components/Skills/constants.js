@@ -15,14 +15,6 @@ export const SKILLS = [
         iconSrc: '/assets/images/skills/springboot.png',
       },
       {
-        name: 'Node.js',
-        iconSrc: '/assets/images/skills/nodejs.png',
-      },
-      {
-        name: 'AWS Lambda',
-        iconSrc: '/assets/images/skills/awslambda.png',
-      },
-      {
         name: 'QueryDSL JPA',
         iconSrc: '/assets/images/skills/querydsl.png',
       },
@@ -41,6 +33,18 @@ export const SKILLS = [
       {
         name: 'PostgreSQL',
         iconSrc: '/assets/images/skills/postgresql.png',
+      },
+      {
+        name: 'AWS Lambda',
+        iconSrc: '/assets/images/skills/awslambda.png',
+      },
+      {
+        name: 'Amazon API Gateway',
+        iconSrc: '/assets/images/skills/amazonapigateway.png',
+      },
+      {
+        name: 'Amazon RDS',
+        iconSrc: '/assets/images/skills/amazonrds.png',
       },
     ],
   },
@@ -70,28 +74,41 @@ export const SKILLS = [
     ],
   },
   {
+    category: 'Mobile',
+    tools: [
+      {
+        name: 'Flutter',
+        iconSrc: '/assets/images/skills/flutter.png',
+      },
+    ],
+  },
+  {
     category: 'DevOps',
     tools: [
       {
         name: 'Git',
         iconSrc: '/assets/images/skills/git.png',
       },
-      {
-        name: 'Docker',
-        iconSrc: '/assets/images/skills/docker.png',
-      },
       // {
       //   name: 'Github Action',
       //   iconSrc: '/assets/images/skills/githubaction.png',
       // },
       {
-        name: 'ArgoCD',
-        iconSrc: '/assets/images/skills/argocd.png',
+        name: 'Docker',
+        iconSrc: '/assets/images/skills/docker.png',
       },
+      // {
+      //   name: 'ArgoCD',
+      //   iconSrc: '/assets/images/skills/argocd.png',
+      // },
       // {
       //   name: 'Jenkins',
       //   iconSrc: '/img/skills/jenkins.png',
       // },
+      {
+        name: 'AWS VPC',
+        iconSrc: '/assets/images/skills/awsvpc.png',
+      },
       {
         name: 'Amazon EC2',
         iconSrc: '/assets/images/skills/amazonec2.png',
@@ -100,6 +117,18 @@ export const SKILLS = [
         name: 'Amazon S3',
         iconSrc: '/assets/images/skills/amazons3.png',
       },
+      {
+        name: 'AWS CodePipeline',
+        iconSrc: '/assets/images/skills/awscodepipeline.png',
+      },
+      {
+        name: 'Amazon RDS',
+        iconSrc: '/assets/images/skills/amazonrds.png',
+      },
+      // {
+      //   name: 'Amazon EKS',
+      //   iconSrc: '/assets/images/skills/amazoneks.png',
+      // },
       // {
       //   name: 'Terraform',
       //   iconSrc: '/img/skills/terraform.png',
@@ -108,44 +137,11 @@ export const SKILLS = [
       //   name: 'K8s',
       //   iconSrc: '/img/skills/kubernetes.png',
       // },
-      // {
-      //   name: 'Amazon EKS',
-      //   iconSrc: '/assets/images/skills/amazoneks.png',
-      // },
-      {
-        name: 'AWS CodePipeline',
-        iconSrc: '/assets/images/skills/awscodepipeline.png',
-      },
-    ],
-  },
-  {
-    category: 'Machine Learning',
-    tools: [
-      {
-        name: 'Tensorflow',
-        iconSrc: '/assets/images/skills/tensorflow.png',
-      },
-      {
-        name: 'Amazon Comprehend',
-        iconSrc: '/assets/images/skills/amazoncomprehend.png',
-      },
     ],
   },
   {
     category: 'Etc.',
     tools: [
-      {
-        name: 'Amazon API Gateway',
-        iconSrc: '/assets/images/skills/amazonapigateway.png',
-      },
-      {
-        name: 'AWS VPC',
-        iconSrc: '/assets/images/skills/awsvpc.png',
-      },
-      {
-        name: 'Amazon RDS',
-        iconSrc: '/assets/images/skills/amazonrds.png',
-      },
       {
         name: 'C++',
         iconSrc: '/assets/images/skills/cpp.png',
@@ -154,10 +150,30 @@ export const SKILLS = [
         name: 'Python',
         iconSrc: '/assets/images/skills/python.png',
       },
+      // {
+      //   name: 'OpenCV',
+      //   iconSrc: '/assets/images/skills/opencv.png',
+      // },
+      // {
+      //   name: 'Tensorflow',
+      //   iconSrc: '/assets/images/skills/tensorflow.png',
+      // },
       {
-        name: 'OpenCV',
-        iconSrc: '/assets/images/skills/opencv.png',
+        name: 'Amazon SageMaker',
+        iconSrc: '/assets/images/skills/amazonsagemaker.png',
       },
+      {
+        name: 'Amazon Bedrock',
+        iconSrc: '/assets/images/skills/amazonbedrock.png',
+      },
+      // {
+      //   name: 'Amazon Comprehend',
+      //   iconSrc: '/assets/images/skills/amazoncomprehend.png',
+      // },
+      // {
+      //   name: 'Amazon Textract',
+      //   iconSrc: '/assets/images/skills/amazontextract.png',
+      // },
     ],
   },
 ];
