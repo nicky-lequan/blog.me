@@ -20,10 +20,10 @@ export const TABS = [
         desc: 'Spring Boot api server template. Provides example of a production-level REST APIs for productivity boost🔥.',
       },
       {
-        title: 'about-jooncco',
-        thumbnailSrc: '/assets/images/portfolio/about-jooncco.png',
+        title: 'blog.me',
+        thumbnailSrc: '/assets/images/portfolio/blog.me.png',
         demoUrl: 'https://jooncco.me',
-        githubUrl: 'https://github.com/jooncco/about-jooncco',
+        githubUrl: 'https://github.com/jooncco/blog.me',
         desc: 'A portfolio page made with Next.js 14, tailwindcss, and 💜. Fork this repo for your own portfolio page.',
       },
       {
