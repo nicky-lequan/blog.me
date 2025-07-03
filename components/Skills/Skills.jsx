@@ -48,14 +48,17 @@ function Skills() {
                     mount: {scale: 1, y: 0},
                     unmount: {scale: 0, y: 25},
                   }}>
-                  <Image
-                    src={tool.iconSrc}
-                    alt={tool.name}
-                    width={48}
-                    height={48}
-                    priority
-                    quality={1}
-                  />
+                  <div className="w-12 h-12 flex justify-center items-center">
+                    <Image
+                      className="h-12 w-auto"
+                      src={tool.iconSrc}
+                      alt={tool.name}
+                      width={48}
+                      height={48}
+                      priority
+                      quality={1}
+                    />
+                  </div>
                 </Tooltip>
               ))}
             </AccordionBody>

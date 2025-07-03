@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {API_ENDPOINT} from './config';
+import {httpsAgent} from '../httpsAgent';
 
 /**
  * Fetches user contest ranking info from the Leetcode GraphQL API.
@@ -8,9 +9,11 @@ import {API_ENDPOINT} from './config';
  */
 export async function getContestRankingInfo(username) {
   return axios
-    .post(API_ENDPOINT, {
-      operationName: 'userContestRankingInfo',
-      query: `
+    .post(
+      API_ENDPOINT,
+      {
+        operationName: 'userContestRankingInfo',
+        query: `
             query userContestRankingInfo($username: String!) {
                 userContestRanking(username: $username) {
                     attendedContestsCount
@@ -24,11 +27,14 @@ export async function getContestRankingInfo(username) {
                 }
             }
         `,
-      variables: {
-        username: username,
+        variables: {
+          username: username,
+        },
       },
-    })
+      {httpsAgent}
+    )
     .then((res) => {
+      console.log('lettcode', res.data);
       return res.data.data.userContestRanking;
     })
     .catch((err) => {

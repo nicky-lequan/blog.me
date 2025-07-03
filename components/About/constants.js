@@ -1,22 +1,22 @@
 export const CAPABILITIES = [
   {
-    title: 'Full Stack Engineer',
+    title: 'Front-end Engineer',
     shortTitle: 'Engineer',
     iconSrc: '/assets/images/about/solid_figure_1.png',
   },
   {
-    title: 'Solutions Architect',
-    shortTitle: 'Architect',
+    title: 'Agile Facilitator',
+    shortTitle: 'Agile Facilitator',
     iconSrc: '/assets/images/about/solid_figure_2.png',
   },
   {
-    title: 'Flutter Developer',
+    title: 'Blockchain Developer',
     shortTitle: 'Developer',
-    iconSrc: '/assets/images/about/solid_figure_3.png',
+    iconSrc: '/assets/images/about/solid_figure_4.png',
   },
   {
-    title: 'Quant Enthusiast',
-    shortTitle: 'Quant Enthusiast',
-    iconSrc: '/assets/images/about/solid_figure_4.png',
+    title: 'Project Leader',
+    shortTitle: 'Leader',
+    iconSrc: '/assets/images/about/solid_figure_3.png',
   },
 ];

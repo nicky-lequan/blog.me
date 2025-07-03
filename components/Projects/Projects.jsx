@@ -39,10 +39,6 @@ function Projects() {
         Projects
       </h1>
 
-      <Typography variant="small" className="mt-2text-[0.75rem] font-raleway">
-        *Note: These projects were completed for my clients during my tenure at
-        LG CNS.
-      </Typography>
       <article className="relative mt-8 flex flex-col h-[52rem] overflow-scroll px-2 sm:px-8 py-10 bg-slate-100 dark:bg-stone-950 rounded-lg shadow-inner">
         <Timeline>
           {projects.map((project, index) => (

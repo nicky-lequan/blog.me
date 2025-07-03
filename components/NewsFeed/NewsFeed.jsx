@@ -20,7 +20,7 @@ import {
 } from './constants';
 
 function NewsFeed() {
-  const [imageIdx, setImageIdx] = useState(-1);
+  const [imageIdx, setImageIdx] = useState(0);
   const [items, setItems] = useState(
     ALL_NEWSFEED.slice(0, INITIAL_NEWSFEED_COUNT)
   );
@@ -99,7 +99,6 @@ function NewsFeed() {
                   width={400}
                   height={400}
                   className="rounded-lg"
-                  placeholder="blur"
                   priority={true}
                 />
               </div>
@@ -111,4 +110,4 @@ function NewsFeed() {
   );
 }
 
-export default SectionWrapper(NewsFeed, 'newsFeed');
+export default SectionWrapper(NewsFeed, 'news-feed');

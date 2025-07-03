@@ -12,8 +12,8 @@ function HomePage() {
       <About />
       <Projects />
       <Skills />
-      <Portfolio />
-      <CompetitiveProgramming />
+      {/* <Portfolio /> */}
+      {/* <CompetitiveProgramming /> */}
       <NewsFeed />
       <Testimonials />
     </div>

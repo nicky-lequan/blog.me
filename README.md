@@ -6,7 +6,7 @@
 </figure>
 
 A developer portfolio page made with Next.js 14, tailwindcss and three.js.  
-You can see the demo [here](https://jooncco.me).
+You can see the demo [here](https://nicky-lequan.me).
 
 This is a [Template Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), which means you can create your own repository using this repo.  
 Feel free to make your own portfolio, and don&apos;t forget to star⭐ this repository if you wanna say thanks.
@@ -40,7 +40,7 @@ https://nodejs.org/
 
 ### Clone
 ```
-git clone https://github.com/jooncco/blog.me.git
+git clone https://github.com/nicky-lequan/blog.me.git
 ```
 
 ### Install dependencies

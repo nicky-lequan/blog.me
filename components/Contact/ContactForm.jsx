@@ -23,9 +23,9 @@ function ContactForm() {
       setLoading(true);
       EmailService.sendEmail(
         nameRef.current.value,
-        'Junha',
+        'Nicky',
         emailRef.current.value,
-        'jooncco.g@gmail.com',
+        'nicky.lequan@gmail.com',
         messageRef.current.value
       )
         .then(

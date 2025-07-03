@@ -7,9 +7,13 @@ export const NAV_ITEMS = [
     name: 'Projects',
     path: '/#projects',
   },
+  // {
+  //   name: 'Portfolio',
+  //   path: '/#portfolio',
+  // },
   {
-    name: 'Portfolio',
-    path: '/#portfolio',
+    name: 'News Feed',
+    path: '/#news-feed',
   },
   {
     name: 'Testimonials',
@@ -17,6 +21,6 @@ export const NAV_ITEMS = [
   },
   {
     name: 'Contact',
-    path: '/contact',
+    path: '/#contact',
   },
 ];
