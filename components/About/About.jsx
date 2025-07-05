@@ -70,9 +70,9 @@ function About() {
               place in traditional engineering. I began with front-end
               development, where I thrive. At LG CNS, I discovered I could be
               more than just a developer, stepping up as a Project Leader and
-              unofficial Scrum Master. I've led many business-critical projects
-              to success, ranging from small to medium scale. Check out the
-              details below &nbsp;
+              unofficial Scrum Master. I&apos;ve led many business-critical
+              projects to success, ranging from small to medium scale. Check out
+              the details below &nbsp;
               <a
                 className="text-cyan-500 dark:text-violet-500 underline"
                 href="#projects">
