@@ -1,8 +1,5 @@
 import {
   AcademicCap,
-  BuildingOffice2Icon,
-  CodeBracketIcon,
-  CodeforcesIcon,
   IdentificationIcon,
   TrophyIcon,
   UserGroupIcon,
