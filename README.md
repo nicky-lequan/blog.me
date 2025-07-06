@@ -53,8 +53,7 @@ npm install
 
 #### 1. Replace static files with yours.
 
-- `/public/Resume-Junha-en.pdf`
-- `/public/Resume-Junha-ko.pdf`
+- `/public/Resume-Nicky.pdf`
 - `/public/assets/images/logo.png`
 - `/public/assets/images/about/profile.png`
 - `/public/assets/images/newsFeed/*{your_glorious_moments.png}`
