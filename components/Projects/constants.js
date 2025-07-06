@@ -2,6 +2,19 @@ export const INITIAL_LOAD_COUNT = 3;
 export const LOAD_MORE_COUNT = 2;
 export const ALL_PROJECTS = [
   {
+    title: 'Samsung CNT',
+    companyName: 'Samsung',
+    iconSrc: '/assets/images/company/samsung.png',
+    position: 'Full Stack Engineer',
+    date: 'Jun 2025 - Now',
+    description: 'Multi-agent doc analysis system',
+    contributions: [
+      'Front-end application.',
+      'Security classification module that detects and displays document confidentiality.',
+    ],
+    tags: '#Vite, #React, #Python, #RestAPI, #Websocket, #StrandsAgents, #AwsS3, #AwsDynamoDB, #AwsBedrock',
+  },
+  {
     title: 'KB Insurance',
     companyName: 'KB Insurance',
     iconSrc: '/assets/images/company/kb.svg',
@@ -9,10 +22,10 @@ export const ALL_PROJECTS = [
     date: 'Feb 2025 - Jun 2025',
     description: 'Car Insurance Application with AI Chatbot.',
     contributions: [
-      'Front-end application',
+      'Front-end application.',
       'Collaborated with the back-end team to integrate AWS Bedrock-based chatbot services and RESTful APIs.',
     ],
-    tags: '#Vite, #React, #Tailwind, #RestAPI, #AwsBedrock',
+    tags: '#Vite, #React, #Python, #RestAPI, #AwsS3, #AwsDynamoDB, #AwsBedrock',
   },
   {
     title: 'Online Manual',
