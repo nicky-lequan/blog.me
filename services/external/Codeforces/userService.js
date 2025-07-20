@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {API_ENDPOINT} from './config';
+import {httpsAgent} from '../httpsAgent';
 
 /**
  * Retrieves the contest ranking information for a given username.
@@ -12,7 +13,7 @@ import {API_ENDPOINT} from './config';
 export async function getContestRankingInfo(username) {
   // Fetch user info
   const userInfo = await axios
-    .get(`${API_ENDPOINT}/user.info?handles=${username}`)
+    .get(`${API_ENDPOINT}/user.info?handles=${username}`, {httpsAgent})
     .then((res) => res.data.result[0])
     .catch((err) => {
       console.error('error fetching user info', err);
@@ -21,7 +22,7 @@ export async function getContestRankingInfo(username) {
 
   // Fetch user contest info
   const userContestInfo = await axios
-    .get(`${API_ENDPOINT}/user.rating?handle=${username}`)
+    .get(`${API_ENDPOINT}/user.rating?handle=${username}`, {httpsAgent})
     .then((res) => res.data.result)
     .catch((err) => {
       console.error('error fetching user contest info', err);

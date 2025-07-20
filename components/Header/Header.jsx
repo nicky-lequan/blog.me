@@ -22,7 +22,7 @@ function Header() {
               <Typography
                 variant="h4"
                 className="my-auto font-bold lg:block hidden">
-                jooncco.me
+                nicky-lequan.me
               </Typography>
             </div>
           </Link>

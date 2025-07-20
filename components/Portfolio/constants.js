@@ -22,7 +22,7 @@ export const TABS = [
       {
         title: 'blog.me',
         thumbnailSrc: '/assets/images/portfolio/blog.me.png',
-        demoUrl: 'https://jooncco.me',
+        demoUrl: 'https://nicky-lequan.me',
         githubUrl: 'https://github.com/jooncco/blog.me',
         desc: 'A portfolio page made with Next.js 14, tailwindcss, and 💜. Fork this repo for your own portfolio page.',
       },

@@ -5,13 +5,13 @@ import AlertWithContent from '@/components/AlertWithContent';
 import './globals.css';
 
 export const metadata = {
-  metadataBase: new URL('https://jooncco.me/'),
+  metadataBase: new URL('https://nicky-lequan.me/'),
   title: {
-    default: 'jooncco.me',
-    template: '%s | jooncco.me',
+    default: 'nicky-lequan.me',
+    template: '%s | nicky-lequan.me',
   },
   description: 'This cool nerd never stops.',
-  keywords: ['jooncco', 'developer', 'web', 'portfolio'],
+  keywords: ['nicky-lequan', 'developer', 'web', 'portfolio'],
 };
 
 function RootLayout({children}) {

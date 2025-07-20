@@ -28,18 +28,18 @@ async function CompetitiveProgramming() {
     };
   }
 
-  // Fetch codeforces data and update
-  const codeforcesData = await CodeforcesUserService.getContestRankingInfo(
-    CP_CODEFORCES_USERNAME
-  );
-  if (codeforcesData) {
-    cpCardData[CP_CODEFORCES_DATA_IDX] = {
-      ...cpCardData[CP_CODEFORCES_DATA_IDX],
-      level: codeforcesData.level,
-      currentRating: codeforcesData.rating,
-      attended: codeforcesData.attended,
-    };
-  }
+  // // Fetch codeforces data and update
+  // const codeforcesData = await CodeforcesUserService.getContestRankingInfo(
+  //   CP_CODEFORCES_USERNAME
+  // );
+  // if (codeforcesData) {
+  //   cpCardData[CP_CODEFORCES_DATA_IDX] = {
+  //     ...cpCardData[CP_CODEFORCES_DATA_IDX],
+  //     level: codeforcesData.level,
+  //     currentRating: codeforcesData.rating,
+  //     attended: codeforcesData.attended,
+  //   };
+  // }
 
   return (
     <>

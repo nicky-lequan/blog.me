@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import {Typography} from '@/providers/AppProvider';
 import {FOOTER_ITEMS} from './constants';
+import SectionWrapper from '../hoc/SectionWrapper';
 
 function Footer() {
   return (
@@ -29,10 +30,10 @@ function Footer() {
       <Typography
         color="blue-gray"
         className="mt-4 text-center font-normal text-text">
-        &copy; 2023 Junha Jeong
+        &copy; 2025 Nicky Le Quan
       </Typography>
     </footer>
   );
 }
 
-export default Footer;
+export default SectionWrapper(Footer, 'contact');

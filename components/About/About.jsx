@@ -59,20 +59,20 @@ function About() {
         <div className="flex flex-row justify-between items-center">
           <article>
             <h1 className="mt-8 font-black text-[2.5rem] xs:text-[3.125rem] sm:text-[3.75rem] lg:text-[5rem] lg:leading-[6.125rem]">
-              Hey there. I&apos;m <span className="text-primary">Daniel</span>.
+              Hey there. I&apos;m <span className="text-primary">Nicky</span>.
             </h1>
             <p className="mt-2 mb-2 text-gray-700 dark:text-gray-500 font-medium text-[1rem] xs:text-[1.25rem] sm:text-[1.625rem] lg:text-[1.875rem] leading-[2rem]">
               <span className="font-bold">{iamText}</span>
               <span className="font-bold text-red-600">|</span>
             </p>
             <p className="mt-2 lg:pe-12 text-gray-700 dark:text-gray-500 font-medium text-[0.625rem] xs:text-[0.875rem] sm:text-[1.125rem] lg:text-[1.5rem] sm:leading-[1.5rem]">
-              I got several aliases, and &quot;jooncco&quot; is the one that I
-              use when I do develop and build things. I started my career as a
-              back-end engineer at LG CNS, pretty awsome company to start
-              career, and found out I could be the full-stack engineer that any
-              team would LOVE to work with. I&apos;ve led many business critical
-              projects to success, ranging from small to big scales. Check out
-              the details&nbsp;
+              I started my career in blockchain development, but soon found my
+              place in traditional engineering. I began with front-end
+              development, where I thrive. At LG CNS, I discovered I could be
+              more than just a developer, stepping up as a Project Leader and
+              unofficial Scrum Master. I&apos;ve led many business-critical
+              projects to success, ranging from small to medium scale. Check out
+              the details below &nbsp;
               <a
                 className="text-cyan-500 dark:text-violet-500 underline"
                 href="#projects">
@@ -86,7 +86,7 @@ function About() {
             alt="profile"
             withBorder
             className="mt-12 hidden lg:block lg:w-[20rem] lg:h-[18.75rem] border-2 border-primary"
-            src="/assets/images/about/profile.jpg"
+            src="/assets/images/about/profile.jfif"
           />
         </div>
         <div className="mt-10 flex flex-wrap gap-6">

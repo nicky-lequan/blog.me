@@ -1,30 +1,29 @@
 export const TESTIMONIALS = [
-    {
-        title: 'The most proactive person that I know of',
-        body: "Whenever there's something to be done, Junha is always the first to volunteer. I've seen this happen so many times that it's become familiar. Thanks to his proactive support even in somewhat challenging or hesitant situations, I feel secure working in the same team and get motivated by his positive energy. ",
-        imageSource: '/assets/images/testimonials/testimonial_jeny.png',
-        name: 'Guijeong Lim',
-        jobTitle: 'Lead Software Engineer, LG CNS'
-    },
-    {
-        title: 'Tremendous sense of responsibility and passion',
-        body: "Our first collaboration was on the LG Electronics project in 2023, where I focused on backend development. Despite the project's initial lift-and-shift approach, he didn't settle for routine tasks. Instead, he actively contributed to raising the project's maturity level through proactive refactoring, supporting the growth of other developers. He displayed a passion for tackling challenges and addressing performance issues, which significantly enhanced customer satisfaction. His positive communication and mentorship with junior developers make him stand out as one of the best backend developers I've worked with. Collaborating with him has been both enriching and enlightening for me.",
-        imageSource: '/assets/images/testimonials/testimonial_samba.png',
-        name: 'Junki Park',
-        jobTitle: 'Software Engineer, LG CNS'
-    },
-    {
-        title: 'Positive and proactive attitude towards any difficulty or challenge',
-        body: "During the NFT exchange project with Junha, I was able to learn a lot and witness his outstanding skills. Firstly, Junha's positive and proactive attitude towards any difficulty or challenge left a strong impression. He took the lead in solving problems effectively by tackling them head-on. Technically, Junha demonstrated remarkable competence. Through continuous learning of new technologies and tools, he added innovative ideas and features to the project. His technical prowess significantly contributed to the project's success. I look forward to the opportunity to collaborate with Junha on future projects",
-        imageSource: '/assets/images/testimonials/testimonial_elliot.png',
-        name: 'Sehoon Kim',
-        jobTitle: 'Software Engineer, LG CNS'
-    },
-    {
-        title: 'Always passionate and self-motivated',
-        body: "Junha is one of the colleagues I would love to work with again among those I've worked with before. He is always passionate, self-motivated, and has an excellent ability to implement necessary requirements. Additionally, he consistently strives for his own growth and is a colleague who has no hesitation in engaging in technical discussions and feedback exchanges with others :)",
-        imageSource: '/assets/images/testimonials/testimonial_max.png',
-        name: 'Yongtae Kim',
-        jobTitle: 'DevOps Engineer, LG CNS'
-    }
-]
+  {
+    title:
+      'My industry role model, both remarkably skilled and effortlessly cool',
+    body: `A 3x Developer.
+
+Nicky has been a key man to our project, demonstrating strong development productivity, a strong sense of responsibility, and also a proactive attitude.
+In particular, his outstanding frontend development skills have contributed to the success of the numerous project for our customers. I especially want to highlight his proactive communication and craftsmanship in software development.
+I guarantee that any personnel, regardless of being tech-based or not, would love to work with this guy. It was a true joy to work with him.`,
+    imageSource: '/assets/images/testimonials/daniel.png',
+    name: 'Daniel (Junha Jeong)',
+    jobTitle: 'Solution Architect, LGCNS Korea',
+  },
+  {
+    title:
+      'A true brotherly leader — kind, approachable, and always there when you need him',
+    body: 'Nicky is an enthusiastic, friendly, and highly responsible person. This is evidenced by the awards he has received during his time working. I think it has been an honor to work with him.',
+    imageSource: '/assets/images/testimonials/bao_anh.png',
+    name: 'Bao Anh',
+    jobTitle: 'Acting AM Team Lead, LGCNS',
+  },
+  {
+    title: `One of the strongest and most trustworthy leaders I've ever worked with`,
+    body: 'Quan is intelligent, quick to adapt, ambitious, and highly demanding when it comes to product quality. His main weakness is a somewhat impulsive and youthful personality, but with maturity, he shows great potential for success.',
+    imageSource: '/assets/images/testimonials/nguyen_minh_duc.png',
+    name: 'Nguyen Minh Duc',
+    jobTitle: 'Project Manager, MIC (MB Bank)',
+  },
+];

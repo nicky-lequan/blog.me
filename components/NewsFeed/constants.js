@@ -6,67 +6,52 @@ import {
   IdentificationIcon,
   TrophyIcon,
   UserGroupIcon,
+  FlightIcon,
 } from '../Icons';
 
-import amazonEksJamSingaporeImage from '/public/assets/images/newsFeed/amazon_eks_jam_singapore.png';
-import lgCodeJamImage from '/public/assets/images/newsFeed/lg_code_jam.png';
-import awsJamImage from '/public/assets/images/newsFeed/aws_jam.png';
-import awsSapImage from '/public/assets/images/newsFeed/aws_sap.png';
-import codeforcesSpecialistImage from '/public/assets/images/newsFeed/codeforces_specialist.png';
-import csYonseiImage from '/public/assets/images/newsFeed/cs_yonsei.png';
-import lgcnsStartImage from '/public/assets/images/newsFeed/lgcns_start.png';
+import gdcContributionAwardImage from '/public/assets/images/newsFeed/gdc_contribution_award.jpeg';
+import koreaBusinessTripImage from '/public/assets/images/newsFeed/korea_business_trip.jpg';
+import wireWorkSharingImage from '/public/assets/images/newsFeed/wire_work_sharing.jpg';
+import graduationImage from '/public/assets/images/newsFeed/graduation.jpg';
+import gameloftInternshipImage from '/public/assets/images/newsFeed/gameloft_internship.jpg';
 
-export const INITIAL_NEWSFEED_COUNT = 4;
+export const INITIAL_NEWSFEED_COUNT = 5; // TODO: Set to 4 if displaying many items for better layout
 export const LOAD_MORE_NEWSFEED_COUNT = 2;
 
 export const ALL_NEWSFEED = [
   {
-    title: 'Amazon EKS JAM Singapore Facilitator',
-    subtitle: '25 OCT 2023',
-    icon: <UserGroupIcon />,
-    color: 'orange',
-    imageSrc: amazonEksJamSingaporeImage,
-  },
-  {
-    title: '24th Place, LG Code Jam',
-    subtitle: '15 SEP 2023',
-    icon: <CodeBracketIcon />,
-    color: 'pink',
-    imageSrc: lgCodeJamImage,
-  },
-  {
-    title: 'AWS JAM Winner',
-    subtitle: '20 JUN 2023',
+    title: 'GDC Contribution Award',
+    subtitle: '20 DEC 2024',
     icon: <TrophyIcon />,
     color: 'orange',
-    imageSrc: awsJamImage,
+    imageSrc: gdcContributionAwardImage,
   },
   {
-    title: 'AWS Certified Solutions Architect Professional',
-    subtitle: '02 FEB 2023',
-    icon: <IdentificationIcon />,
-    color: 'orange',
-    imageSrc: awsSapImage,
+    title: 'Agile Wirework Training Session',
+    subtitle: '25 OTC 2024',
+    icon: <UserGroupIcon />,
+    color: 'pink',
+    imageSrc: wireWorkSharingImage,
   },
   {
-    title: 'Codeforces Specialist',
-    subtitle: '18 OCT 2020',
-    icon: <CodeforcesIcon />,
-    color: 'teal',
-    imageSrc: codeforcesSpecialistImage,
+    title: 'Korea Business Trip',
+    subtitle: '04 Aug 2024',
+    icon: <FlightIcon />,
+    color: 'green',
+    imageSrc: koreaBusinessTripImage,
   },
   {
-    title: 'Computer Science B.S. Yonsei, Seoul',
-    subtitle: '25 FEB 2019',
+    title: 'Computer Engineering B.S., HUST, Hanoi',
+    subtitle: '05 SEP 2021',
     icon: <AcademicCap />,
     color: 'blue',
-    imageSrc: csYonseiImage,
+    imageSrc: graduationImage,
   },
   {
-    title: 'Software Engineer, LG CNS',
-    subtitle: '7 JAN 2019',
-    icon: <BuildingOffice2Icon />,
-    color: 'pink',
-    imageSrc: lgcnsStartImage,
+    title: 'Gameloft Internship Certificate',
+    subtitle: '08 APR 2021',
+    icon: <IdentificationIcon />,
+    color: 'orange',
+    imageSrc: gameloftInternshipImage,
   },
 ];
